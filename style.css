@@ -379,7 +379,7 @@ nav{
 .image-hover {
     margin: auto;
     position: absolute;
-    top: 0;
+    top: -.7%;
     right: 0;
     left: 0;
     bottom: 0;
