@@ -17,7 +17,7 @@ nav{
     position: fixed;
     width: 100%;
     display: flex;
-    padding: 2% 0%;
+    padding: 20px 0%;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(4,9,30,0.8);
@@ -64,7 +64,7 @@ nav{
 
 
 .whitemain{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
