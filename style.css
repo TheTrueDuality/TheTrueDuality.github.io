@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #C89B3C;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/*------------Card Display-------------*/
+
+
+.whitemain{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.whitemain h1{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 100px;
+}
+.white{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.white li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.white img{
+    width: 100%;
+}
+.bluemain{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.bluemain h1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+.blue-head{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+.blue{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.blue li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.blue img{
+    width: 100%;
+}
+.blackmain{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.blackmain h1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+.black-head{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+.black{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.black li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.black img{
+    width: 100%;
+}
+.redmain{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.redmain h1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+.red-head{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+.red{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.red li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.red img{
+    width: 100%;
+}
+.greenmain{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.greenmain h1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+.green-head{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+.green{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.green li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.green img{
+    width: 100%;
+}
+.multimain{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.multimain h1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+.multi-head{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+.multi{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.multi li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.multi img{
+    width: 100%;
+}
+.lessmain{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.lessmain h1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+.less-head{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+.less{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.less li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.less img{
+    width: 100%;
+}
+
+
+/*--------Two Sided Cards--------*/
+
+
+
+
+.double {
+    position: absolute;
+    max-width: 100%;
+}
+.image-hover {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: none;
+    opacity: 0;
+    transition: .3s;
+}
+.image-hover:hover {
+    opacity: 1;
+}
