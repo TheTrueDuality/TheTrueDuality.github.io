@@ -86,7 +86,7 @@ nav{
     position: relative;
     overflow: hidden;
 }
-.white li{
+.white ol{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
