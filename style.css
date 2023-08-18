@@ -131,7 +131,7 @@ nav{
     position: relative;
     overflow: hidden;
 }
-.blue li{
+.blue ol{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -176,7 +176,7 @@ nav{
     position: relative;
     overflow: hidden;
 }
-.black li{
+.black ol{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -221,7 +221,7 @@ nav{
     position: relative;
     overflow: hidden;
 }
-.red li{
+.red ol{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -266,7 +266,7 @@ nav{
     position: relative;
     overflow: hidden;
 }
-.green li{
+.green ol{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -311,7 +311,7 @@ nav{
     position: relative;
     overflow: hidden;
 }
-.multi li{
+.multi ol{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -356,7 +356,7 @@ nav{
     position: relative;
     overflow: hidden;
 }
-.less li{
+.less ol{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
