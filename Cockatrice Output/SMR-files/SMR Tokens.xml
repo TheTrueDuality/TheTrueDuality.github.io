@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="4">
+  <cards>
+
+    <card>
+      <name>Tibbers, Enchanted Bear SMR</name>
+      <set>SMR</set>
+      <prop>
+        <color>R</color>
+        <type>Legendary Artifact - Bear </type>
+        <maintype>Artifact</maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>5R: Tibbers becomes a 6/6 red bear creature until end of turn. this ability costs one less for each spell you’ve cast this turn. </text>
+      <token>1</token>
+    </card>
+    <card>
+      <name>Scarecrow Effigy SMR</name>
+      <set>SMR</set>
+      <prop>
+        <color>B</color>
+        <type>Artifact Creature - Scarecrow </type>
+        <maintype>Creature</maintype>
+        <pt>0/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>All creatures able to block  Scarecrow Effigy do so.</text>
+      <token>1</token>
+    </card>
+    <card>
+      <name>Maiden of the Mist SMR</name>
+      <set>SMR</set>
+      <prop>
+        <color></color>
+        <type>Legendary Token Creature - Wraith </type>
+        <maintype>Creature</maintype>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>If a nontoken creature an opponent controls would die, exile that card and create a 2/2 black zombie creature token with decayed (This creature can’t block. When it attacks, sacrifice it at end of combat.)</text>
+      <token>1</token>
+    </card>
+    <card>
+      <name>Quickblades SMR</name>
+      <set>SMR</set>
+      <prop>
+        <color></color>
+        <type>Token Artifact - Equipment </type>
+        <maintype>Artifact</maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>When Quickblades enters the battlefield attach it to a creature you control
+Equipped creature gets +1/+1 and if Equipped creature has exactly 6 equipment attached to it, the creature gains an additional +2/+2
+Equip {2}</text>
+      <token>1</token>
+    </card>
+    <card>
+      <name>Grim Rose SMR</name>
+      <set>SMR</set>
+      <prop>
+        <color></color>
+        <type>Token Artifact</type>
+        <maintype>Artifact</maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>{T}, Sacrifice: Add 4 Mana of any combination of colors to your mana pool.</text>
+      <token>1</token>
+    </card>
+    <card>
+      <name>Ball SMR</name>
+      <set>SMR</set>
+      <prop>
+        <color></color>
+        <type>Legendary Token Artifact - Vehicle </type>
+        <maintype>Artifact</maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>Crew 3 (Tap any number of creatures you control with total power 3 or greater: This Vehicle becomes an artifact creature until end of turn.)
+Flying, haste
+Ball gains +1/+1 for each tapped artifact you control.</text>
+      <token>1</token>
+    </card>
+    <card>
+      <name>Not Neeko SMR</name>
+      <set>SMR</set>
+      <prop>
+        <color>URG</color>
+        <type>Legendary Creature - Salamander Illusion </type>
+        <maintype>Creature</maintype>
+        <pt>0/0</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Not Neeko enters the battlefield as a copy of a creature except its named Not Neeko, its still legendary, and it gains whenever this takes damage, sacrifice it.    </text>
+      <token>1</token>
+    </card>
+    <card>
+      <name>Eggnivia SMR</name>
+      <set>SMR</set>
+      <prop>
+        <color>U</color>
+        <type>Legendary Creature - Egg </type>
+        <maintype>Creature</maintype>
+        <pt>0/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text></text>
+      <token>1</token>
+    </card>
+
+  </cards>
+</cockatrice_carddatabase>

@@ -1,0 +1,3068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="4">
+  <sets>
+    <set>
+      <name>SMR</name>
+      <longname>Summoners Rift</longname>
+      <settype></settype>
+    </set>
+  </sets>
+  <cards>
+
+    <card>
+      <name>Lucian, Grim Purifier</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>W</color>
+        <manacost>1WW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Ranger </type>
+        <maintype>Creature</maintype>
+        <pt>3/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Senna, the Redeemer (When this creature enters the battlefield, target player may put Senna into their hand from their library, then shuffle.)
+Lucian has double strike as long as you cast a spell this turn.
+Whenever Lucian attacks, he deals damage equal to his power to target tapped creature, if Lucian has double strike copy this ability, you may choose new targets for the copy.</text>
+    </card>
+    <card>
+      <name>Kalista, Undying Wraith</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBR</color>
+        <manacost>2UBR</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Spirit </type>
+        <maintype>Creature</maintype>
+        <pt>3/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Soulbond (You may pair this creature with another unpaired creature when either enters the battlefield. They remain paired for as long as you control both of them.)
+As long as Kalista is paired with another creature, each of those creatures has “{T}: Put a spear counter on target creature opponent controls or deal X damage to target creature, where X is the number of spear counters on it, excess damage dealt this way is instead dealt to its controller.”</text>
+    </card>
+    <card>
+      <name>Gnar, Primal Curiosity</name>
+      <set rarity="rare" splitterPath="/Gnar, Primal Curiosity.jpg" >SMR</set>
+      <prop>
+        <color>RG</color>
+        <manacost>1RG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Yordle </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever this creature deals or receives damage, put a rage counter on him. Then if he has 5 or more rage counters Transform Gnar, Primal Curiosity.
+---
+(Back): Mega Gnar, Enraged Titan</text>
+      <related attach="attach">Mega Gnar, Enraged Titan</related>
+    </card>
+    <card>
+      <name>Mega Gnar, Enraged Titan</name>
+      <set rarity="rare" splitterPath="/Mega Gnar, Enraged Titan.jpg" >SMR</set>
+      <prop>
+        <color>RG</color>
+        <manacost></manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Yordle Giant </type>
+        <pt>6/8</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Trample
+If Mega Gnar deals lethal damage to a creature, return it to its owners hand instead of their graveyard.
+Whenever this creature deals or receives damage, remove a rage counter from him then if he has no rage counters on him transform him, no counters can be placed on him until the end of your next turn.
+Whenever Mega Gnar attacks, choose one:
+• Defending player sacrifices artifacts with total mana value X. If they can’t, destroy all their artifacts, where X is his power.
+• Mega Gnar deals X damage to each creature defending player controls, where X is his toughness. 
+---
+(Front): Gnar, Primal Curiosity</text>
+    </card>
+    <card>
+      <name>Xin-Zhao, Redeemed Reckoner</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>W</color>
+        <manacost>2W</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>2/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>First strike, vigilance, mentor (Whenever this creature attacks, put a +1/+1 counter on target attacking creature with lesser power.)
+Whenever this creature blocks or becomes blocked, chose a creature blocking or blocked by Xin-Zhao prevent all damage dealt to Xin-Zhao except by the chosen creature.</text>
+    </card>
+    <card>
+      <name>Dr Mundo, Mad Practicioner</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BRG</color>
+        <manacost>3BRG</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Mutant Doctor </type>
+        <maintype>Creature</maintype>
+        <pt>4/7</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Ward {3} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)
+Whenever a creature you control attacks, you lose life equal to the creatures power.
+Whenever a creature you control deals combat damage to a player, you gain life equal to its power.</text>
+    </card>
+    <card>
+      <name>Katarina, Sinister Blade</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>3BR</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Assassin </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>commander ninjutsu BR (BR, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand or the command zone tapped and attacking.)
+Whenever Katarina deals combat damage to a player or planeswalker, deal 3 damage divided as you choose among up to three targets.</text>
+    </card>
+    <card>
+      <name>Renata Glasc, Chem Baron</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBR</color>
+        <manacost>UBR</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Noble </type>
+        <maintype>Creature</maintype>
+        <pt>1/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>At the beginning of each opponents upkeep, goad each creature that player controls unless that player has you draw a card and make a treasure token</text>
+    </card>
+    <card>
+      <name>Ahri, Alluring Conjurist</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>URG</color>
+        <manacost>1GUR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Fox Spirit </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever a creature you control but don’t own attacks, get an experience counter.
+At the beginning of combat, gain control of target creature until end of turn with mana value less than or equal to the number of experience counters you have, it gains haste.</text>
+    </card>
+    <card>
+      <name>Amumu, Sad Mummy</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUB</color>
+        <manacost>2WUB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Zombie </type>
+        <maintype>Creature</maintype>
+        <pt>2/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Deathtouch
+Amumu enters the battlefield with a friendship counter.
+Other creatures get -2/-2 for each friendship counter on each other creature.</text>
+    </card>
+    <card>
+      <name>Ashe, Bow of Freljord</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WU</color>
+        <manacost>1WUU</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Ranger </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Vigilance, reach
+Whenever Ashe deals combat damage to a player, you may look at the top three cards of their library, put them back in any order.
+When you cast your third spell in a turn, tap target creature an opponent controls. That creature doesn’t untap during its controller’s next untap step.</text>
+    </card>
+    <card>
+      <name>Azir, Sand Sculptor</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WG</color>
+        <manacost>2GGWW</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Bird God </type>
+        <maintype>Creature</maintype>
+        <pt>6/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Indestructible
+Ascend (If you control ten or more permanents, you get the city’s blessing for the rest of the game.)
+Whenever Azir enters the battlefield or attacks, for each desert you control create a 1/1 colorless sand creature token.
+As long as you have the city’s blessing, deserts you control have “Sand creatures you control have +1/+1.”</text>
+    </card>
+    <card>
+      <name>Brand, Searing Pyroclast</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>R</color>
+        <manacost>RRRR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Elemental Spirit </type>
+        <maintype>Creature</maintype>
+        <pt>4/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+Whenever a creature or player is dealt lethal damage from a noncombat source you control, add {R} to your mana pool and exile the top card of your library, you may play that card until end of turn.</text>
+    </card>
+    <card>
+      <name>Braum, Shield of Freljord</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WU</color>
+        <manacost>1WUU</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Flagbearer </type>
+        <maintype>Creature</maintype>
+        <pt>1/8</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Defender
+While an opponent is choosing targets as part of casting a spell they control or activating an ability they control, that player must choose at least one Flagbearer on the battlefield if able.
+If Braum would be destroyed for the first time this turn, prevent it.</text>
+    </card>
+    <card>
+      <name>Corki, Daring Bombardier</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>URR</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Yordle </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Flying, haste
+Vehicles you control have haste.
+Whenever Corki or a vehicle you control attacks, you may give it +3/+3 if you do sacrifice it at the beginning of the next end step and draw a card.</text>
+    </card>
+    <card>
+      <name>Diana, Midnight Emissary</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WB</color>
+        <manacost>2WB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Planeswalker - Diana </type>
+        <maintype>Planeswalker</maintype>
+      <loyalty>3</loyalty>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>It becomes night as Diana enters the battlefield, as long as it is night you may activate Diana’s abilities as though they had flash if you do it becomes day at the start of the next turn.
+[+1]: You may tap an untapped creature you control. If you do, target nonland permanent an opponent controls loses all non mana abilities.
+[-2]: draw a card for each tapped creature an opponent controls.
+[-5]: You get an emblem with “As long as its night, spells you cast have flash”.
+Partner with Leona, Solar Herald
+Diana, Midnight Emissary can be your commander.        </text>
+    </card>
+    <card>
+      <name>Aatrox, Imminent Apocolypse</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>5BR</manacost>
+        <cmc>7</cmc>
+        <type>Legendary Creature - Darkin Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>5/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste, flying, menace
+When Aatrox enter the battlefield on your turn, or an opponent loses the game, each opponent sacrifices a creature, untap all creatures you control. After this phase, there is an additional combat phase followed by an additional main phase.
+Only darkins can attack during extra combats.      </text>
+    </card>
+    <card>
+      <name>Akshan, Rogue Sentinel</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBR</color>
+        <manacost>1RWB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>3/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Double strike, vigilance, invisible (This creature can’t be the target of spells or abilities and can’t be blocked, This creature loses this effect if they deal damage.)
+Whenever a spell or effect an opponent controls destroys a creature you control, that player gains a scoundrel counter.
+Whenever Akshan deal combat damage to a scoundrel, remove all scoundrel counters from all players and return target creature from your graveyard to the battlefield tapped.</text>
+    </card>
+    <card>
+      <name>Akali, Silent Reckoning</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UB</color>
+        <manacost>1UB</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Assassin </type>
+        <maintype>Creature</maintype>
+        <pt>4/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Commander ninjutsu UB (UB, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand or the command zone tapped and attacking.)
+When Akali enters the battlefield, target creature an opponent controls gets -2/-2 until end of turn.
+If a creature an opponent controls dies this turn, Akali gains shroud until your next upkeep.            </text>
+    </card>
+    <card>
+      <name>Alistar, Unbreakable Vengeance</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>RG</color>
+        <manacost>RG</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Minotaur </type>
+        <maintype>Creature</maintype>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Trample
+Whenever Alistar is blocked, Alistar deals 1 damage to each other attacking and blocking creature
+Whenever Alistar deals lethal damage to a creature, return it to its owners hand instead.</text>
+    </card>
+    <card>
+      <name>Annie, Cursed by Kindle</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>1BR</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human </type>
+        <maintype>Creature</maintype>
+        <pt>1/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>When Annie enters the battlefield, create a legendary red artifact Bear token named Tibbers, Enchanted Bear with “5R: Tibbers becomes a 6/6 red bear creature until end of turn. this ability costs one less for each spell you’ve cast this turn.”
+Whenever a bear you control attacks, exile the top two cards of your library, you may play them as long as a bear has attacked this turn.       </text>
+    </card>
+    <card>
+      <name>Anivia, The Eternal Frost</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>U</color>
+        <manacost>3UUU</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Phoenix God </type>
+        <maintype>Creature</maintype>
+        <pt>7/7</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Flying
+When Anivia enters the battlefield, nonland permanents your opponents control don’t untap on their controllers next untap step.
+When Anivia dies, create a legendary 0/1 blue Egg token named Eggnivia.
+3UUU, sacrifice an egg: You may cast Anivia from your graveyard without paying her mana cost. Activate only as a sorcery.</text>
+    </card>
+    <card>
+      <name>Aphelios, Sibling of Faith</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color></color>
+        <manacost>3</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>If Aphelios were to become a color and he already has 2 or more colors choose a color to lose.
+Aphelios gets +1/+1 for each of his colors.
+If Aphelios is white he has hexproof and the same is true for blue and Menace, black and trample, red and lifelink and  green and first strike.
+{W}: Aphelios becomes white.
+{U}: Aphelios becomes blue.
+{B}: Aphelios becomes black.
+{R}: Aphelios becomes red.
+{G}: Aphelios becomes green.</text>
+    </card>
+    <card>
+      <name>Aurelion Sol, Starweaver</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>U</color>
+        <manacost>4UUU</manacost>
+        <cmc>7</cmc>
+        <type>Legendary Planeswalker - Aurelion </type>
+        <maintype>Planeswalker</maintype>
+      <loyalty>4</loyalty>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>[+2]: Draw two cards, you may exile a card from your hand, if you do put a stardust counter on it.
+[-3]: For each player, exile up to one permanent that player controls. Put a stardust counter on each permanent exiled this way .
+[-9]: Make a copy of each spell in exile with a stardust counter, you may play those spells without paying their mana costs.
+Aurelion Sol, Starweaver can be your commander.</text>
+    </card>
+    <card>
+      <name>Bard, Cosmic Vagabond</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WUG</color>
+        <manacost>GWU</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Planeswalker - Bard </type>
+        <maintype>Planeswalker</maintype>
+      <loyalty>3</loyalty>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>[+1]: Each player makes a food token, draws a card and gains 3 life.
+[-2]: Tap up to two nonland permanents and put stun counters on them. An opponent may exile a permanents they control with a stun counter on it, if they do exile all permanents with stun counters on them.
+[-7]: Put any number of permanent cards from your hand onto the battlefield.
+Bard, Cosmic Vagabond can be your commander.</text>
+    </card>
+    <card>
+      <name>Bel&apos;Veth, Matron of Madness</name>
+      <set rarity="rare" splitterPath="/Bel'Veth, Matron of Madness.jpg" >SMR</set>
+      <prop>
+        <color>WB</color>
+        <manacost>1WB</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Voidling Fish </type>
+        <maintype>Creature</maintype>
+        <pt>3/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever Bel’Veth attacks, you may sacrifice a permanent that does not share a card type with a card in the void. If you do, draw a card.
+Revolt -- At the beginning of each endstep, if a permanent you control left the battlefield, if it was put into your hand or graveyard, you may exile it. If you do, it sinks into the void, then if there are 5 or more permanent in the void transform Bel’Veth.
+---
+(Back): Shurima, the Lavender Sea</text>
+      <related attach="attach">Shurima, the Lavender Sea</related>
+    </card>
+    <card>
+      <name>Shurima, the Lavender Sea</name>
+      <set rarity="rare" splitterPath="/Shurima, the Lavender Sea.jpg" >SMR</set>
+      <prop>
+        <color>WB</color>
+        <manacost></manacost>
+        <cmc>3</cmc>
+        <type>Legendary Land - Desert </type>
+      </prop>
+      <tablerow>0</tablerow>
+      <text>{T}: Return a permanent card from the void to the battlefield with a finality counter.
+{T}: Add X mana in any combination of colors, where X is the number of cards in the void.
+---
+(Front): Bel&apos;Veth, Matron of Madness</text>
+    </card>
+    <card>
+      <name>Blitzcrank, Rolling Golem</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color></color>
+        <manacost>7</manacost>
+        <cmc>7</cmc>
+        <type>Legendary Artifact Creature - Golem </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>1U, {T}: Exile target creature an opponent controls.
+3R: Untap Blitzcrank, return a card exiled with Blitzcrank to its owners control. Blitzcrank deals damage equal to its power to its controller.</text>
+    </card>
+    <card>
+      <name>Caitlyn, Piltover Peacekeeper</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WU</color>
+        <manacost>1WU</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Ranger </type>
+        <maintype>Creature</maintype>
+        <pt>3/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Vi
+First strike
+Spells you control have flash as long as Caitlyn is blocking.
+Whenever a creature attacks you, a planeswalker or a battle you defend, look at the top X cards of your library. Put one of them into your hand and the rest on the bottom of your library where X is the number of attacking creatures. </text>
+    </card>
+    <card>
+      <name>Camille, Hextech Tactician</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUB</color>
+        <manacost>1WUB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Noble </type>
+        <maintype>Creature</maintype>
+        <pt>4/7</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Camille can only attack players who have the monarch.
+When Camille enters the battlefield, you become the monarch. (The monarch draws a card at the beginning of their end step. Whenever the monarch is dealt combat damage by a creature, its controller becomes the monarch.)
+Whenever Camille attacks, exile target creature defending player controls with mana value less than the number of cards in your hand.</text>
+    </card>
+    <card>
+      <name>Cassiopeia, Serpents Gaze</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>1BG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Snake Noble </type>
+        <maintype>Creature</maintype>
+        <pt>2/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Deathtouch
+Whenever a snake creature you control deals lethal damage to a creature, exile it instead of putting it into its owners graveyard.
+You may cast spells exiled with Cassiopeia for as long as they remained exiled. If you do, they are artifact art spells in addition to their other types. (Art creatures can’t attack, block and their abilities can’t be activated)</text>
+    </card>
+    <card>
+      <name>Cho&apos;Gath, Hunger Incarnate</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BRG</color>
+        <manacost>4BRG</manacost>
+        <cmc>7</cmc>
+        <type>Legendary Creature - Mutant Horror </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Eminence — Whenever a card is put into exile from anywhere. If Cho’gath is in the command zone or on the battlefield put a feast counter on it.
+Trample
+Cho’gath gets +X/+X, where X is the number of cards in exile with feast counters on it.
+Whenever Cho’Gath deals combat damage to player, each other opponent exiles the top X cards of their library, where X is the number of cards that player owns in exile with feast counters on them.</text>
+    </card>
+    <card>
+      <name>Darius, Hand of Noxus</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBR</color>
+        <manacost>2RWB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>4/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Menace
+Whenever a warrior deals combat damage to an opponent, that player gains a bleed counter. For as long as that player has one or more bleed counter, at the beginning of their upkeep that player looses life equal to the number of bleed counters on them then remove a bleed counter from them.</text>
+    </card>
+    <card>
+      <name>Draven, Glorius Gladiator</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>2BR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Rebel </type>
+        <maintype>Creature</maintype>
+        <pt>3/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+{T}: Unattach an equipment you control: Draven deals X damage to any target where X is the mana value of the unequipped equipment, when a creature dealt damage this way dies create Y treasure tokens where Y is the number of adoration counters you have.
+Whenever you attach an equipment to Draven, gain a adoration counter. This ability triggers only once each turn.</text>
+    </card>
+    <card>
+      <name>Ekko, Timewinder</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UG</color>
+        <manacost>GU</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Human Rebel </type>
+        <maintype>Creature</maintype>
+        <pt>2/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}, put a card from your hand on top of your library: End the current phase. After this phase there is an additional upkeep, draw and main phase, activate only as a sorcery and only on your turn.
+“ahh, that fresh smart smell”</text>
+    </card>
+    <card>
+      <name>Elise, Spider Monarch</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BRG</color>
+        <manacost>BRG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Spider Horror </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Menace
+Whenever a spider deals combat damage to a player, create a blood token.
+Whenever you cast a spider creature spell, tap target creature. If that creature is already tapped it does not untap on its controllers next untap step.
+You may cast spider spells from your graveyard, as an additional cost to cast spells this way sacrifice X blood tokens Where X is that spells mana value.</text>
+    </card>
+    <card>
+      <name>Evelynn, Maiden of Anguish</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBR</color>
+        <manacost>1UBR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Demon </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Goaded creatures can’t be blocked.
+When Evelynn enters the battlefield goad X creatures where X is the amount of times you have cast your commander from the command zone this game. (Until your next turn, that creature attacks each combat if able and attacks a player other than you if able.)
+Whenever a goaded creature attacks its controllers losses 3 life and discards a card unless that opponent sacrifices the creature or have you draw a card and gain 3 life.</text>
+    </card>
+    <card>
+      <name>Ezreal, Daring Archeoligist</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUR</color>
+        <manacost>URW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>2/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever you cast a noncreature spell, the next spell you cast costs {2} less to cast. If it’s the second time resolving this ability, instead deal 2 damage to any target. If it’s the third time, exile Ezreal then return him to the battlefield under its owner’s control.</text>
+    </card>
+    <card>
+      <name>Fiddlesticks, Whispering Terror</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>B</color>
+        <manacost>2BB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Scarecrow Horror </type>
+        <maintype>Creature</maintype>
+        <pt>4/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>At the beginning of your end step, if you don’t control a creature named Scarecrow Effigy, create a 0/1 colorless scarecrow artifact creature token named Scarecrow Effigy with “All creatures able to block  Scarecrow Effigy do so.”
+Whenever a scarecrow you control deals combat damage to a player, you lose a life, draw a card and scarecrow spells cost {1} less to cast this turn.</text>
+    </card>
+    <card>
+      <name>Fiora, Honored Duelest</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost>RWW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Knight </type>
+        <maintype>Creature</maintype>
+        <pt>3/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>First strike, vigilance 
+At the beginning of combat, choose an opponent at random. Whenever Fiora deals combat damage to that player this turn, gain 3 life and draw a card.</text>
+    </card>
+    <card>
+      <name>Fizz, Playful Prankster</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>URG</color>
+        <manacost>1GUR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Yordle Fish </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Fizz enters the battlefield with a +1/+1 counter for each spell you’ve cast this turn.
+Whenever Fizz becomes the target of a spell or blocks, exile Fizz until the next end step.
+Counters remain on Fizz as he moves to any zone except for a player’s hand or library.</text>
+    </card>
+    <card>
+      <name>Galio, Bulwark of Demacia</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color></color>
+        <manacost>4</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Artifact Creature - Golem </type>
+        <maintype>Creature</maintype>
+        <pt>10/10</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Indestructible, Ward {10}
+Galio is not a creature as long as there is a slumber counter on it.
+Galio enters the battlefield with 20 slumber counters on it.
+Whenever an opponent casts an instant or sorcery spell remove X Slumber counters from Galio Where X is that spells mana value, if no mana was spent to cast that spell counter it and  Remove twice that many counters instead.   </text>
+    </card>
+    <card>
+      <name>Gangplank, Burning Vengeance</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBRG</color>
+        <manacost>UBRG</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Pirate </type>
+        <maintype>Creature</maintype>
+        <pt>3/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Persist (When this creature dies, if it had no -1/-1 counters on it, return it to the battlefield under its owner’s control with a -1/-1 counter on it.)
+Whenever Gangplank or another pirate leave your graveyard, deal 2 damage to target player. Create a tapped treasure token.
+Pirates you control have unearth, their unearth cost is equal to their mana cost, you may spend mana only from treasures to pay this cost.               </text>
+    </card>
+    <card>
+      <name>Garen, Might of Demacia</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>W</color>
+        <manacost>3WW</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Soldier </type>
+        <maintype>Creature</maintype>
+        <pt>6/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever Garen deals combat to a player, that player can’t cast noncreature spells until the start of your next turn.
+If Garen is blocked by several creatures, he assigns combat damage to each creature blocking him instead of a single creature.</text>
+    </card>
+    <card>
+      <name>Gragas, Bottomless Barrel</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>URG</color>
+        <manacost>1GUR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Giant Human </type>
+        <maintype>Creature</maintype>
+        <pt>3/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever you cast your first spell each turn, make a food token.
+Whenever you sacrifice a food, the next spell you cast this turn costs {2} less and can be cast as though it had flash.</text>
+    </card>
+    <card>
+      <name>Graves, Destined Outlaw</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBR</color>
+        <manacost>UBR</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Mercenary </type>
+        <maintype>Creature</maintype>
+        <pt>3/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Menace
+If a creature dealing combat damage to a player would cause a triggered ability of a permanent you control, copy it. You may choose new targets for the copy.
+Whenever Graves deals combat damage to a player, Face a Villainous Choice — Draw a card or make a treasure.</text>
+    </card>
+    <card>
+      <name>Gwen, Arcane Weaved</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBG</color>
+        <manacost>WBG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Artifact Creature - Spirit Construct </type>
+        <maintype>Creature</maintype>
+        <pt>3/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink
+Whenever Gwen becomes the target of a spell or ability an opponent controls, you may pay {X} where X is the spells spells mana value. If you do, Gwen phases out.
+Whenever Gwen attacks or blocks, you may sacrifice an aura attached to gwen. If you do, search your library for an enchantment card with mana value equal to 1 plus the sacrificed enchantment’s mana value, put that card onto the battlefield, then shuffle.</text>
+    </card>
+    <card>
+      <name>Hecarim, Endless Torment</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>4BR</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Spirit Horse </type>
+        <maintype>Creature</maintype>
+        <pt>5/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+Whenever a nontoken creature dies, gain 2 life.
+At the beginning of combat you may pay up to 10 life, create that many 2/2 red black ghost horse tokens with haste.      </text>
+    </card>
+    <card>
+      <name>Heimerdinger, Obsessed Inventor</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>2UR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Yordle Artificer </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Improvise, Ward {X} where X is the number of constructs you control.
+When Heimerdinger or another artificer enters the battlefield, create a */2 colorless artifact Creature token with defender and “this creatures power is equal to the number of artifact creatures you control.”
+Artifact creatures and artificers you cast have improvise.</text>
+    </card>
+    <card>
+      <name>Illaoi, Truthbearer</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBG</color>
+        <manacost>2BGU</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Cleric </type>
+        <maintype>Creature</maintype>
+        <pt>4/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Tentacles you control have lifelink.
+Whenever Illaoi enters the battlefield or attacks, create a 1/1 blue tentacle creature token. Illaoi fights target creature you don’t control.
+Whenever Illaoi fights a creature an opponent controls, each tentacle deals 1 damage to it.
+Whenever a creature an opponent controls dies, if it was dealt damage by Illaoi this turn, put a +1/+1 counter on each tentacle you control.</text>
+    </card>
+    <card>
+      <name>Irelia, The Blade Dancer</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WRG</color>
+        <manacost>RGW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Ally </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Vigilance
+Whenever Irelia or another ally enters the battlefield, create an artifact equipment token named Quickblade that has “When Quickblades enters the battlefield attach it to a creature you control.
+Equipped creature gets +1/+1 and if Equipped creature has exactly 6 equipment attached to it, the creature gains an additional +2/+2.
+Equip {2}”</text>
+    </card>
+    <card>
+      <name>Ivern, Reborn Mystic</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>G</color>
+        <manacost>1GG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Treefolk Mystic </type>
+        <maintype>Creature</maintype>
+        <pt>2/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>When Ivern enters the battlefield, put three +1/+1 counters on target land you control. It becomes a legendary 0/0 elemental creature named Daisy.
+Whenever a land you control attacks, put a +1/+1 counter on it and prevent all combat damage that would be dealt to that creature this turn.</text>
+    </card>
+    <card>
+      <name>Janna, Tempest&apos;s Grace</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WUG</color>
+        <manacost>1GWU</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Planeswalker - Janna </type>
+        <maintype>Planeswalker</maintype>
+      <loyalty>4</loyalty>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>[+1]: Put a +1/+1 counter on a creature you control with flying then put a flying counter on another creature you control.
+[-3]: Draw a card for each creature you control with flying.
+[-8]: You get an emblem with “ Whenever you cast a creature spell return target permanent an opponent controls to its owner’s hand. If that creature spell had flying return up to 3 permanents instead.
+Janna, Tempest’s Grace can be your commander.</text>
+    </card>
+    <card>
+      <name>Jarvan The Fourth</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUR</color>
+        <manacost>1URW</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Noble </type>
+        <maintype>Creature</maintype>
+        <pt>2/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>When Jarvan enters the battlefield, search your library for an aura or equipment with mana value X or less, attached to a creature an opponent controls, where X is the amount of times you’ve cast your commander this game.
+Equipment you control gain “equipped creature is goaded”.
+You may attach equipment to creatures your opponents control.</text>
+    </card>
+    <card>
+      <name>Jax, Grandmaster at Arms</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost>RW</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Troll Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+Activated abilities of artifacts attached to Jax can’t be activated unless they are equip abilities.
+Artifacts you control are equipment in addtion to its other types its equip cost is equal to half its mana value rounded up and give it “+X/+X where X is this artifacts mana value.”
+As long as Jax has 5 or more equipment attached to him. He gains +0/+5 First strike and vigilance.</text>
+    </card>
+    <card>
+      <name>Jayce, Protector of Today</name>
+      <set rarity="rare" splitterPath="/Jayce, Protector of Today.jpg" >SMR</set>
+      <prop>
+        <color>WUR</color>
+        <manacost>2URW</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Noble </type>
+        <maintype>Creature</maintype>
+        <pt>  2/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Vigilance
+{T}: Choose one that hasn’t been chosen —
+• Deal 3 damage to any target.
+• Creatures you control gain haste until end of turn.
+• Transform Jayce, Protector of Today.      
+---
+(Back): Jayce, Tyrant of Tomorrow</text>
+      <related attach="attach">Jayce, Tyrant of Tomorrow</related>
+    </card>
+    <card>
+      <name>Jayce, Tyrant of Tomorrow</name>
+      <set rarity="rare" splitterPath="/Jayce, Tyrant of Tomorrow.jpg" >SMR</set>
+      <prop>
+        <color></color>
+        <manacost></manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Noble </type>
+        <pt>5/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Mentor (Whenever this creature attacks, put a +1/+1 counter on target attacking creature with lesser power.)
+Whenever Jayce attacks, choose one that hasn’t been chosen —
+• Jayce gains +2/+2 and gains flying until end of turn.
+• Return target creature defending player controls to its owners hand.
+• Transform Jayce, Tyrant of Tomorrow.
+---
+(Front): Jayce, Protector of Today</text>
+    </card>
+    <card>
+      <name>Jhin, Cold Open</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color></color>
+        <manacost>4</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Artist </type>
+        <maintype>Creature</maintype>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>WUBR, {T}: Deal 1 damage to any target, if the target would die from this effect increase the damage by 1 and choose an additional target, a maximum of 4 targets can be chosen this way.
+At the beginning of each end step, if exactly 4 creatures died this turn, create an artifact token named Grim Rose with “{T}, Sacrifice: Add 4 mana of any combination of colors to your mana pool.”</text>
+    </card>
+    <card>
+      <name>Jinx, Pow Pow and Fishbones</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BRG</color>
+        <manacost>BRG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Rebel </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Cleave 2BRG (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Haste
+{T}: Deal 1 damage to any target [If a player was dealt damage this way deal that amount of damage to each creature and planeswalker that player controls.]
+Whenever a creature dies if it was dealt damage by Jinx this turn untap Jinx.</text>
+    </card>
+    <card>
+      <name>K&apos;Sante, Umber Bastion</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBG</color>
+        <manacost>3WBG</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Human Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>3/7</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Ward {X}, where X is his toughness (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {X}.)
+Whenever a creature  attacks, you may swap that creatures power and toughness. If you control that creature, it gains lifelink until and of turn.
+Whenever a creature enters the battlefield, put a +1/+1 counter on each creature with lesser power, if no counter were placed this way, the creatures controller draws a card and gains 3 life.</text>
+    </card>
+    <card>
+      <name>Kai&apos;Sa, Bound to Ruin</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>2UR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Voidling Human </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+{T}: Deal 1 damage to any target.
+as long as you control 2 or more other creatures, Kai’Sa has hexproof.
+whenever you activate Kai’Sa ability as long as you control 3 or more artifacts copy it twice you may choose new targets for the copies.
+As long as there are 3 or more instants or sorceries in your graveyard, if Kai’Sa would deal noncombat damage, she deals that much plus two instead.</text>
+    </card>
+    <card>
+      <name>Karma, Mantra Master</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUG</color>
+        <manacost>1GWU</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Spellshaper </type>
+        <maintype>Creature</maintype>
+        <pt>2/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Kicker WU (You may pay an additional WU as you cast this spell.)
+When Karma enters the battlefield, put a shield counter on target creature you control, if this spell was kicked put a shield counter on each creature instead.
+Whenever Karma attacks, you may remove any number of counters from permanents you control. If you do, exile target nonland permanent with mana value less than or equal to the amount of counters removed this way.</text>
+    </card>
+    <card>
+      <name>Karthus, Voice of Ruin</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>B</color>
+        <manacost>2BB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Spirit Shaman </type>
+        <maintype>Creature</maintype>
+        <pt>2/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Deathtouch
+Whenever another creature you control dies, put a requiem counter on Karthus.
+When Karthus dies, put X -1/-1 counters on each creature you don’t control and create X 1/1 white and black spirit tokens with flying, where X is the number of requiem counters on Karthus.</text>
+    </card>
+    <card>
+      <name>Kassadin, Riftwalker</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color></color>
+        <manacost>4CCC</manacost>
+        <cmc>7</cmc>
+        <type>Legendary Creature - Human Horror </type>
+        <maintype>Creature</maintype>
+        <pt>3/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Flash
+When Kassadin enters the battlefield, counter target spell.
+At the beginning of your next upkeep, Kassadin deals X damage to each other creature, where X is the countered spells mana value.</text>
+    </card>
+    <card>
+      <name>Kayle, Angel of Punishment</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>W</color>
+        <manacost>1WW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Angel </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Flying, vigilance
+Rival with Morgana (As this creature enters the battlefield, if you control Morgana , you must phase out Kayle, Angel of Punishment or  Morgana until the other leaves the battlfield.)
+While Morgana is Rivaled, Kayle gets +3/+3 and becomes a god in addition to her other types.
+Whenever Kayle attacks, exile target nonland permanent with mana value X or less until Kayle leaves the battlefield or is phased out, where X is her power.             </text>
+    </card>
+    <card>
+      <name>Kayn, Shadow Assassin</name>
+      <set rarity="rare" splitterPath="/Kayn, Shadow Assassin.jpg" >SMR</set>
+      <prop>
+        <color>UB</color>
+        <manacost>4UB</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Human Assassin </type>
+        <maintype>Creature</maintype>
+        <pt>7/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Invisible (This creature can’t be the target of spells or abilities and can’t be blocked, This creature loses this effect if they deal damage.)
+Whenever Kayn deals combat damage to a player, choose one —
+• Put three +1/+1 counters on Kayn for as long as he has a counter on him he loses all other abilities and can’t be blocked.
+• Transform Kayn under defending players control.    
+---
+(Back): Rhaast, Form Unbound</text>
+      <related attach="attach">Rhaast, Form Unbound</related>
+    </card>
+    <card>
+      <name>Rhaast, Form Unbound</name>
+      <set rarity="rare" splitterPath="/Rhaast, Form Unbound.jpg" >SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost></manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Darkin Warrior </type>
+        <pt>4/7</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink
+Rhaast must attack each combat if able and can’t attack its owner or planeswalkers.
+Whenever Rhaast deals combat damage to a player, that player gains control of Rhaast. You control that player’s next turn.
+---
+(Front): Kayn, Shadow Assassin</text>
+    </card>
+    <card>
+      <name>Kennen, Eye of the Storm</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>1UR</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Yordle Ninja </type>
+        <maintype>Creature</maintype>
+        <pt>2/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Storm
+Haste
+The legend rule does not apply to creatures you control named Kennen, Eye of the Storm.
+At the beginning of each end step, return Kennen to its owner’s hand.</text>
+    </card>
+    <card>
+      <name>Kha&apos;Zix, Ever Adaptive</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>1BG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Voidling Insect </type>
+        <maintype>Creature</maintype>
+        <pt>3/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever Kha’Zix enters the battlefield or attacks, you may exile a creature from any graveyard, if that creature had first strike put a first strike counter on Kha’Zix the same is true for flying, deathtouch, double strike, haste, hexproof, indestructible, lifelink, menace, reach, skulk, trample, and vigilance.
+Kha’zix keeps his counters as he changes zones except for hand and library.</text>
+    </card>
+    <card>
+      <name>Kindred, Lamb of Light</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WB</color>
+        <manacost>2WB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Sheep Incarnation </type>
+        <maintype>Creature</maintype>
+        <pt>4/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Kindred, the Black Wolf (When this creature enters the battlefield, target player may put Kindred into their hand from their library, then shuffle.)
+At the beginning of your upkeep, put a bounty counter on target creature an opponent controls, for as long as that creature has a bounty counter on it, it gains “whenever this creature dies each opponent draws a card and puts a +1/+1 counter on up to one target creature they control”.</text>
+    </card>
+    <card>
+      <name>Kled, The Mountain Admiral</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBR</color>
+        <manacost>RWB</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Yordle Berserker </type>
+        <maintype>Creature</maintype>
+        <pt>4/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Skaarl, Immortal Companion
+You may cast equipment as though it costs {2} less. If you do, when that equipment enters the battlefield attach it to a creature an opponent controls.
+Whenever a creature an opponent controls leaves the battlefield attach all equipment attached to that creature to Kled.</text>
+    </card>
+    <card>
+      <name>Kog&apos;Maw, Looming Feast</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>BG</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Voidling Horror </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Reach
+Whenever you sacrifice a nontoken permanent, put a +1/+1 counter on Kog’Maw.
+When Kog’Maw dies, return him to the battlefield at the beginning of the next upkeep with X +1/+1 counters, haste and trample, where X is his power, Exile him at the beginning of the next end step.</text>
+    </card>
+    <card>
+      <name>LeBlanc, Mirrored Mystery</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBR</color>
+        <manacost>1UBR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Wizard </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Creatures you control with a cipher cannot be blocked.
+Whenever you cast a instant or sorcery spell for the first time on each of your turns it has gains cipher.
+Cypher’s embedded by Leblanc can only trigger once each turn.</text>
+    </card>
+    <card>
+      <name>Lee Sin, Sightless Master</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUR</color>
+        <manacost>1URW</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Monk </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Multikicker 1U/R
+When Lee Sin enters the battlefield, return target creature an opponent controls for each time it was kicked.
+Whenever a card is put into its owners hand from anywhere but their library, put a +1/+1 counter on Lee Sin then he deals damage equal to his power to its owner.</text>
+    </card>
+    <card>
+      <name>Leona, Solar Herald</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>W</color>
+        <manacost>2WW</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Planeswalker - Leona </type>
+        <maintype>Planeswalker</maintype>
+      <loyalty>4</loyalty>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>It becomes day as Leona enters the battlefield. As long as it is day you may activate Leona’s abilities as though they had flash. If you do, it becomes night at the start of the next turn.
+[+1]: You may untap up to one tapped creature you control. If you do, you may tap target Nonland permanent an opponent controls.
+[-3]: Exile target tapped nonland permanent.
+[-6]: You get an emblem with “As long as its day, untap all permanents you control during each other player’s untap step.”
+Partner with Diana, Midnight Emissary
+Leona, Solar Herald can be your commander.</text>
+    </card>
+    <card>
+      <name>Lillia, Full Bloom</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUG</color>
+        <manacost>1GWU</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Centaur </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Trample
+When Lillia enters the battlefield, tap target creature an opponent controls for as long as you control Lillia.
+Whenever Lillia attacks, she gets +X/+X then look at the top X cards of your library, put one into your hand and the rest on the bottom of your library in a random order, where X is the number of tapped creatures defending player controls.              </text>
+    </card>
+    <card>
+      <name>Ice Witch Lissandra</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UB</color>
+        <manacost>3UB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Warlock </type>
+        <maintype>Creature</maintype>
+        <pt>3/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}, Exert Lissandra: Tap target creature. It doesn’t untap during its controllers next untap step. (An exerted creature won’t untap during your next untap step.)
+If a creature you control doesn’t untap during your untap step put 2 +1/+1 counters on that creature.</text>
+    </card>
+    <card>
+      <name>Lulu, Unknown Mischief</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WURG</color>
+        <manacost>RGWU</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Yordle Mystic </type>
+        <maintype>Creature</maintype>
+        <pt>2/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Magecraft — Whenever you cast or copy an instant or sorcery spell, put a shield counter on target creature you control.
+2RGGW, Remove any number of counters from permanents you control: Target creature you control gets three times +X/+X and becomes a giant in addition to its other types until end of turn, where X is the number of counters that were removed this way. </text>
+    </card>
+    <card>
+      <name>Lux, The Last Light</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>W</color>
+        <manacost>1WW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Wizard </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever a creature an opponent controls becomes tapped, put a illumination counter on it.
+Magecraft -- whenever you cast or copy and instant or sorcery spell, tap target creature an opponent controls.
+{T} {W}: Deal X damage to target creature, where X is the number of illumination counters on it.
+At the beginning of each end step, if that player controls 3 or more creatures with illumination counters on them, draw a card.</text>
+    </card>
+    <card>
+      <name>Malphite, Roaming Range</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>R</color>
+        <manacost>2RR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Giant Golem </type>
+        <maintype>Creature</maintype>
+        <pt>7/8</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Malphite enters the battlefield tapped with 2 slumber counters on it.
+As long as Malphite has a slumber counter on it, it’s a land. (it’s not a creature)
+landfall — Whenever a land enters the battlefield under your control, you may remove a slumber counter from Malphite and create a 3/3 colorless golem creature token
+{T}: Add RR</text>
+    </card>
+    <card>
+      <name>Malzahar, Betrayer of Humanity</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUB</color>
+        <manacost>2WUB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Voidling Cleric </type>
+        <maintype>Creature</maintype>
+        <pt>4/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Spells you cast from anywhere but your hand Cost {1} less to cast for each time you have cast your commander from the command zone this game.
+Whenever Malzahar or a desert enters the battlefield under you control, each opponent exiles the top card of their library, it enters the void.
+You may play cards from the void and spend mana as though it were any color when casting spells this way.</text>
+    </card>
+    <card>
+      <name>Maokai, Eternal Evergreen</name>
+      <set rarity="mythic" splitterPath="/Maokai, Eternal Evergreen.jpg" >SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>5BG</manacost>
+        <cmc>7</cmc>
+        <type>Legendary Creature - Elemental Avatar </type>
+        <maintype>Creature</maintype>
+        <pt>*/*</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Maokai’s power and toughness are equal to the number of lands you control.
+Whenever Maokai attacks create a 3/3 sapling land creature token with “{T}, Sacrifice this creature: Add BG.”
+At the beginning of your end step, if you control 12 or more lands transform Maokai, Eternal Evergreen.
+---
+(Back): The Roots of The Isle</text>
+      <related attach="attach">The Roots of The Isle</related>
+    </card>
+    <card>
+      <name>The Roots of The Isle</name>
+      <set rarity="mythic" splitterPath="/The Roots of The Isle.jpg" >SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost></manacost>
+        <cmc>7</cmc>
+        <type>Legendary Land</type>
+      </prop>
+      <tablerow>0</tablerow>
+      <text>{T}: Add BG, create a 3/3 sapling land creature token with “{T}, Sacrifice this creature: Add BG.”
+Whenever a land is put into your graveyard from anywhere, each opponent loses 3 life and you draw a card
+---
+(Front): Maokai, Eternal Evergreen</text>
+    </card>
+    <card>
+      <name>Master Yi of Great Insight</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUG</color>
+        <manacost>2GWU</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Monk </type>
+        <maintype>Creature</maintype>
+        <pt>4/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>First strike, vigilance 
+Creatures you control with vigilance have “{T}: regenerate this creature.”
+Whenever a creature you control with vigilance attacks, you may tap that creature. If you do, put a +1/+1 counter on that creature.
+At the beginning of your end step, gain X life where X is the total toughness of untapped creatures your control that attacked this turn.         </text>
+    </card>
+    <card>
+      <name>Miss Fortune, Captain of Tyranny</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>3UR</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Pirate </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever a vehicle you control attacks, exile target creature you don’t control until the vehicle leaves the battlefield, its controller may cast if for as long as it is exiled. If they do, you create treasure tokens equal to its mana value.
+Vehicles you control have “{T} {X}: Put a creature card with mana value X or less exiled by this vehicle into its owners graveyard. Spend mana only from treasures to activate this ability.”              </text>
+    </card>
+    <card>
+      <name>Mordekaiser, Immortal Bastion</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>B</color>
+        <manacost>BB</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Zombie God </type>
+        <maintype>Creature</maintype>
+        <pt>8/8</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Deathtouch
+Mordekaiser enters with 8 revival counters.
+Whenever a nontoken creature dies, remove a revival counter from Mordekaiser.
+As long as there are 1 or more revival counters on Mordekaiser, he is not a creature.
+When the last revival counter is removed, choose target creature an opponent controls then all other creatures except that creature and Mordekaiser phase out until your next turn.</text>
+    </card>
+    <card>
+      <name>Morgana, Angel of Redemption</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>B</color>
+        <manacost>2BB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Angel </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Hexproof
+Rival with Kayle (As this creature enters the battlefield, if you control Kayle , you must phase out Morgana, Angel of Redemption or  Kayle until the other leaves the battlfield.)
+While Kayle is rivaled, Morgana gets +2/+2 and becomes a god in addition to her other types.
+Whenever a nonland permanent enters the battlefield under an opponents control, if it was not cast, its controller exiles it unless they pay 3 life. If Morgana is a god they must pay 6 life rather than 3.  </text>
+    </card>
+    <card>
+      <name>Nami, Seabound Archon</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UG</color>
+        <manacost>2GU</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Merfolk Cleric </type>
+        <maintype>Creature</maintype>
+        <pt>3/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever Nami or another merfolk enters the battlefield under your control, untap up to one tapped permanent and tap another untapped permanent.
+Whenever a merfolk you control becomes untapped, it gains +1/+1 until end of turn.</text>
+    </card>
+    <card>
+      <name>Nasus, Ascended Strategist</name>
+      <set rarity="mythic" splitterPath="/Nasus, Ascended Strategist.jpg" >SMR</set>
+      <prop>
+        <color>WG</color>
+        <manacost>3GW</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Dog God </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink
+Modified creatures you control have lifelink.
+Whenever Nasus or another modified creature deals lethal damage to a creature or planeswalker, Put a +1/+1 counter on that creature and you get a siphon counter.
+When Nasus dies, return it to its owner’s hand at the beginning of the next end step.
+     
+---
+(Back): Siphoning Striker</text>
+      <related attach="attach">Siphoning Striker</related>
+    </card>
+    <card>
+      <name>Siphoning Striker</name>
+      <set rarity="mythic" splitterPath="/Siphoning Striker.jpg" >SMR</set>
+      <prop>
+        <color>WB</color>
+        <manacost>WB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Artifact - Equipment </type>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>Equipped creature gets Lifelink and +1/+1 for each siphon counter you have.
+Whenever equipped creature deals combat damage to a player, return target creature from your graveyard to your hand, if its mana value is less than or equal to the number of siphon counters you have return it to the battlefield instead.
+Equip {2}
+---
+(Front): Nasus, Ascended Strategist</text>
+    </card>
+    <card>
+      <name>Nautilus, Sunken Titan</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UB</color>
+        <manacost>6UUB</manacost>
+        <cmc>9</cmc>
+        <type>Legendary Creature - Giant Horror </type>
+        <maintype>Creature</maintype>
+        <pt>4/12</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Delve
+Exile each card delved this way with a depth counter on it.
+Whenever Nautilus attacks, defending player makes a devious choice — You may return 2 cards with depth counter on them from exile to your hand, or you may cast a spell with a depth counter on it without paying its mana cost.</text>
+    </card>
+    <card>
+      <name>Neeko, Delighted Curiosity</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>URG</color>
+        <manacost>GUR</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Salamander </type>
+        <maintype>Creature</maintype>
+        <pt>0/0</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Kicker GU (You may pay an additional GU as you cast this spell.)
+Neeko enters the battlefield as a copy of a creature except it keeps it’s name, its still legendary.
+As you cast this spell, if it was kicked, copy it except the copies name is Not Neeko and it gains when it takes damage sacrifice it.
+</text>
+    </card>
+    <card>
+      <name>Nidalee, Ixtal&apos;s Protector</name>
+      <set rarity="rare" splitterPath="/Nidalee, Ixtal's Protector.jpg" >SMR</set>
+      <prop>
+        <color>RG</color>
+        <manacost>1RG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Cat </type>
+        <maintype>Creature</maintype>
+        <pt>3/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Non-Human creatures you control gain +1/+1 and have protection from humans
+Whenever three or more non-Human creatures deal combat damage, transform Nidalee Ixtal’s Protector.
+---
+(Back): Jungle Cat Nidalee</text>
+      <related attach="attach">Jungle Cat Nidalee</related>
+    </card>
+    <card>
+      <name>Jungle Cat Nidalee</name>
+      <set rarity="rare" splitterPath="/Jungle Cat Nidalee.jpg" >SMR</set>
+      <prop>
+        <color>RG</color>
+        <manacost></manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Giant Cat </type>
+        <pt>6/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Non-Human Creatures you control get +2/+2 and  have protection from humans and artifacts you don’t control.
+Whenever one or more non-Human creatures deal combat damage to a player, that player sacrifices an artifact and you draw a card.           
+---
+(Front): Nidalee, Ixtal&apos;s Protector</text>
+    </card>
+    <card>
+      <name>Nilah, Seven Handed</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUBG</color>
+        <manacost>GWUB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>5/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink
+Whenever you gain life from any source, each opponent gains that much life.
+At the beginning of your end step, for each opponent, draw a card unless its controller taps a creature with power greater than the amount of life they have gained this turn.
+Whenever a creature an opponent controls becomes tapped, if its power is greater than Nilah’s, put a stun counter on that creature then put a +1/+1 counter on Nilah.</text>
+    </card>
+    <card>
+      <name>Nocturne, Living Nightmare</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>B</color>
+        <manacost>3BB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Demon Nightmare </type>
+        <maintype>Creature</maintype>
+        <pt>5/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>As Nocturne enters the battlefield, put a paranoid counter on each creature your opponents control, they gain “this creature can’t block horrors” and “At the beginning of your upkeep you may tap this creature to remove all paranoid counters. For as long as the creature has a paranoid counter on it.”
+Whenever Nocturne attacks, return a nightmare or horror creature with mana value X or less from your graveyard to your hand, where X is the amount of paranoid counters that are on permanents defending player controls. </text>
+    </card>
+    <card>
+      <name>Nunu, Savior of Winter</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>U</color>
+        <manacost>U</manacost>
+        <cmc>1</cmc>
+        <type>Legendary Creature - Human Demigod </type>
+        <maintype>Creature</maintype>
+        <pt>0/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Willump
+Whenever a nontoken snow permanent enters the battlefield,  create a snowball snow equipment token named Snowball with “equipped creature has ‘{T} {1}: Sacrifice snowball tap target creature.’”</text>
+    </card>
+    <card>
+      <name>Olaf, Might of Lokfar</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>R</color>
+        <manacost>2RR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Berserker </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever Olaf attacks, he gains indestructible until your next end step.
+Whenever a creature is dealt lethal damage from Olaf, he deals damage equal to that creatures toughness to its controller and you.</text>
+    </card>
+    <card>
+      <name>Orianna, Manufactured Beauty</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color></color>
+        <manacost>5</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Golem Construct </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}, Tap an untapped vehicle creature you control: Prevent X damage that would be dealt to any target this turn, where X is the power of the Vehicle.
+When Orianna enters the battlefield, create a colorless legendary vehicle artifact token named Ball with “Flying, haste and Ball gains +1/+1 for each tapped artifact you control and Crew 3” (Tap any number of creatures you control with total power 3 or greater: This Golem Construct becomes an artifact creature until end of turn.)</text>
+    </card>
+    <card>
+      <name>Ornn, The Living Bellows</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>R</color>
+        <manacost>2RR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Ram God </type>
+        <maintype>Creature</maintype>
+        <pt>4/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>When Ornn enters the battlefield, target equipment you control becomes a masterwork in addition to its other types. As long as it is a masterwork it gains an additional copy of its non equip abilities.
+As long as you control 3 Masterworks, Ornn gets Indestructible.
+1RR: Target equipment becomes a masterwork, spend mana only from treasures to activate this ability.</text>
+    </card>
+    <card>
+      <name>Pantheon, God of War</name>
+      <set rarity="mythic" splitterPath="/Pantheon, God of War.jpg" >SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost>2RW</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Planeswalker - Pantheon </type>
+        <maintype>Planeswalker</maintype>
+      <loyalty>3</loyalty>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>If Pantheon has zero loyalty counters instead, transform him.
+[+1]: Deal 1 damage to any target, if Pantheon has 4 or more loyalty deal 3 damage instead.
+[-2]: Until your next turn, combat damage cant be dealt to creatures you control and all creatures attack each combat if able.
+Pantheon, God of War can be your commander.
+---
+(Back): Atreus, Will of Man</text>
+      <related attach="attach">Atreus, Will of Man</related>
+    </card>
+    <card>
+      <name>Atreus, Will of Man</name>
+      <set rarity="mythic" splitterPath="/Atreus, Will of Man.jpg" >SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost></manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Warrior </type>
+        <pt>4/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>All permanents lose indestructible.
+Players can’t activate planeswalkers’ loyalty abilities.
+Whenever a card would be put into the graveyard exile it instead.
+---
+(Front): Pantheon, God of War</text>
+    </card>
+    <card>
+      <name>Poppy, Hero of Demacia</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>W</color>
+        <manacost>5WWW</manacost>
+        <cmc>8</cmc>
+        <type>Legendary Creature - Yordle Knight </type>
+        <maintype>Creature</maintype>
+        <pt>5/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature’s color.)
+When Poppy enters the battlefield, put target nonland permanent X cards from the top of their library, where X is the number of tapped creatures you control.</text>
+    </card>
+    <card>
+      <name>Pyke, Drowned Vengeance</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UB</color>
+        <manacost>2UB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Zombie Assassin </type>
+        <maintype>Creature</maintype>
+        <pt>4/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Invisible (This creature can’t be the target of spells or abilities and can’t be blocked, This creature loses this effect if they deal damage.)
+At the beginning of each end step, destroy target creature that was damaged this turn. If you do, create a treasure token and draw a card, if an effect or creature from one or more other players dealt damage to that creature this turn those players draw cards and each of those players create a treasure token. </text>
+    </card>
+    <card>
+      <name>Qiyana, Ixtal&apos;s Highness</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>URG</color>
+        <manacost>1GUR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Noble </type>
+        <maintype>Creature</maintype>
+        <pt>5/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever Qiyana attacks, if you cast a red spell this turn, deal 3 damage to any target, if you cast a blue spell this turn, tap target nonland permanent an opponent controls and put a stun counter on it, if you cast a green spell this turn, gain invisible. (This creature can’t be the target of spells or abilities and can’t be blocked, This creature loses this effect if they deal damage.)</text>
+    </card>
+    <card>
+      <name>Quinn, Birds Eye</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost>1RW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Ranger </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Vigilance
+Whenever Quinn attacks, look at defending players hand then name a nonland card, the named card costs {2} more to cast until Quinn attacks again.</text>
+    </card>
+    <card>
+      <name>Rakan, Swaying Songbird</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost>3RW</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Bird Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Xayah Sleuthing Songbird
+Haste, vigilance 
+Whenever you attack, untap up to one target cleric one target Rogue one target Warrior and one target wizard, if you control a full party prevent all damage dealt to those creatures.
+This Spell costs {1} less to cast for each time you have cast another commander from the command zone.</text>
+    </card>
+    <card>
+      <name>Rammus, Rolling Hero</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>G</color>
+        <manacost>2GG</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Armadillo </type>
+        <maintype>Creature</maintype>
+        <pt>2/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+Modified creatures you control assign damage with their toughness rather than their power.
+If a counter, equipment or an enchantment increases a creatures toughness it increases that creature’s toughness twice as much instead.</text>
+    </card>
+    <card>
+      <name>Rek&apos;Sai, From Below</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>RG</color>
+        <manacost>2RG</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Xer’Sai Voidling Beast </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Morph RG
+Other Xer’Sai Creatures you control get +1/+1.
+Whenever a creature you control is turned face up, create a 3/2 colorless Xer’Sai creature token with “at the beginning of your upkeep you may turn this creature face down as a 2/2 morph if you do it gains “Megamorph RG.””  </text>
+    </card>
+    <card>
+      <name>Rell, The Price of Power</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost>RW</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Human Knight </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+Whenever an equipment enters the battlefield under your control, if it was cast from your hand, discover equipment X where X is its mana value. (“Exile cards from the top of your library until you exile a nonland equipment card with mana value X or less. Cast it without paying its mana cost or put it into your hand”)
+Whenever Rell attacks, you may attach an equipment to Rell. If you do, attach all equipment that share a mana cost to Rell.</text>
+    </card>
+    <card>
+      <name>Renekton, Blood of Shurima</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WBRG</color>
+        <manacost>BRGW</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Crocodile God </type>
+        <maintype>Creature</maintype>
+        <pt>5/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Trample, indestructible, ascend
+As long as its controller has cities blessing Renekton has lifelink.
+Whenever Renekton enters the battlefield or attacks, deal 1 damage to each player and each creature.
+Whenever Renekton dies or is put into exile from the battlefield, you put it into its owner’s library third from the top.
+At the beginning of each opponent’s upkeep, that player gains control of Renekton. If they do, untap Renekton, he gains haste until end of turn.</text>
+    </card>
+    <card>
+      <name>Rengar, Primal Hunter</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WRG</color>
+        <manacost>RGW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Cat Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever a permanent card is put into the graveyard from the battlefield, if it does not share a card type with another card in any graveyard, draw a card and put a +1/+1 counter on Rengar.
+Delirium -- if there are 4 or more card types among cards in your graveyard, Rengar can’t be blocked and if he would deal damage he does twice that much instead.</text>
+    </card>
+    <card>
+      <name>Riven, Noxian General</name>
+      <set rarity="rare" splitterPath="/Riven, Noxian General.jpg" >SMR</set>
+      <prop>
+        <color>WB</color>
+        <manacost>1WB</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Soldier </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>First strike, menace
+Only cast this side if Riven has not transformed this game.
+As riven enters the battlefield, each opponent makes 2 1/1 green and white citizen tokens.
+When no players control any citizens, transform Riven for the rest of the game.        
+---
+(Back): Riven, Ionia Redeemed</text>
+      <related attach="attach">Riven, Ionia Redeemed</related>
+    </card>
+    <card>
+      <name>Riven, Ionia Redeemed</name>
+      <set rarity="rare" splitterPath="/Riven, Ionia Redeemed.jpg" >SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost>1RW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Nomad </type>
+        <pt>6/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>First strike
+Citizens you control have indestructible.
+Only cast this side if Riven has transformed this game.
+Whenever Riven enters or transforms, create two 1/1 green and white citizen. tokens.
+---
+(Front): Riven, Noxian General</text>
+    </card>
+    <card>
+      <name>Rumble, Junkyard Menace</name>
+      <set rarity="rare" splitterPath="/Rumble, Junkyard Menace.jpg" >SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>UR</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Yordle Artificer </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}: Add {C} For each artifact card put into your graveyard from anywhere this turn
+Craft with any number of artifacts {3} ({3}, Exile this artifact, Exile any number of artifacts you control or any number of artifact cards from your graveyard: Return this card transformed under its owner’s control. Craft only as a sorcery.)
+---
+(Back): &quot;Tristy&quot;</text>
+      <related attach="attach">&quot;Tristy&quot;</related>
+    </card>
+    <card>
+      <name>&quot;Tristy&quot;</name>
+      <set rarity="rare" splitterPath="/"Tristy".jpg" >SMR</set>
+      <prop>
+        <color></color>
+        <manacost></manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Yordle Construct </type>
+        <pt>*/*</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>“Tristy”s power and toughness is equal to the total mana value of artifacts used to craft it.
+When “Tristy” enters the battlefield, if there are fifteen artifacts used to craft it, destroy all nonland permanents your opponents control.
+Flamespitter — As long as there are three or more artifacts used to craft “Tristy” it has first strike and menace.
+Electro Harpoon — As long as there are six or more artifacts used to craft “Tristy” whenever it attacks it deals damage equal to the amount of artifacts used to craft it to any target.
+Scrap Shield — As long as there are nince or more artifacts used to craft “Tristy” it has ward {X} and indestructible where X is the amount of artifacts used to craft it. 
+---
+(Front): Rumble, Junkyard Menace</text>
+    </card>
+    <card>
+      <name>Ryze, Tethered to Power</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUBRG</color>
+        <manacost>WUBRG</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Wizard </type>
+        <maintype>Creature</maintype>
+        <pt>5/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Instant and sorcery spells you control are arcane in addition to its other types.
+Spells you control have splice onto arcane, its splice onto arcane cost is equal to its cost.  (As you cast an arcane, its splice onto arcane cost is equal to spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card’s effects to that spell.)</text>
+    </card>
+    <card>
+      <name>Samira, Stylish Daredevil</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBR</color>
+        <manacost>2RWB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever you cast a spell, deal 2 damage to any target, if this is the sixth time this ability has resolved this turn deal 6 damage to each other creature instead.
+Whenever Samira deals lethal damage, create a treasure then exile the top card of your library you may play it this turn unless an opponent has Samira deal damage equal to the cards mana value to them.</text>
+    </card>
+    <card>
+      <name>Sejuani, Sister of Battle</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>2UR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Boar </type>
+        <maintype>Creature</maintype>
+        <pt>4/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Bristle, Battle Boar
+When Sejuani enters the battlefield, an opponent becomes the monarch.
+At the beginning of combat, if you are the monarch, tap target creature an opponent controls.
+whenever one or more creatures an opponent controls becomes tapped, if it is not being declared as an attacker, Sejuani deals six damage to that creature if you are the monarch otherwise deal two damage instead, if excess damage is dealt this way put a +1/+1 counter on each creature you control.</text>
+    </card>
+    <card>
+      <name>Senna, The Redeemer</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WB</color>
+        <manacost>1WBB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Spirit </type>
+        <maintype>Creature</maintype>
+        <pt>*/*</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Lucian, Grim Purifier (When this creature enters the battlefield, target player may put Lucian into their hand from their library, then shuffle.)
+Senna’s power and toughness are each equal to the number of creature cards in opponents graveyards.
+At the beginning of your upkeep, exile the top card of your library, you may play it this turn. If you do, you lose life equal to its mana value and you may tap up to one target creature.</text>
+    </card>
+    <card>
+      <name>Seraphine, Song of Hope</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>U</color>
+        <manacost>3UU</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Bard </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Prowess
+Whenever you cast an instant or sorcery spell, put a verse counter on Seraphine, then if she has three or more verse counters remove all of them and copy that spell.
+{T}: Proliferate (Choose any number of permanents and/or players with counters on them, then give each another counter of each kind already there.)</text>
+    </card>
+    <card>
+      <name>Sett, Savage Beating</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBRG</color>
+        <manacost>2BRGW</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Human Brawler </type>
+        <maintype>Creature</maintype>
+        <pt>5/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever Sett does Fatal damage, create a treasure.
+Whenever Sett attacks, target creature defending player controls must block this turn if able. If the blocking creature would die Sett deals X damage to each other creature defending player controls, where X is the blocking creatures toughness.         </text>
+    </card>
+    <card>
+      <name>Shaco, Death&apos;s Jester</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>2BR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Demon Clown </type>
+        <maintype>Creature</maintype>
+        <pt>1/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Flash, invisible (This creature can’t be the target of spells or abilities and can’t be blocked, This creature loses this effect if they deal damage.)
+TBR: Target creature you control with a backstab counter on it deals damage equal to its power to target opponent.
+Whenever a permanent enters the battlefield under your control, if it is not your turn, put a backstab counter on it. For as long as it has a backstab counter on it the creature has “If this creature would deal damage deal twice as much instead then remove a backstab counter.” </text>
+    </card>
+    <card>
+      <name>Shen, Seer of Night</name>
+      <set rarity="rare" splitterPath="/Shen, Seer of Night.jpg" >SMR</set>
+      <prop>
+        <color>WU</color>
+        <manacost>WU</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Human Ninja </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Flash
+Disturb 3WB (You may cast this card from your graveyard transformed for its disturb cost.)
+When Shen enters the battlefield, target creature you control gains protection from everything until end of turn. (This creature can’t be blocked, targeted, dealt damage, enchanted, or equipped by anything until end of turn.)
+---
+(Back): Spirit Sword</text>
+      <related attach="attach">Spirit Sword</related>
+    </card>
+    <card>
+      <name>Spirit Sword</name>
+      <set rarity="rare" splitterPath="/Spirit Sword.jpg" >SMR</set>
+      <prop>
+        <color></color>
+        <manacost></manacost>
+        <cmc>2</cmc>
+        <type>Legendary Artifact - Equipment </type>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>Equip spirit or samurai 1WU.
+Equipped creature has +1/+1 and has protection from everything but Spirit Sword. (This creature can’t be blocked, targeted, dealt damage, enchanted, or equipped by anything but Spirit Sword.)
+---
+(Front): Shen, Seer of Night</text>
+    </card>
+    <card>
+      <name>Shyvana, Guilty by Blood</name>
+      <set rarity="rare" splitterPath="/Shyvana, Guilty by Blood.jpg" >SMR</set>
+      <prop>
+        <color>R</color>
+        <manacost>1RR</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever you take damage, put that many rage counters on Shyvana
+Whenever Shyvana attacks, each human you control deals 1 damage to any target.
+At the beginning of your end step, if Shyvana has 6 or more rage counters on   her transform her.                                       
+---
+(Back): Shyvana, Reawoken</text>
+      <related attach="attach">Shyvana, Reawoken</related>
+    </card>
+    <card>
+      <name>Shyvana, Reawoken</name>
+      <set rarity="rare" splitterPath="/Shyvana, Reawoken.jpg" >SMR</set>
+      <prop>
+        <color>R</color>
+        <manacost></manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Dragon Warrior </type>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Flying, haste, protection from dragons
+Whenever Shyvana attacks, each human you control deals 1 damage to defending player and each creature you control, then Each Dragon you control deals 2 damage to defending player and each creature they control.  
+---
+(Front): Shyvana, Guilty by Blood</text>
+    </card>
+    <card>
+      <name>Singed, Living Contagion</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BRG</color>
+        <manacost>BRG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Artificer </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Toxic 2
+If a creature an opponent controls would die, exile it instead. If you do, make a token copy of that card except it is a black and green mutant in addition to its other types and has Toxic 1 and decay.
+Corrupted — As long as defending player has three or more poison counters, creatures you control that are attacking and have attacked that player gain “This creature can’t be sacrificed.”</text>
+    </card>
+    <card>
+      <name>Sion, Ressurected Rage</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>3BR</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Zombie Juggernaut </type>
+        <maintype>Creature</maintype>
+        <pt>6/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Trample, undying (When this creature dies, if it had no +1/+1 counters on it, return it to the battlefield under its owner’s control with a +1/+1 counter on it.)
+Sion has haste as long as he has a counter.
+At the beginning of your end step, if Sion has a counter sacrifice him.</text>
+    </card>
+    <card>
+      <name>Sivir, Fortune Hunter</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WBR</color>
+        <manacost>2RWB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Nomad </type>
+        <maintype>Creature</maintype>
+        <pt>7/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Ward {3} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)
+At the beginning of combat, each player may pay any amount of mana, Sivir can only attack the player who payed the least.
+If an opponent payed three or more mana for a spell or an ability you control, create a tapped treasure token.</text>
+    </card>
+    <card>
+      <name>Skarner, Crystalline Harmony</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUBRG</color>
+        <manacost>WUBRG</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Scorpion Golem </type>
+        <maintype>Creature</maintype>
+        <pt>5/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Skarner gets +1/+1 for each prism you control.
+When Skarner enters the battlefield or attacks, create a Prism artifact token with “{T}: Add one mana of any color. whenever this enters the battlefield or it changes controllers its controller draws a card. Whenever an opponent deals combat damage to you untap Prism then that player gains control of it”</text>
+    </card>
+    <card>
+      <name>Sona, Silent Song</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WU</color>
+        <manacost>WU</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Human Bard </type>
+        <maintype>Creature</maintype>
+        <pt>0/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}: Put a verse counter on Sona then choose one, where X is the number of verse counters on Sona —
+• Gain X life.
+• Target creature gets +X/+X until end of turn.
+•Tap any number of nonland permanents with combined mana value X or less.             </text>
+    </card>
+    <card>
+      <name>Soraka, the Starchild</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WG</color>
+        <manacost>2GW</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Archon Cleric </type>
+        <maintype>Creature</maintype>
+        <pt>1/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever one or more creatures with base power and toughness 1/1 enter the battlefield under your control, gain 2 life and draw a card.
+{T}: Regenerate each other creature you control, for each creature that is regenerated this way, you lose 2 life. (The next time this creature would be destroyed this turn, it isn’t. Instead tap it, remove all damage from it, and remove it from combat.)</text>
+    </card>
+    <card>
+      <name>Swain, Demon Keeper</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBR</color>
+        <manacost>3UBR</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Human Noble </type>
+        <maintype>Creature</maintype>
+        <pt>2/7</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever you cast your second spell each turn, each opponent loses life equal to the number of birds you control, you gain life equal to the number of demons you control.
+Whenever you look at or reveal one or cards in an opponents non revealed hand or library without searching it for the first time each turn, create X 1/1 black demon birds where X is the number of cards looked at this way.</text>
+    </card>
+    <card>
+      <name>Sylas, Bane of Demacia</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUR</color>
+        <manacost>URW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Rebel </type>
+        <maintype>Creature</maintype>
+        <pt>2/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+Whenever you counter a spell, copy it, you may cast the copy, and you may spend mana as though it were mana of any color to cast the spell.</text>
+    </card>
+    <card>
+      <name>Syndra, Infinite Potential</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUB</color>
+        <manacost>3WUB</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Human Wizard </type>
+        <maintype>Creature</maintype>
+        <pt></pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Syndra, Infinite Potential can’t be countered.
+Flying
+When Syndra enters the battlefield, if it was cast, for each opponent create a Black-hole enchantment token with “ Exile target nonland permanent an opponent controls until Black-hole leaves the battlefield”
+Whenever Syndra attacks, you may put any number of cards exiled with enchantments you control into their owners graveyard if you do each opponent loses life equal to the mana value of cards put into their graveyard this way.</text>
+    </card>
+    <card>
+      <name>Tahm Kench, Demon of Gluttony</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBG</color>
+        <manacost>2BGU</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Fish Demon </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Tribute 2, tribute 2, tribute 2, tribute 2
+When Tahm Kench enters the battlefield for each time his tribute was payed, the player who payed the tribute discards a card if that player can’t they lose the game then you draw a card for each time the tribute was not payed.
+Whenever Tahm Kench attacks, exile target creature defending player controls until Tahm Kench leaves the battlefield.</text>
+    </card>
+    <card>
+      <name>Taliyah, Rubble Rouser</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>URG</color>
+        <manacost>1GUR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Spellshaper </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Landfall — Whenever a land enters the battlefield under your control, create a  artifact equipment token named Rock with “Equipped creature has “{1}, {T}: Sacrifice Rock: This creature deals 2 damage to any target”” and equip {1}. If the land is a desert make 2 instead.
+Taliyah does not need to tap to activate abilities that require the additional cost of sacrificing rocks.</text>
+    </card>
+    <card>
+      <name>Talon, Blade Unseen</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBR</color>
+        <manacost>RWB</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Equip cost X less to attach where X is the number of blood counters on your opponents.
+Whenever Talon deals combat damage to a player, for each equipment attached to him that player gains a bleed counter, for as long as that player has one or more bleed counter, at the beginning of their upkeep that player loses life equal to the number of bleed counters on them then remove a bleed counter from them.              </text>
+    </card>
+    <card>
+      <name>Taric, Shimmering Hope</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>W</color>
+        <manacost>3WW</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Planeswalker - Taric </type>
+        <maintype>Planeswalker</maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>[+1]:  Gain 2 life and put a loyalty counter on Taric for each creature that dealt combat damage this turn.
+[-2]: Distribute up to two shield counters among creatures you control.
+[-9]: You get an emblem with “Whenever you gain life, creatures you control get +X/+X and indestructible, where X is the amount of life you gained.”
+Taric, Shimmering Hope can be your commander.</text>
+    </card>
+    <card>
+      <name>Teemo, Mischievous Poisoner</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>BB/GB/G</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Yordle Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>3/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste, skulk, toxic 1 (This creature can’t be blocked by creatures with greater power.)
+{T}: Target creature can’t block this turn.
+At the beginning of your end step, if Teemo has not dealt damage this turn, he gains invisible (This creature can’t be the target of spells or abilities and can’t be blocked, This creature loses this effect if they deal damage.)</text>
+    </card>
+    <card>
+      <name>Thresh, Restless Shackles</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUBR</color>
+        <manacost>WUBR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Spirit Warden </type>
+        <maintype>Creature</maintype>
+        <pt>3/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>When Thresh enters the battlefield, create Thresh’s Lantern with hexproof and “Whenever a nontoken creature an opponent controls dies, exile it instead”.
+Whenever Thresh attacks, choose any number of exiled cards exiled with Thresh’s Lantern and return them to the battlefield tapped and attacking. Thresh’s Lantern deals X damage to you where X is the total mana value of creatures returned this way.</text>
+    </card>
+    <card>
+      <name>Tristana, The Bandle Gunner</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>3UR</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Yordle Ranger </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Double strike
+when Tristana enters the battlefield, each opponent gets a colorless artifact token named bomb with “Enters the battlefield with three charge counters on it, whenever one or more creatures an opponent controls deals combat damage to you put two charge counters on it. At the beginning of your endstep, if no counters have been put on the bomb since your last endstep sacrifice it. Whenever a bomb leaves the battlefield it deals X damage to you and each creature you control where X is the amount of charge counters on the bomb.”</text>
+    </card>
+    <card>
+      <name>Trundle, Proclaimed Monarch</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>URG</color>
+        <manacost>GUR</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Snow Creature - Troll Warrior </type>
+        <maintype>Creature</maintype>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Trample
+Whenever a troll you control attacks, target creature your opponent controls gets -2/-2 until end of turn, then put a +1/+1 counter on target troll.</text>
+    </card>
+    <card>
+      <name>Tryndamere, Frozen Fury</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>R</color>
+        <manacost>4R</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Berserker </type>
+        <maintype>Creature</maintype>
+        <pt>4/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+Tryndamere attacks each combat if able.
+Prevent all damage that would be dealt to Tryndamere while attacking.
+Whenever Tryndamere attacks, target creature defending player controls becomes a coward in addition to their other types. Cowards can’t block this turn.</text>
+    </card>
+    <card>
+      <name>Twisted Fate, Dealer of Destiny</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUR</color>
+        <manacost>1URW</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}: Draw a card and discard a card
+Whenever you discard a blue card untap target permanent, This ability triggers only once each turn.
+Whenever you discard a red card deal 2 damage to any target, This ability triggers only once each turn.
+Whenever you discard a white card tap target permanent, This ability triggers only once each turn. </text>
+    </card>
+    <card>
+      <name>Twitch, The Spreading Plague</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>1BG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Rat Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Invisible Toxic 1 (This creature can’t be the target of spells or abilities and can’t be blocked, This creature loses this effect if they deal damage.)
+Corrupted — At the beginning of your endstep for each opponent who has 3 or more poison counters return a creature with mana value less than the number of poison counters they control to the battlefield unless that player pays life equal to it’s mana value and discards a card.        </text>
+    </card>
+    <card>
+      <name>Udyr, Ethereal Avalanche</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>URG</color>
+        <manacost>GUUR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Monk </type>
+        <maintype>Creature</maintype>
+        <pt>*/*</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Udyr’s power is equal to your devotion to green and blue
+Udyr’s toughness is equal to your devotion to blue and red
+At the beginning of combat choose one —
+• Creatures you control get +X/+0 where X is your devotion to green.
+• Creatures you control get +0/+X where X is your devotion to blue.
+• Creatures you control can’t be blocked this turn by creatures mana value X or less where X is your devotion to blue.
+• You may put a artifact card with mana value X or less from your hand onto the battlefield, it becomes a artifact creature with power and toughness X/X with haste Where X is your devotion to red.       </text>
+    </card>
+    <card>
+      <name>Urgot, Zauns Weapon</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>3BBGG</manacost>
+        <cmc>7</cmc>
+        <type>Legendary Creature - Human Mutant </type>
+        <maintype>Creature</maintype>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Menace
+When Urgot attacks, destroy target creature defending player controls, that player reveals their hand. You choose a creature from it. That player discards that card, then that player reveals cards from the top of their library until they reveal a creature card, put that card into their graveyard and the rest on the bottom of their library in a random order.
+Whenever a creature card is put into an opponents graveyard from anywhere, put X +1/+1 counters where X is that creatures power.</text>
+    </card>
+    <card>
+      <name>Varus, Bow of Retribution</name>
+      <set rarity="mythic" splitterPath="/Varus, Bow of Retribution.jpg" >SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>3BR</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Artifact - Equipment </type>
+        <maintype>Artifact</maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>Equipped creature gets +2/+2 and has lifelink and reach
+As Varus enters the battlefield, create two legendary 2/2 white human creature tokens named Valmar and Kai
+Whenever a creature you control named Kai dies, you may exile a creature named Valmar. If you do, exile Varus and return him to the battlefield transformed under its owner’s control.
+Equip {3}
+Can be your commander
+---
+(Back): Varus, Unstable Malevolence</text>
+      <related attach="attach">Varus, Unstable Malevolence</related>
+    </card>
+    <card>
+      <name>Varus, Unstable Malevolence</name>
+      <set rarity="mythic" splitterPath="/Varus, Unstable Malevolence.jpg" >SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost></manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Darkin Ranger </type>
+        <pt>6/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink, reach
+Whenever Varus attacks, he deals damage equal to his power to target defending creature an opponent controls.
+Whenever Varus deals lethal damage to a creature, exile it instead. You may cast creatures exiled with Varus for as long as it remains exiled. whenever you   cast a spell an opponent owns they may pay life equal to its mana value if they do counter the spell.               
+---
+(Front): Varus, Bow of Retribution</text>
+    </card>
+    <card>
+      <name>Vayne, Glimmer in the Shadow</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WB</color>
+        <manacost>2WB</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Ranger </type>
+        <maintype>Creature</maintype>
+        <pt>4/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Vayne gets  +1/+1 for each experience counter you have if you have six or more she enters the battlefield invisible. (This creature can’t be the target of spells or abilities and can’t be blocked, This creature loses this effect if they deal damage.)
+When Vayne enters the battlefield, choose target non-Human creature an opponent controls.
+Whenever the chosen creature dies, gain an experience counter, draw a card then exile Vayne until the beginning of the next endstep.</text>
+    </card>
+    <card>
+      <name>Veigar, Twisted Mage</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UB</color>
+        <manacost>3UB</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Yordle Wizard </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}: Choose target creature an opponent controls, that creature gets -X/-X  turn, where X is the number of instant and sorcery spells you have cast this turn. When that creature dies this turn choose a instant or sorcery in your graveyard that was put there from anywhere this turn, you may cast it this turn, if its mana value is less then X you may cast it without paying its mana cost.</text>
+    </card>
+    <card>
+      <name>Vel&apos;Koz, Scion of the Watchers</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>U</color>
+        <manacost>CCU</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Voidling Eye </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>When Vel’koz enters the battlefield, look at target opponents hand then name a card.
+Whenever an opponents plays a named card, draw a card then name a new card.</text>
+    </card>
+    <card>
+      <name>Vex, Shadowcaster</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UB</color>
+        <manacost>1UB</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Yordle Warlock </type>
+        <maintype>Creature</maintype>
+        <pt>1/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Skulk
+Whenever an opponent casts a spell, if its not their turn they lose 2 life.
+Whenever vex deals combat damage to a player, pick one:
+• They lose life equal to the amount of life they lost before combat this turn.
+• Return target creature they control to their  hand.</text>
+    </card>
+    <card>
+      <name>Vi, Impulsive Haymaker</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UR</color>
+        <manacost>2UR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Rebel </type>
+        <maintype>Creature</maintype>
+        <pt>5/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Caitlyn
+First strike
+Whenever Vi deals combat damage to a player antagonize each creature that player controls until the end of your next turn (Antagonized creatures must attack each combat if able and must attack you or a planeswalker you control.)
+Whenever one or more creatures attack you or a planeswalker you control, you may choose to defend target battle until end of turn then you may redirect a creature of your choice to attack the battle. </text>
+    </card>
+    <card>
+      <name>Viego, The Ruined King</name>
+      <set rarity="mythic" splitterPath="/Viego, The Ruined King.jpg" >SMR</set>
+      <prop>
+        <color>B</color>
+        <manacost>BBB</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Zombie Noble </type>
+        <maintype>Creature</maintype>
+        <pt>6/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink, Protection from creatures with ruin counters (This creature can’t be blocked, targeted or dealt damage by creatures with ruin counters.)
+When Viego enters the battlefield, if he was cast, exile him and return him transformed under your control.
+Creatures with ruin counters can’t attack you or planeswalkers you control.
+---
+(Back): The Ruination</text>
+      <related attach="attach">The Ruination</related>
+    </card>
+    <card>
+      <name>The Ruination</name>
+      <set rarity="mythic" splitterPath="/The Ruination.jpg" >SMR</set>
+      <prop>
+        <color>B</color>
+        <manacost></manacost>
+        <cmc>3</cmc>
+        <type>Legendary Enchantment - Saga </type>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)
+I — You lose 5 life.
+II, III — Destroy all creatures.
+Each player returns a creature from their graveyard to the battlefield with a ruin counter.
+Exile this saga, then return it to the battlefield transformed under your control.
+---
+(Front): Viego, The Ruined King</text>
+    </card>
+    <card>
+      <name>Viktor, Herald of Progress</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UBR</color>
+        <manacost>2UBR</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Artifact Creature - Human Artificer </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Creatures you control are artifacts in addition to their other types. The same is true for creatures in your graveyard and creature permanent cards that are not on the battlefield.
+At the beginning of your end step, you may sacrifice 3 artifacts. If you do, return target artifact from your graveyard to your hand. If this is the second time you may return it to the battlefield. If its your third search your library for an aritfact and put it onto the battlefield. and if it is your fourth time you may search your library for an artifact card put it onto the battlefield and return an artifact card from your graveyard to the battlefield.</text>
+    </card>
+    <card>
+      <name>Vladimir, Blood Craving</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>4BR</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Human Cleric </type>
+        <maintype>Creature</maintype>
+        <pt>3/6</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink
+Whenever you lose life for first time each turn, each opponent gets a blood counter, for as long as that player has one or more blood counter, at the beginning of their upkeep that player looses life equal to the number of blood counters on them then remove a blood counter from them.
+Whenever an opponent loses life from a blood counter you gain that much life.</text>
+    </card>
+    <card>
+      <name>Volibear, Aurora of Thunder</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>G</color>
+        <manacost>3GG</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Enchantment Creature - Bear God </type>
+        <maintype>Creature</maintype>
+        <pt>13/13</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Indestructible, Trample
+As long as creatures you control have less than 15 power, Volibear is not a creature.
+At the beginning of each combat on each players turn, that players creature with the highest power gains haste and is goaded until end of turn then if that creature has less power than each of your creatures draw a card.            </text>
+    </card>
+    <card>
+      <name>Warwick, Wild Experiment</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>BG</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Dog Horror </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink
+Fateful hour — As long as you have 5 or less life, if you were to gain life gain twice as much instead
+Warwick has haste as long as an opponent has less than half their starting life total
+Whenever Warwick attacks, he gains double strike if the defending player has less then half their starting life total.</text>
+    </card>
+    <card>
+      <name>Wukong, Living Cyclone</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WR</color>
+        <manacost>RW</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Monkey Monk </type>
+        <maintype>Creature</maintype>
+        <pt>2/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Haste
+Whenever Wukong becomes the target of a spell with a single target, make a non-legendary token copy of Wukong. Change the target of the spell to the token copy. Exile it at the next end step.</text>
+    </card>
+    <card>
+      <name>Xayah, Sleuthing Songbird</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WG</color>
+        <manacost>1GW</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Bird Rogue </type>
+        <maintype>Creature</maintype>
+        <pt>2/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner
+Skulk
+Creatures you control have ward {X} where X is the number of creatures in your party.
+As long as you have a full party, clerics, rogues, warriors and wizards you control have hexproof and skulk.
+This Spell costs {1} less to cast for each time you have cast another commander from the command zone.         </text>
+    </card>
+    <card>
+      <name>Xerath, Cursed by Envy</name>
+      <set rarity="mythic" splitterPath="/Xerath, Cursed by Envy.jpg" >SMR</set>
+      <prop>
+        <color>U</color>
+        <manacost>3UU</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Spirit God </type>
+        <maintype>Creature</maintype>
+        <pt>*/*</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Xerath’s power and toughness are equal to the number of cards in your hand.
+Whenever Xerath attacks, look at the top X cards of your library put half of them rounded down into your hand, where X is the difference between the cards in your hand compared to the cards in defending player hand.
+Whenever Xerath dies, you may discard a card. If you do, exile Xerath and return him to the battlefield tapped under its owner’s control then its owner gains control of target creature an opponent controls.
+---
+(Back): Xerath, Saikhal Tomb</text>
+      <related attach="attach">Xerath, Saikhal Tomb</related>
+    </card>
+    <card>
+      <name>Xerath, Saikhal Tomb</name>
+      <set rarity="mythic" splitterPath="/Xerath, Saikhal Tomb.jpg" >SMR</set>
+      <prop>
+        <color>U</color>
+        <manacost></manacost>
+        <cmc>5</cmc>
+        <type>Legendary Artifact Land</type>
+      </prop>
+      <tablerow>0</tablerow>
+      <text>Creatures can’t attack unless its controlled by its owner.
+{T}: {U}
+2U: Transform Xerath, activate this ability if you control no permanents owned by other players.
+---
+(Front): Xerath, Cursed by Envy</text>
+    </card>
+    <card>
+      <name>Yasuo, Wind of Resolve</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WU</color>
+        <manacost>2WU</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Samurai </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Vigilance, bushido 2 (Whenever this creature blocks or becomes blocked, it gets +2/+2 until end of turn.)
+Whenever a samurai you control deals combat damage to a player, choose a creature they control, return it to its owners hand.</text>
+    </card>
+    <card>
+      <name>Yone, Displaced Duelist</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WUBR</color>
+        <manacost>WUBR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Demon Spirit </type>
+        <maintype>Creature</maintype>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Spiritbond (As Yone, Displaced Duelist enters the battlefield, they pair with a creature in your graveyard rather than a creature on the battlefield for as long as either creature is on the battlefield under your control or in your graveyard.)
+As Long as Yone is paired with a creature, each of those creatures gain first strike, Vigilance and haste and whenever this creature deals combat damage to a player, you may sacrifice this creature. If you do, return the creature it is paired with to the battlefield.                </text>
+    </card>
+    <card>
+      <name>Yorick, Undead Shepherd</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>B</color>
+        <manacost>4BB</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Creature - Human Monk </type>
+        <maintype>Creature</maintype>
+        <pt>5/5</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>At the beginning of your upkeep, if you don’t control a creature named Maiden of the Mist, you may sacrifice a creature, if you do create a Legendary 4/4 black wraith creature token named Maiden of the Mist, with “If a nontoken creature an opponent controls would die exile that card and create a 2/2 black zombie creature token with decayed” (It can’t block. When it attacks, sacrifice it at end of combat.)
+Zombies you control have “This creature can’t be sacrificed”</text>
+    </card>
+    <card>
+      <name>Yuumi, Keeper of Book</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>U</color>
+        <manacost>U</manacost>
+        <cmc>1</cmc>
+        <type>Legendary Enchantment Creature - Cat </type>
+        <maintype>Creature</maintype>
+        <pt>0/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Bestow 2GW (If you cast this card for its bestow cost, it’s an Aura spell with enchant creature. It becomes a creature again if it’s not attached to a creature.)
+Enchanted creature gets +2/+2 flying and lifelink.
+At the beginning of your upkeep, you may exile Yuumi, you may cast her for as long as she remains exiled.
+“We got the zoomies”</text>
+    </card>
+    <card>
+      <name>Zac, Indomitable Sludge</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>G</color>
+        <manacost>1GG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Ooze </type>
+        <maintype>Creature</maintype>
+        <pt>0/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Whenever Zac attacks or dies, create a 0/1 green ooze creature token.
+Sacrifice another ooze: Zac gets +2/+2 until end of turn.
+Sacrifice four oozes: Return Zac from your graveyard to the battlefield with four +1/+1 counters.</text>
+    </card>
+    <card>
+      <name>Zed, Harmony in Shadow</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>2BR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Ninja </type>
+        <maintype>Creature</maintype>
+        <pt>4/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Commander Ninjitsu BR
+If Zed or another shade or ninja creature would deal damage to a player, if that players life is less then half of their starting total, deal twice that much instead.
+At the beginning of your end step, Zed deals X damage to each opponent, where X is the number of effects or permanents that dealt them damage this turn.</text>
+    </card>
+    <card>
+      <name>Zeri, Volatile Spark</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WG</color>
+        <manacost>GW</manacost>
+        <cmc>2</cmc>
+        <type>Legendary Creature - Human Rebel </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>When Zeri enters the battlefield, Proliferate. (Choose any number of permanents and/or players with counters on them, then give each another counter of each kind already there.)
+Whenever Zeri attacks, you may remove any number of charge counters from permanents you control. If you do, deal X damage to any target and Zeri gets +X/+0 until end of turn
+Where X is the number of counters removed this way.
+Whenever Zeri deals combat damage to a player, distribute that many charge counters among permanents you control.    </text>
+    </card>
+    <card>
+      <name>Ziggs, Crazed Detonation</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>2BR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Yordle Artificer </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}: Add CCC to your mana pool spend this mana only to active abilities of artifacts you control.
+Whenever you sacrifice an artifact, deal X damage to any target where X is the mana value of the sacrificed artifact. </text>
+    </card>
+    <card>
+      <name>Zilean, Keeper of Icathia</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WU</color>
+        <manacost>1WU</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Human Wizard </type>
+        <maintype>Creature</maintype>
+        <pt>2/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Flash
+If an opponent would take an extra turn, that player skips that turn and you take an additional turn after this one.
+Players may cast spells as though they had flash. If they do, they cost an additional {1} to cast.</text>
+    </card>
+    <card>
+      <name>Zoe, Mischief Incarnate</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>WUBRG</color>
+        <manacost>1WUBRG</manacost>
+        <cmc>6</cmc>
+        <type>Legendary Planeswalker - Zoe </type>
+        <maintype>Planeswalker</maintype>
+      <loyalty>5</loyalty>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>[0]: You may exile target instant or sorcery from an opponents graveyard, for as long as it remains exiled you may cast that spell, if you cast it this turn you may distribute X loyalty counters among planeswalkers you control, where X is the spells mana value.
+[-9]: Gain an emblem with “Whenever an opponent casts their first spell each turn, copy it, you may choose new targets for the copy (A copy of a permanent spell becomes a token)”
+Zoe, Mischief Incarnate can be your commander.</text>
+    </card>
+    <card>
+      <name>Zyra, Nature Given Form</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>G</color>
+        <manacost>3GG</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Plant </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}: Create a copy of the card rampant growth, you may cast the copy.
+Magecraft — Whenever you cast or copy an instant or sorcery spell, create a 0/1 green plant creature token then Put a +1/+1 counter on each plant and each creature you control that is also a land.
+If a land were to be put onto the battlefield, if it was not put there from your hand, it enters as a 0/1 plant with two +1/+1 counters on it untap it. (It’s still affected by summoning sickness).</text>
+    </card>
+    <card>
+      <name>Milio, Gentle Flame</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>RG</color>
+        <manacost>2RG</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Human Shaman </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Elemental spells you control have assist. (Another player can pay up to {2} of this spell’s cost.)
+Whenever another player pays mana on an elemental spell you control, that player copies that spell.</text>
+    </card>
+    <card>
+      <name>Kindred, The Black Wolf</name>
+      <set rarity="mythic">SMR</set>
+      <prop>
+        <color>BG</color>
+        <manacost>1BG</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Wolf Incarnation </type>
+        <maintype>Creature</maintype>
+        <pt>3/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Kindred, Lamb of Light (When this creature enters the battlefield, target player may put Kindred into their hand from their library, then shuffle.)
+At the beginning of each end step Kindred, the Black Wolf gains indestructible until end of turn and fights target creature an opponent controls who sacrificed a creature this turn.       </text>
+    </card>
+    <card>
+      <name>Skaarl, Immortal Companion</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>UG</color>
+        <manacost>1GU</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Lizard Coward </type>
+        <maintype>Creature</maintype>
+        <pt>0/1</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Kled, the Mountain Admiral (When this creature enters the battlefield, target player may put Kled into their hand from their library, then shuffle.)
+Reconfigure GU (GU: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn’t a creature.)
+While Skarl is equipped he is not an artifact.
+If equipped creature would die, instead exile Skarl, you may cast him from exile for as long as he remains exiled.</text>
+    </card>
+    <card>
+      <name>Naafiri, Pack of One</name>
+      <set rarity="rare" splitterPath="/Naafiri, Pack of One.jpg" >SMR</set>
+      <prop>
+        <color>WBR</color>
+        <manacost>RWB</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Darkin Dog </type>
+        <maintype>Creature</maintype>
+        <pt>3/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>First strike, lifelink
+When Naafiri enters the battlefield, create a 1/1 white dog token.
+Whenever Naafiri deals combat damage to a player, you may sacrifice any number of  blood tokens. If you do, distribute twice that many +1/+1 counters among dog creatures you control.
+When Naafiri dies, return her to battlefield transformed under your control.
+---
+(Back): Naafiri, Blade of the Sands</text>
+      <related attach="attach">Naafiri, Blade of the Sands</related>
+    </card>
+    <card>
+      <name>Naafiri, Blade of the Sands</name>
+      <set rarity="rare" splitterPath="/Naafiri, Blade of the Sands.jpg" >SMR</set>
+      <prop>
+        <color></color>
+        <manacost></manacost>
+        <cmc>3</cmc>
+        <type>Legendary Artifact - Equipment </type>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>Equipped creature gets +2/+2 as long as it is a dog.
+Whenever equipped creature attacks, create two 1/1 white dog tokens tapped and attacking.
+Whenever a dog you control deals combat damage to a player, create a blood token then if you control 5 or more blood tokens unattach and transform Naafiri.
+Equip Dog {1}
+Equip {3}
+---
+(Front): Naafiri, Pack of One</text>
+    </card>
+    <card>
+      <name>Briar, Blood Frenzy</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>BR</color>
+        <manacost>2BR</manacost>
+        <cmc>4</cmc>
+        <type>Legendary Creature - Vampire </type>
+        <maintype>Creature</maintype>
+        <pt>4/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Lifelink, haste
+Whenever Briar deals lethal damage to a creature, make a blood token.
+Whenever Briar attacks, she fights the creature with the lowest power if two or more creatures are tied for the lowest power you choose one of them.
+Whenever you sacrifice a blood token, put a +1/+1  counter on Brair. She gains indestructible until end of turn.</text>
+    </card>
+    <card>
+      <name>Hwei, Bloody Blend</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>WBG</color>
+        <manacost>2WBG</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Creature - Human Wizard </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>{T}: Add WBG. This mana can’t be spent on any generic cost.
+Creatures you control get +1/+1 for each of its colors.
+Whenever you cast a spell, mill an amount equal to its colors, then you may return a card with one less color from your graveyard to your hand from the cards milled this way.        </text>
+    </card>
+    <card>
+      <name>Bristle, Battle Boar</name>
+      <set rarity="uncommon">SMR</set>
+      <prop>
+        <color>G</color>
+        <manacost>2G</manacost>
+        <cmc>3</cmc>
+        <type>Legendary Creature - Boar </type>
+        <maintype>Creature</maintype>
+        <pt>2/2</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Sejuani, Sister of Battle
+Trample
+Whenever a legendary creature enters the battlefield under your control, attach Bristle to that creature, that creature becomes mounted, (its still a creature but it can’t attack or block) attached creature gets trample and  +X/+X where X is bristles power
+If you would put one or more counters on a creature you control, put that many plus one of each of those kinds of counters on that permanent instead.</text>
+    </card>
+    <card>
+      <name>Willump, Friend of Ice</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>RG</color>
+        <manacost>6RG</manacost>
+        <cmc>8</cmc>
+        <type>Legendary Snow Creature - Yeti </type>
+        <maintype>Creature</maintype>
+        <pt>4/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Partner with Nunu
+Affinity for snow
+Whenever a snow permanent enters the battlefield under your control, put a packed counter on target snowball you control, for as long as it has that counter it has “equipped creature gets +1/+1 for each packed counter and whenever this snowball is sacrificed to equipped creatures ability copy that ability for each packed counter on the snowball.”      </text>
+    </card>
+    <card>
+      <name>Smolder, Dragon in Training</name>
+      <set rarity="rare">SMR</set>
+      <prop>
+        <color>R</color>
+        <manacost>2RR</manacost>
+        <cmc>4</cmc>
+        <type></type>
+        <maintype></maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text></text>
+    </card>
