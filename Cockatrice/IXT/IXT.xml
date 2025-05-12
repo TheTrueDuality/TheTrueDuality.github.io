@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="4">
+  <sets>
+    <set>
+      <name></name>
+      <longname></longname>
+      <settype></settype>
+    </set>
+  </sets>
+  <cards>
+
+    <card>
+      <name>The Axiomata</name>
+      <set rarity="rare"></set>
+      <prop>
+        <colors>WU</colors>
+        <manacost>WU</manacost>
+        <cmc>2</cmc>
+        <type>Creature - Human Wizard </type>
+        <maintype>Creature</maintype>
+        <pt>1/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>At the beginning of each endstep gain X life where X is the amount of spells you have cast this turn, If X is three or greater draw a card.</text>
+    </card>
+    <card>
+      <name>The Vidalian</name>
+      <set rarity="mythic"></set>
+      <prop>
+        <colors></colors>
+        <manacost>5</manacost>
+        <cmc>5</cmc>
+        <type>Legendary Enchantment - Landmark </type>
+        <maintype>Land</maintype>
+      <loyalty>3</loyalty>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>Spells you cast cost 1 less to cast
+1: 3 Create a 0/0 shapeshifter token, It enters with X +1/+1 counters on it where X is the total mana of other spells you have cast this turn.</text>
+    </card>
+    <card>
+      <name>Clothed in Power</name>
+      <set rarity="rare"></set>
+      <prop>
+        <colors>WU</colors>
+        <manacost>1WU</manacost>
+        <cmc>3</cmc>
+        <type>Enchantment - Aura </type>
+        <maintype>Enchantment</maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>Vanishing 2 (This permanent enters with two time counters on it. At the beginning of your upkeep, remove a time counter from it. When the last is removed, sacrifice it.)
+At the beginning of your upkeep make a copy of enchanted creature except it has vanishing 2 </text>
+    </card>
+    <card>
+      <name>Mind&apos;s Desire</name>
+      <set rarity="rare"></set>
+      <prop>
+        <colors>U</colors>
+        <manacost>4UU</manacost>
+        <cmc>6</cmc>
+        <type>Sorcery</type>
+        <maintype>Sorcery</maintype>
+      </prop>
+      <tablerow>3</tablerow>
+      <text>Shuffle your library. Then exile the top card of your library. Until end of turn, you may play that card without paying its mana cost.</text>
+    </card>
+    <card>
+      <name>Time Bomb</name>
+      <set rarity="rare"></set>
+      <prop>
+        <colors>WU</colors>
+        <manacost>2WWU</manacost>
+        <cmc>5</cmc>
+        <type>Sorcery</type>
+        <maintype>Sorcery</maintype>
+      </prop>
+      <tablerow>3</tablerow>
+      <text>Return a creature you control to its owner’s hand, then destroy all creatures.</text>
+    </card>
+    <card>
+      <name>Surge of BrillianceSurge of BrillianceSurge of BrillianceSurge of BrillianceSurge of Brilliance</name>
+      <set rarity="common"></set>
+      <prop>
+        <colors>U</colors>
+        <manacost>1U</manacost>
+        <cmc>2</cmc>
+        <type></type>
+        <maintype></maintype>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>Paradox — Draw a card for each spell you’ve cast this turn from anywhere other than your hand.
+Foretell 1U (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)</text>
+    </card>

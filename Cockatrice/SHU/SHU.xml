@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="4">
+  <sets>
+    <set>
+      <name></name>
+      <longname></longname>
+      <settype></settype>
+    </set>
+  </sets>
+  <cards>
+
+    <card>
+      <name>Desert Naturalist</name>
+      <set rarity="rare"></set>
+      <prop>
+        <colors>WRG</colors>
+        <manacost>1RGW</manacost>
+        <cmc>4</cmc>
+        <type>Creature - Human Barbarian </type>
+        <maintype>Creature</maintype>
+        <pt>2/4</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>When Desert Naturalist enters, destroy target artifact or enchantment, then search your library for a desert card and put it onto the battlefield tapped.
+Landfall — Whenever a land you control enters, deal X damage to target creature an opponent controls, where X is the number of deserts you control.</text>
+    </card>
+    <card>
+      <name>Roiling Sands</name>
+      <set rarity="rare"></set>
+      <prop>
+        <colors>G</colors>
+        <manacost>1G</manacost>
+        <cmc>2</cmc>
+        <type>Enchantment - Landmark </type>
+        <maintype>Land</maintype>
+      <loyalty>3</loyalty>
+      </prop>
+      <tablerow>1</tablerow>
+      <text>​1: </text>
+    </card>
+    <card>
+      <name>Rock Hopper</name>
+      <set rarity="uncommon"></set>
+      <prop>
+        <colors>WR</colors>
+        <manacost>2RW</manacost>
+        <cmc>4</cmc>
+        <type>Creature - Human Scout </type>
+        <maintype>Creature</maintype>
+        <pt>2/3</pt>
+      </prop>
+      <tablerow>2</tablerow>
+      <text>Modified creatures you control have haste.
+Whenever a non-token creature you control enters the battlefield, create a colorless Equipment artifact token named Rock with “Equipped creature has ‘1, {T}, Sacrifice Rock: This creature deals 2 damage to any target’” and equip {1} and attach it to it.</text>
+    </card>
