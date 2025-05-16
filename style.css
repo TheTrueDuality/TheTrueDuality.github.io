@@ -377,16 +377,17 @@ nav{
     max-width: 100%;
 }
 .image-hover {
+
     margin: auto;
     position: absolute;
     top: -.7%;
     right: 0;
     left: 0;
     bottom: 0;
-    object-fit: none;
     opacity: 0;
     transition: .3s;
 }
 .image-hover:hover {
+    width: 380px;
     opacity: 1;
 }
