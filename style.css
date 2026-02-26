@@ -104,7 +104,7 @@ nav{
     position: relative;
 }
 .white img{
-    width: 380px;
+    width: 280px;
 }
 .bluemain{
     width: 100%;
@@ -587,7 +587,8 @@ body {
 }
 
 body.modal-open {
-    overflow: hidden;
+  overflow: hidden;
+  touch-action: none;
 }
 
 html, body {
@@ -771,4 +772,179 @@ html, body {
   max-height: 220px;
   overflow: auto;
   padding-right: 6px;
+}
+
+/* ---------- Mobile / Responsive ---------- */
+
+img { max-width: 100%; height: auto; } /* safety */
+
+@media (max-width: 800px) {
+  /* Reduce big header spacing */
+  .bigheader {
+    font-size: 2rem;
+    margin: 12px 0;
+  }
+
+  /* Sticky nav spacing */
+  nav {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  /* Search input */
+  #cardSearch {
+    width: 170px;       /* fits left side */
+    max-width: 45vw;
+    font-size: 0.95rem;
+  }
+
+  /* Card list container padding */
+  .cardlist {
+    padding: 0 10px;
+  }
+
+  /* Grid: switch to responsive grid instead of long row */
+  .white {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .white ol {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .white ol img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+
+  /* Double cards: ensure both images don’t blow up layout */
+  .white ol.double {
+    position: relative;
+  }
+
+  .white ol.double .image-hover {
+    display: none; /* hover doesn’t exist on mobile */
+  }
+
+  .modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.8);
+
+    /* key changes */
+    overflow-y: auto;          /* overlay scrolls */
+    -webkit-overflow-scrolling: touch;
+    padding: 16px 12px;        /* breathing room on edges */
+    align-items: flex-start;   /* anchor to top */
+    justify-content: center;
+}
+  /* Modal layout becomes vertical */
+  .modal-content {
+    width: min(85%);
+    max-height: calc(100vh - 36px);
+    height: auto;
+        align-items: center;
+
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 0 auto;          /* <-- important: remove the 300px */
+    overflow: auto;          /* <-- scroll inside the modal box */
+    border-radius: 14px;
+  }
+
+  .modal-image-wrapper {
+    width: 100%;
+    margin-top: 28px;        /* small space so nav/close doesn’t feel cramped */
+  }
+
+  .modal-image-wrapper,
+  .card-3d{
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .card-3d{
+    height: auto;               /* let the image define height */
+    aspect-ratio: 380 / 532;    /* keep MTG ratio */
+  }
+
+  .rules{
+    max-height: none;
+    overflow: auto;
+  }
+
+  /* Oracle panel */
+  .oracle-panel{
+    width: 90vw;
+    max-width: 480px;
+    margin: 14px auto 0 auto;
+    border-radius: 16px;
+  }
+
+  /* Nav buttons: keep them visible on small screens */
+  .nav-btn{
+    top: 14px;                     /* instead of -60px */
+    max-width: 40vw;
+  }
+  .nav-prev{ left: 14px; transform: none; }
+  .nav-next{ right: 14px; transform: none; }
+
+  /* Close button stays tappable */
+  .close{
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Card image in modal scales */
+  #modalFront,
+  #modalBack {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Text sizing */
+  .modal-info {
+    font-size: 0.95rem;
+  }
+
+  .card-face img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Oracle panel under modal */
+  .oracle-panel {
+    width: min(95vw, 520px);
+    max-height: 20vh;
+    overflow: auto;
+  }
+
+  /* Nav buttons: keep usable on small screens */
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  nav {
+    padding: 8px 10px;
+  }
+
+  #cardSearch {
+    width: 150px;
+  }
+
+  .bigheader {
+    font-size: 1.6rem;
+  }
 }
