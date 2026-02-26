@@ -1,0 +1,70 @@
+https://archidekt.com/decks/19991498/zilean_precon
+1x Abrade
+1x Adarkar Wastes
+1x Amphibian Downpour
+1x Arcane Bombardment
+1x Arcane Signet
+1x Austere Command
+1x Battlefield Forge
+1x Cleansing Nova
+1x Clifftop Retreat
+1x Command Tower
+1x Consign to Memory
+1x Cursed Mirror
+1x Delayed Blast Fireball
+1x Dig Through Time
+1x Discontinuity
+1x Dragon's Rage Channeler
+1x Energy Tap
+1x Exotic Orchard
+1x Faithful Mending
+1x Faithless Looting
+1x Flusterstorm
+1x Fury
+1x Fury Storm
+1x Galvanic Relay
+1x Glacial Fortress
+1x Hideous Taskmaster
+1x Ingot Chewer
+10x Island
+1x Izzet Charm
+1x Izzet Signet
+1x Jeska's Will
+1x Jeskai Ascendancy
+1x Lose Focus
+1x Mind's Desire
+1x Mizzix's Mastery
+1x Monk Class
+6x Mountain
+1x Mystic Monastery
+1x Narset of the Ancient Way
+1x Narset, Jeskai Waymaster
+1x Narset's Reversal
+1x Nulldrifter
+9x Plains
+1x Powerbalance
+1x Prairie Stream
+1x Release to the Wind
+1x Return the Past
+1x Run Away Together
+1x See the Truth
+1x Shattering Spree
+1x Slash the Ranks
+1x Sol Ring
+1x Talisman of Conviction
+1x Talisman of Progress
+1x Temple of Enlightenment
+1x Temple of Triumph
+1x Temporal Fissure
+1x Time Wipe
+1x Torrent Sculptor // Flamethrower Sonata
+1x Treasure Cruise
+1x Unable to Scream
+1x Unstable Amulet
+1x Utter Insignificance
+1x Vega, the Watcher
+1x Vexing Scuttler
+1x Visions of Ruin
+1x Wandering Archaic // Explore the Vastlands
+1x Whirlwind of Thought
+1x Zilean, Keeper of Icathia #CustomCard

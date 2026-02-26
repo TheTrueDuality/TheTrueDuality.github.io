@@ -4,7 +4,8 @@
     font-family: 'Merriweather Sans', sans-serif;
 }
 .header{
-    min-height: 100vh;
+    min-height: 60vh;
+    text-align: center;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
     background-attachment: fixed;
@@ -387,7 +388,390 @@ nav{
     opacity: 0;
     transition: .3s;
 }
-.image-hover:hover {
+
+.search-wrap{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+#cardSearch{
+  width: 420px;
+  max-width: 90vw;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgba(0,0,0,0.25);
+  color: #000000;
+  outline: black;
+}
+
+#cardSearch::placeholder{
+  color: rgba(0, 0, 0, 0.55);
+}
+
+#cardSearch:focus{
+  border-color: rgba(58, 58, 58, 0.35);
+}
+
+.search-count{
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* -------- Modal Popup -------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    background-color: rgba(0,0,0,0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: visible;
+}
+
+.modal-content {
+    background: #3f3f3f;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 30px;
+    width: 1000px;       /* use your current max width */
+    height: 540px;       
+    overflow: visible;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.modal-content.has-glow::before{
+  content: "";
+  position: absolute;
+  inset: -10px;                 /* how far glow extends */
+  border-radius: 20px;          /* slightly larger than modal radius */
+  background: var(--glow-bg, transparent);
+  filter: blur(18px);
+  opacity: 0.35;                /* “slight glow” */
+  z-index: -1;
+  pointer-events: none;
+}
+
+.modal-content img {
     width: 380px;
+    overflow: visible;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.close{
+    opacity: 0.85;
+    position: fixed;   /* anchor to viewport, not the modal box */
+    top: 16px;
+    left: 16px;
+    z-index: 100000;   /* above everything */
+
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+
+  cursor: pointer;
+  user-select: none;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+  line-height: 1;
+}
+
+.close:hover{
     opacity: 1;
+}
+
+.modal-info{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+.type {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.rules{
+    margin-bottom: 10px;
+    overflow-y: auto;
+    white-space: pre-line;
+    max-height: 300px;   /* adjust to taste */
+}
+
+.pt {
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+
+.flavor {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.modal-image-wrapper {
+    position: relative;
+}
+
+.flip-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.flip-btn:hover {
+    background: #d3d3d3;
+}
+
+/* -------- 3D Card Flip -------- */
+
+.modal-image-wrapper {
+    perspective: 1200px;
+    position: relative;
+    width: 380px;
+}
+
+.card-3d {
+    width: 380px;
+    height: 532px; /* Standard MTG ratio */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.card-3d.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-face img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+#cardModal {
+  display: none;
+}
+
+.modal-content{
+  position: relative; /* needed so buttons can sit in the corners */
+}
+
+.nav-btn{
+  position: absolute;
+  top: -60px;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+
+  color: #ffffff;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 26px;
+  font-weight: 600;
+
+  /* keep it tidy */
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  z-index: 9998;
+}
+
+.nav-prev{
+  left: 200px;
+  transform: translateX(-110%); /* pushes outside left edge */
+  text-align: left;
+}
+
+.nav-next{
+  right: 200px;
+  transform: translateX(110%);  /* pushes outside right edge */
+  text-align: right;
+}
+
+.nav-btn:disabled{
+  opacity: 0.35;
+  cursor: default;
+  text-decoration: none;
+}
+
+/* ---- Title row (Name + Mana on same line) ---- */
+.title-row{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.title-row h2{
+  margin: 0; /* your h2 has margin-bottom currently */
+}
+
+/* ---- Tapered divider line ---- */
+.taper-line{
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 12px 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,0.35),
+    transparent
+  );
+}
+
+.mana{
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.mana-symbol{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+
+  background-image: url("images/Mana.svg");
+  background-repeat: no-repeat;
+
+  background-size: 1000% 700%;
+}
+
+.rules .mana-symbol {
+    width: 16px;   /* 50% of 22px */
+    height: 16px;
+    vertical-align: -2px;
+}
+
+/* Row/Col helpers (tile = 100px) */
+.mana-W{ background-position: -400px -200px; } /* row 2 col 4 */
+.mana-U{ background-position: -500px -200px; } /* row 2 col 5 */
+.mana-B{ background-position: -600px -200px; } /* row 2 col 6 */
+.mana-R{ background-position: -700px -200px; } /* row 2 col 7 */
+.mana-G{ background-position: -800px -200px; } /* row 2 col 8 */
+
+/* Numbers 0-9 (row 0 col 0-9) */
+.mana-0{ background-position:   -0px   -0px; }
+.mana-1{ background-position: -100px   -0px; }
+.mana-2{ background-position: -200px   -0px; }
+.mana-3{ background-position: -300px   -0px; }
+.mana-4{ background-position: -400px   -0px; }
+.mana-5{ background-position: -500px   -0px; }
+.mana-6{ background-position: -600px   -0px; }
+.mana-7{ background-position: -700px   -0px; }
+.mana-8{ background-position: -800px   -0px; }
+.mana-9{ background-position: -900px   -0px; }
+
+/* Numbers 10-19 (row 1 col 0-9) */
+.mana-10{ background-position:   -0px -100px; }
+.mana-11{ background-position: -100px -100px; }
+.mana-12{ background-position: -200px -100px; }
+.mana-13{ background-position: -300px -100px; }
+.mana-14{ background-position: -400px -100px; }
+.mana-15{ background-position: -500px -100px; }
+.mana-16{ background-position: -600px -100px; }
+.mana-17{ background-position: -700px -100px; }
+.mana-18{ background-position: -800px -100px; }
+.mana-19{ background-position: -900px -100px; }
+
+/* 20 (row 2 col 0) */
+.mana-20{ background-position:   -0px -200px; }
+
+
+/* Oracle panel under modal popup */
+#cardModal {
+  flex-direction: column; /* stack modal-content + oracle-panel */
+}
+
+.oracle-panel {
+  width: min(1200px, 92vw);
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(10, 10, 12, 0.432);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.oracle-link {
+  display: block;          /* makes it take full width */
+  text-align: center;      /* centers the text */
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.oracle-link,
+.oracle-link:visited,
+.oracle-link:hover,
+.oracle-link:active {
+  color: #ffffff;
+}
+
+.oracle-text {
+    text-align: left;
+    color: #000000;
+  white-space: pre-line;
+  line-height: 1.35;
+  font-size: 0.95rem;
+  opacity: 0.95;
+  max-height: 220px;
+  overflow: auto;
+  padding-right: 6px;
 }
