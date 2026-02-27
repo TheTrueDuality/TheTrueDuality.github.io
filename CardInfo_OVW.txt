@@ -1,0 +1,51 @@
+Name	Mana Cost	Type	Rules Text	Power	Toughness	Loyalty	Name 2	Mana Cost 2	Type 2	Rules Text 2	Power 2	Toughness 2	Loyalty 2	
+Anran							
+Emre							
+Mizuki							
+Jetpack Cat							
+Vendetta							
+Baptiste							
+Domina							
+Hanzo							
+Ana							
+Cassidy							
+Doomfist							
+Echo							
+Zarya							
+Torbörn							
+Brigitte							
+Sombra							
+Widowmaker							
+Sojourn							
+Soldier: 76							
+Zenyatta							
+Reinhardt							
+Tracer							
+Sigma							
+Reaper							
+Pharah							
+Ashe							
+Lucio							
+Freja							
+Junkrat							
+Ramattra							
+Winston							
+D.Va							
+Roadhog							
+Kiriko							
+Hazard							
+Juno							
+Illari							
+Venture							
+Symmetra							
+Mauga							
+Lifeweaver							
+Wrecking Ball							
+Orisa							
+Junker Queen							
+Mei							
+Mercy							
+Bastion							
+Moira							
+Wuyang							
+Genji							

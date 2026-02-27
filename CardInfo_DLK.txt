@@ -1,14 +1,39 @@
 Name	Mana Cost	Type	Rules Text	Power	Toughness	Loyalty	Name 2	Mana Cost 2	Type 2	Rules Text 2	Power 2	Toughness 2	Loyalty 2	
 Dynamo, Paradoxical Professor	2UUR	Legendary Artifact Creature	Flash\n Quantum Entanglement — As Dynamo enters, you may put a creature card with mana value three or less from your hand on to the battlefield, they become entangled. (Entangled creatures must attack and block as a pair and both are tapped at the same time, if one of those creatures would leave the battlefield they leave the other creature also moves to the same zone.)	3	5		
-Doorman, Active Attendant	1URW	Legendary Creature — Human Avatar 	T: Choose a permanent card that is phased out, put it into their owners graveyard \n Whenever this creature enters, target nonland permanent phases out.\n Permanents your opponents control can’t phase in during their untap steps, at the beginning of their upkeep, they may pay 2, if they do, that permanent phases in.				
+Doorman, Active Attendant	1URW	Legendary Creature — Human Avatar 	T: Choose a permanent card that is phased out, put it into their owners graveyard \n Whenever this creature enters, target nonland permanent phases out.\n Permanents your opponents control can’t phase in during their untap steps, at the beginning of their upkeep, they may pay 2, if they do, that permanent phases in.	2	3		
 Graves, Teachers Pet	1UBB	Legendary Creature — Human Spirit 	Lifelink\n When Graves enters, create a 2/2 black zombie creature token with decayed.\n Whenever a creature dies, draw a card, then you lose life equal to the amount of times this ability has triggered this turn.	2	5		
+Kelvin		Legendary Creature					
+Venator		Legendary Creature					
+Mirage		Legendary Creature					
 Ivy, Rescue Relic	GWU	Legendary Artifact Creature — Gargoyle 	Flash\n When Ivy enters, you may return a permanent you control to your hand, you may cast spells that share a name with that permanent as though they had flash, and they cost GWU less to cast.\n As long as a permanent you control left the battlefield this turn, Ivy has indestructible.	1	3		
+Paradox		Legendary Creature					
+Mina		Legendary Creature					
+Mo & Krill		Legendary Creature					
 Vindicta, Wallflower Wielder	2UBR	Legendary Creature — Spirit Assassin 	Flying\n When Vindicta enters, destroy all creatures that have taken damage this turn.\n If a creature dying would cause a triggered ability of a source you control, it triggers an additional time, if that creature was dealt damage by a source you control, it triggers two additional times.	3	3		
-Lady Geist, Socialite	2WUB	Legendary Creature — Zombie Noble 	Kicker—Sacrifice three creatures and discard three cards\n If an opponent would lose life without taking damage, they lose that much life plus 2 instead.\n If you would gain life, you gain that much life plus 2 instead.\n If Lady Geist’s Kicker cost was payed, she can’t be countered and when she enters, exchange life totals with target opponent.				
+Lady Geist, Socialite	2WUB	Legendary Creature — Zombie Noble 	Kicker—Sacrifice three creatures and discard three cards\n If an opponent would lose life without taking damage, they lose that much life plus 2 instead.\n If you would gain life, you gain that much life plus 2 instead.\n If Lady Geist’s Kicker cost was payed, she can’t be countered and when she enters, exchange life totals with target opponent.	3	6		
+Warden		Legendary Creature					
+Yamato		Legendary Creature					
 Sinclair, Split Attention	2WU	Legendary Creature — Spirit Performer 	Flash\n Tandem — When you cast this Spell, copy it, except the copy isn’t Legendary and its power and toughness is swapped.\n When this creature enters, choose one:\n • If you control a clue token, investigate twice if you don’t, investigate.\n • Target creature becomes a 1/1 white rabbit with no abilities until end of your next turn.\n Exile target instant or sorcery from an opponents graveyard, you may cast it this turn, you may spend mana as though it was any color to cast it.	2	1		
+Shiv		Legendary Creature					
+Wraith		Legendary Creature					
+Celeste		Legendary Creature					
+Calico		Legendary Creature					
+Abrams		Legendary Creature					
 Viscous, Deep Sea Dweller	1BRG	Legendary Creature — Ooze Soldier 	When Viscious enters, put five +1/+1 counters on another target creature, if that creature isn’t an Ooze it becomes a legendary green Ooze with defender and indestructible named The Cube.	3	5		
 Drifter, Prowling Carnage	BR	Legendary Creature — Vampire 	Menace\n Whenever creature you control with menace is not blocked, create a Blood token.\n If you would have to discard a card in order to pay a cost, you may instead pay 3 life at the beginning of your next main phase.	3	2		
+Vyper		Legendary Creature					
 Holliday	1RWB	Legendary Creature — Human Mercenary 	Whenever a nontoken creature enters the battlefield under an opponents control, you may sacrifice a treasure, if you do put a bounty counter on that creature.\n Whenever an Outlaw enters under your control, they deal damage equal to their power to a creature with a bounty counter, if lethal damage is dealt this way draw a card and profit.	5	3		
 Grey Talon	URW	Legendary Creature — Human Shaman 	Eminence — Whenever a noncreature source you control deals lethal damage, gain an experience counter.\n Grey Talon has flying as long as you control a bird.\n At the beginning of combat on your turn, target bird becomes Blitzed and gains +1/+1 for each experience counter you have.	3	2		
 Haze, Dreamstalker	WUBR	Legendary Creature — Spirit Assassin 	Hazes toughness is equal to the number of tapped creatures your opponents control.\n When Haze enters, you may exile any number of creature cards from your graveyard, if you do, she deals that much damage to each creature your opponents control.\n If a source you control would deal lethal damage to a permanent, instead tap that permanent, it doesn’t untap during its controllers untap step           	*	*+1		
+Infernus		Legendary Creature					
+Silver		Legendary Creature					
+Lash		Legendary Creature					
+McGinnis		Legendary Creature					
+Victor		Legendary Creature					
 Paige, Neverending Story	1GWU	Legendary Enchantment Creature  — Human Saga 	(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\n I — ​\n ​\n II — ​	2	4		
+Pocket		Legendary Creature					
+Seven		Legendary Creature					
+Rem		Legendary Creature					
+Bebop		Legendary Creature					
+Apollo		Legendary Creature					
+Billy		Legendary Creature					

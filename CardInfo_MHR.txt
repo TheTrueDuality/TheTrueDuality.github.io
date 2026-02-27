@@ -126,7 +126,6 @@ Jin Dahaad
 Lagiacrus							
 Mizutsune							
 Nibelsnarf							
-Royal Ludroth							
 Somnacanth							
 Uth Duna							
 Shakalaka							
@@ -153,12 +152,10 @@ Genprey
 Giaprey							
 Ioprey							
 Izuchi							
-Jaggo							
 Jaggia							
 Kranodath							
 Maccao							
 Porkeplume							
-Zeikret							
 Talioth							
 Velociprey							
 Wroggi							
@@ -219,7 +216,7 @@ Barnos
 Baunos							
 Cortos							
 Harpios							
-Hernos							
+Mernos							
 Noios							
 Raphinos							
 Apex Arzuros							
@@ -231,3 +228,5 @@ Apex Mizutsune
 Dreadqueen Rathian							
 Dreadking Rathalos							
 Gajau							
+Jaggi							
+Seikret							
