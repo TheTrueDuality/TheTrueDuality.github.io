@@ -1,0 +1,141 @@
+Name	Mana Cost	Type	Rules Text	Power	Toughness	Loyalty	Name 2	Mana Cost 2	Type 2	Rules Text 2	Power 2	Toughness 2	Loyalty 2	
+Mender Bug	2W	Creature — Insect 	Flash\n When Mender Bug enters, you may choose an artifact that was put into your graveyard from the battlefield this turn, return it to the battlefield	0	2		
+Sheo							
+Seer							
+Quirrel							
+Pale King							
+Mato							
+Oblobble							
+Nosk							
+Midwife							
+Monomon, The Teacher							
+Moss Charger							
+Nailsmith							
+No Eyes							
+Mister Mushroom							
+Oro							
+Mask Maker							
+Marmu							
+Markoth							
+Marissa							
+Mantis Lords							
+Lurien, The Watcher							
+Lemm							
+Gorb							
+Leg Eater							
+Jinn							
+Iselda							
+Hive Knight							
+Gruz Mother							
+Grimm							
+Godseeker							
+God Tamer							
+Galien							
+Flukemarm							
+False Knight							
+Divine							
+Elder Hu							
+Dung Defender							
+Crystal Guardian							
+Brooding Mawlek							
+Broken Vessel							
+Hornet							
+Herrah, The Beast							
+Grubfather							
+Elderbug							
+Cornifer							
+Cloth							
+Bardoon							
+Salubra							
+Confessor Jiji							
+The Collector							
+Tuk							
+Traitor Lord							
+Tiso							
+The Radiance							
+The Last Stagg							
+The Hunter							
+The Hollow Knight							
+Soul Master	UB						
+Sly							
+Uumuu							
+Vengefly King							
+Watcher Knight							
+White Lady							
+Xero							
+Zote							
+Unn							
+Bell Beast							
+Bell Eater							
+Broodmother							
+Choir Clapper							
+Clover Dancers							
+Cogwork Dancers							
+Craggler							
+Crawfather							
+Crust King Khan							
+Disgraced Chef Lugoli							
+Father of the Flame							
+First Sinner							
+Fourth Chorus							
+Garmond and Zaza							
+Grandmother Silk							
+Great Conchflies							
+Groal the Great							
+Gurr the Outcast							
+Lace							
+Last Judge							
+Moorwing							
+Moss Mother							
+Nyleth							
+Palestag							
+Phantom							
+Pinstress							
+Plasmified Zango							
+Bullgrund							
+Savage Beastfly							
+Second Sentinel							
+Shrine Guardian Seth							
+Shakra							
+Signis and Gron							
+Splinter Sister							
+Skarrgard							
+Skarrsinger Karmelita							
+Skull Tyrant							
+Summoned Savior							
+The Unravelled							
+Trobbio							Tormented Trobbio							
+Voltvyrm							
+Watcher at the Edge							
+Widow							
+Cardinius, Vaultkeeper							
+Relic Seeker Scrounge							
+Grindle							
+Pinmaster Plinney							
+Kratt							
+Grishkin							
+Forge Daughter							
+Jubilana							
+Fleamaster Mooshka							
+Alchemist Zylotol							
+Bell Hermit							
+Ballow							
+Broodling							
+Fayforn							
+Flick, The Fixer							
+Great Gourmand							
+Loam							
+Mergwin							
+Moss Druid							
+Nuu							
+Styx							
+Sprintmaster Swift							
+Tipp and Pill							
+Vog							
+Varga							
+Huntress							
+Twelfth Architect	UR						
+Seamstress							
+Sherma							
+Eva							
+Greyroot							

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monster Hunter (MHR)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<div id="cardModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+    <button id="prevCard" class="nav-btn nav-prev" type="button"></button>
+    <button id="nextCard" class="nav-btn nav-next" type="button"></button>
+
+        <div class="modal-image-wrapper">
+
+            <div class="card-3d" id="card3d">
+                <div class="card-face card-front">
+                    <img id="modalFront" src="" alt="">
+                </div>
+                <div class="card-face card-back">
+                    <img id="modalBack" src="" alt="">
+                </div>
+            </div>
+
+            <button id="flipButton" class="flip-btn" style="display:none;">
+                Flip
+            </button>
+
+        </div>
+
+            <div class="modal-info">
+            <div class="title-row">
+                <h2 id="cardTitle"></h2>
+                <div class="mana" id="cardMana"></div>
+            </div>
+
+            <div class="taper-line"></div>
+
+            <p class="type" id="cardType"></p>
+
+            <div class="taper-line"></div>
+
+            <div class="rules" id="cardText"></div>
+
+            <div class="taper-line"></div>
+
+            <p class="pt" id="cardPowerToughness"></p>
+
+            <div class="taper-line"></div>
+
+            <p class="flavor" id="cardFlavor"></p>
+            </div>
+    </div>
+        <div class="oracle-panel" id="oraclePanel">
+      <a id="oracleDeckLink" class="oracle-link" href="#" target="_blank" rel="noopener noreferrer">
+        View Commander Decklist
+      </a>
+      <div class="taper-line"></div>
+      <div class="oracle-text" id="oracleText"></div>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+
+<body data-cardinfo="CardInfo_MHR.txt">
+<section class="header">
+    <nav>
+      <div class="nav-left">
+        <a class="home-link" href="index.html" aria-label="Home" title="Home">
+          <!-- inline SVG so you don't need an icon library -->
+          <svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 3.2 2.8 11h2.1v9.8h6.1v-6h2v6h6.1V11h2.1L12 3.2z"/>
+          </svg>
+        </a>
+                <input id="cardSearch" type="text" placeholder="Search card name or syntax using c: t: deck..." autocomplete="off" />
+            </div>
+        <div class="nav-links">
+            <ul>
+              <li class="nav-item nav-dropdown">
+                <button
+                  id="setMenuBtn"
+                  class="nav-dropdown-btn"
+                  type="button"
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                >
+                  Choose a set…
+                  <span class="nav-dropdown-caret" aria-hidden="true"></span>
+                </button>
+
+                <div id="setMenu" class="nav-dropdown-menu" role="menu" aria-labelledby="setMenuBtn">
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="smr.html">SMR — Summoners Rift</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="mhr.html">MHR — Monster Hunter</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="dlk.html">DLK — Deadlock</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="thk.html">THK — Hollow Knight</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="ovw.html">OVW — Overwatch</button>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="bigheader">MONSTERS</h1>
+</section>
+
+
+<section class="cardlist">
+
+    <div class="cards">
+        <div class="cardlistmain">
+            <div class="cardlist">
+<ol><img loading="lazy" decoding="async" src="thumbs/Chatcabra-min.png" data-full="images/Chatcabra"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Tetranadon-min.png" data-full="images/Tetranadon"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Tetsucabra-min.png" data-full="images/Tetsucabra"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Zamtrios-min.png" data-full="images/Zamtrios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Aknosom-min.png" data-full="images/Aknosom"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gendrome-min.png" data-full="images/Gendrome"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Giadrome-min.png" data-full="images/Giadrome"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Great Baggi-min.png" data-full="images/Great Baggi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Great Izuchi-min.png" data-full="images/Great Izuchi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Great Jaggi-min.png" data-full="images/Great Jaggi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Great Maccao-min.png" data-full="images/Great Maccao"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Great Wroggi-min.png" data-full="images/Great Wroggi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gypceros-min.png" data-full="images/Gypceros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Hypnocatrice-min.png" data-full="images/Hypnocatrice"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Iodrome-min.png" data-full="images/Iodrome"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Kulu-Ya-Ku-min.png" data-full="images/Kulu-Ya-Ku"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Malfestio-min.png" data-full="images/Malfestio"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Pukei-Pukei-min.png" data-full="images/Pukei-Pukei"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Qurupeco-min.png" data-full="images/Qurupeco"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Tzitzi-Ya-Ku-min.png" data-full="images/Tzitzi-Ya-Ku"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Velocidrome-min.png" data-full="images/Velocidrome"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Yian Garuga-min.png" data-full="images/Yian Garuga"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Yian Kut-Ku-min.png" data-full="images/Yian Kut-Ku"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Anjanath-min.png" data-full="images/Anjanath"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Banbaro-min.png" data-full="images/Banbaro"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Barroth-min.png" data-full="images/Barroth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Brachydios-min.png" data-full="images/Brachydios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Deviljho-min.png" data-full="images/Deviljho"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Duramboros-min.png" data-full="images/Duramboros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Glavenus-min.png" data-full="images/Glavenus"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Quematrice-min.png" data-full="images/Quematrice"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Radobaan-min.png" data-full="images/Radobaan"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Rompopolo-min.png" data-full="images/Rompopolo"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Uragaan-min.png" data-full="images/Uragaan"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Daimyo Hermitaur-min.png" data-full="images/Daimyo Hermitaur"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Shen Gaoren-min.png" data-full="images/Shen Gaoren"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Shogun Ceanataur-min.png" data-full="images/Shogun Ceanataur"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Nu Udra-min.png" data-full="images/Nu Udra"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Xu Wu-min.png" data-full="images/Xu Wu"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Zoh Shia-min.png" data-full="images/Zoh Shia"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gore Magala-min.png" data-full="images/Gore Magala"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Alatreon-min.png" data-full="images/Alatreon"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Amatsu-min.png" data-full="images/Amatsu"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Behemoth-min.png" data-full="images/Behemoth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ceadus-min.png" data-full="images/Ceadus"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Chameleos-min.png" data-full="images/Chameleos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Dahren Mohran-min.png" data-full="images/Dahren Mohran"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Dalamadur-min.png" data-full="images/Dalamadur"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Dire Miralis-min.png" data-full="images/Dire Miralis"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Fatalis-min.png" data-full="images/Fatalis"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gaismagorm-min.png" data-full="images/Gaismagorm"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gogmazios-min.png" data-full="images/Gogmazios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Jhen Mohran-min.png" data-full="images/Jhen Mohran"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Kirin-min.png" data-full="images/Kirin"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Kulve Taroth-min.png" data-full="images/Kulve Taroth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Kushala Daora-min.png" data-full="images/Kushala Daora"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Lao-Shan Lung-min.png" data-full="images/Lao-Shan Lung"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Lunastra-min.png" data-full="images/Lunastra"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Malzeno-min.png" data-full="images/Malzeno"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Nakarkos-min.png" data-full="images/Nakarkos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Namielle-min.png" data-full="images/Namielle"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Nergigante-min.png" data-full="images/Nergigante"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/SafiJiiva-min.png" data-full="images/Safi’Jiiva"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Shagaru Magala-min.png" data-full="images/Shagaru Magala"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Shara Ishvalda-min.png" data-full="images/Shara Ishvalda"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Teostra-min.png" data-full="images/Teostra"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Vaal Hazak-min.png" data-full="images/Vaal Hazak"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Valstrax-min.png" data-full="images/Valstrax"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Velkhana-min.png" data-full="images/Velkhana"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Thunder Serpent Narwa-min.png" data-full="images/Thunder Serpent Narwa"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Wind Serpent Ibushi-min.png" data-full="images/Wind Serpent Ibushi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Narwa the Allmother-min.png" data-full="images/Narwa the Allmother"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/XenoJiiva-min.png" data-full="images/Xeno’Jiiva"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Yama Tsukami-min.png" data-full="images/Yama Tsukami"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Zorah Magdaros-min.png" data-full="images/Zorah Magdaros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ajarakan-min.png" data-full="images/Ajarakan"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Arzuros-min.png" data-full="images/Arzuros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Bishaten-min.png" data-full="images/Bishaten"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Blangonga-min.png" data-full="images/Blangonga"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Bulldrome-min.png" data-full="images/Bulldrome"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Congalala-min.png" data-full="images/Congalala"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Doshaguma-min.png" data-full="images/Doshaguma"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gammoth-min.png" data-full="images/Gammoth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Garangolm-min.png" data-full="images/Garangolm"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Goss Harag-min.png" data-full="images/Goss Harag"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Kecha Wacha-min.png" data-full="images/Kecha Wacha"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Lagombi-min.png" data-full="images/Lagombi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Rajang-min.png" data-full="images/Rajang"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Volvidon-min.png" data-full="images/Volvidon"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Dodogama-min.png" data-full="images/Dodogama"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Great Girros-min.png" data-full="images/Great Girros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Great Jagras-min.png" data-full="images/Great Jagras"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Lunagaron-min.png" data-full="images/Lunagaron"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Magnamalo-min.png" data-full="images/Magnamalo"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Odogaron-min.png" data-full="images/Odogaron"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Tobi-Kadachi-min.png" data-full="images/Tobi-Kadachi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Zinogre-min.png" data-full="images/Zinogre"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Akanator-min.png" data-full="images/Akanator"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Arkveld-min.png" data-full="images/Arkveld"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Astalos-min.png" data-full="images/Astalos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Barioth-min.png" data-full="images/Barioth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Basarios-min.png" data-full="images/Basarios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Bazelgeuse-min.png" data-full="images/Bazelgeuse"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Diablos-min.png" data-full="images/Diablos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Espinas-min.png" data-full="images/Espinas"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gigginox-min.png" data-full="images/Gigginox"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gravios-min.png" data-full="images/Gravios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Khezu-min.png" data-full="images/Khezu"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Legiana-min.png" data-full="images/Legiana"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Monoblos-min.png" data-full="images/Monoblos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Nargacuga-min.png" data-full="images/Nargacuga"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Paolumu-min.png" data-full="images/Paolumu"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Rathalos-min.png" data-full="images/Rathalos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Rathian-min.png" data-full="images/Rathian"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ray Dau-min.png" data-full="images/Ray Dau"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Seregios-min.png" data-full="images/Seregios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Tigrex-min.png" data-full="images/Tigrex"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ukanlos-min.png" data-full="images/Ukanlos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Agnaktor-min.png" data-full="images/Agnaktor"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Almudron-min.png" data-full="images/Almudron"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Balahara-min.png" data-full="images/Balahara"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gobul-min.png" data-full="images/Gobul"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Hirabami-min.png" data-full="images/Hirabami"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Jin Dahaad-min.png" data-full="images/Jin Dahaad"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Lagiacrus-min.png" data-full="images/Lagiacrus"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Mizutsune-min.png" data-full="images/Mizutsune"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Nibelsnarf-min.png" data-full="images/Nibelsnarf"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Royal Ludroth-min.png" data-full="images/Royal Ludroth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Somnacanth-min.png" data-full="images/Somnacanth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Uth Duna-min.png" data-full="images/Uth Duna"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Shakalaka-min.png" data-full="images/Shakalaka"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ahtal-Ka-min.png" data-full="images/Ahtal-Ka"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Seltas-min.png" data-full="images/Seltas"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Vespoid Queen-min.png" data-full="images/Vespoid Queen"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Beotodus-min.png" data-full="images/Beotodus"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Cephadrome-min.png" data-full="images/Cephadrome"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Jyuratodus-min.png" data-full="images/Jyuratodus"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Lavasioth-min.png" data-full="images/Lavasioth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Plesioth-min.png" data-full="images/Plesioth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Leshen-min.png" data-full="images/Leshen"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Najarala-min.png" data-full="images/Najarala"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Lala Barina-min.png" data-full="images/Lala Barina"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Nerscylla-min.png" data-full="images/Nerscylla"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Rakna-Kadaki-min.png" data-full="images/Rakna-Kadaki"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Omega Planetes-min.png" data-full="images/Omega Planetes"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Zamite-min.png" data-full="images/Zamite"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gelidron-min.png" data-full="images/Gelidron"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Baggi-min.png" data-full="images/Baggi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Boggi-min.png" data-full="images/Boggi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gargwa-min.png" data-full="images/Gargwa"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Genprey-min.png" data-full="images/Genprey"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Giaprey-min.png" data-full="images/Giaprey"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ioprey-min.png" data-full="images/Ioprey"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Izuchi-min.png" data-full="images/Izuchi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Jaggo-min.png" data-full="images/Jaggo"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Jaggia-min.png" data-full="images/Jaggia"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Kranodath-min.png" data-full="images/Kranodath"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Maccao-min.png" data-full="images/Maccao"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Porkeplume-min.png" data-full="images/Porkeplume"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Zeikret-min.png" data-full="images/Zeikret"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Talioth-min.png" data-full="images/Talioth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Velociprey-min.png" data-full="images/Velociprey"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Wroggi-min.png" data-full="images/Wroggi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ceanataur-min.png" data-full="images/Ceanataur"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Hermitaur-min.png" data-full="images/Hermitaur"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Blango-min.png" data-full="images/Blango"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Bombadgy-min.png" data-full="images/Bombadgy"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Bullfango-min.png" data-full="images/Bullfango"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Canyne-min.png" data-full="images/Canyne"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Conga-min.png" data-full="images/Conga"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Girros-min.png" data-full="images/Girros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Jagras-min.png" data-full="images/Jagras"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Shamos-min.png" data-full="images/Shamos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Wulg-min.png" data-full="images/Wulg"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Giggi-min.png" data-full="images/Giggi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Anteka-min.png" data-full="images/Anteka"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Apceros-min.png" data-full="images/Apceros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Aptonoth-min.png" data-full="images/Aptonoth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ceratonoth-min.png" data-full="images/Ceratonoth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Dalthydon-min.png" data-full="images/Dalthydon"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Epioth-min.png" data-full="images/Epioth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gastodon-min.png" data-full="images/Gastodon"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gowngoat-min.png" data-full="images/Gowngoat"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Kelbi-min.png" data-full="images/Kelbi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Kestodon-min.png" data-full="images/Kestodon"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Larinoth-min.png" data-full="images/Larinoth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Moofah-min.png" data-full="images/Moofah"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Mosswine-min.png" data-full="images/Mosswine"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Popo-min.png" data-full="images/Popo"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Rafma-min.png" data-full="images/Rafma"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Rhenoplos-min.png" data-full="images/Rhenoplos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Slagtoth-min.png" data-full="images/Slagtoth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gajios-min.png" data-full="images/Gajios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Ludroth-min.png" data-full="images/Ludroth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Piragill-min.png" data-full="images/Piragill"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Uroktor-min.png" data-full="images/Uroktor"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Boaboa-min.png" data-full="images/Boaboa"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Felyne-min.png" data-full="images/Felyne"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gajalaka-min.png" data-full="images/Gajalaka"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Grimalkyne-min.png" data-full="images/Grimalkyne"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Melynx-min.png" data-full="images/Melynx"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Wudwun-min.png" data-full="images/Wudwun"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Altaroth-min.png" data-full="images/Altaroth"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Bnahabra-min.png" data-full="images/Bnahabra"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Bulaqchi-min.png" data-full="images/Bulaqchi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Comaqchi-min.png" data-full="images/Comaqchi"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Great Thunderbug-min.png" data-full="images/Great Thunderbug"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Hornetaur-min.png" data-full="images/Hornetaur"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Konchu-min.png" data-full="images/Konchu"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Vespoid-min.png" data-full="images/Vespoid"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Cephalos-min.png" data-full="images/Cephalos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Delex-min.png" data-full="images/Delex"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Remobra-min.png" data-full="images/Remobra"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Rachnoid-min.png" data-full="images/Rachnoid"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Pyrantula-min.png" data-full="images/Pyrantula"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Omega Micros-min.png" data-full="images/Omega Micros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Barnos-min.png" data-full="images/Barnos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Baunos-min.png" data-full="images/Baunos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Cortos-min.png" data-full="images/Cortos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Harpios-min.png" data-full="images/Harpios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Hernos-min.png" data-full="images/Hernos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Noios-min.png" data-full="images/Noios"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Raphinos-min.png" data-full="images/Raphinos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Apex Arzuros-min.png" data-full="images/Apex Arzuros"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Apex Rathalos-min.png" data-full="images/Apex Rathalos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Apex Zingore-min.png" data-full="images/Apex Zingore"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Apex Diablos-min.png" data-full="images/Apex Diablos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Apex Rathian-min.png" data-full="images/Apex Rathian"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Apex Mizutsune-min.png" data-full="images/Apex Mizutsune"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Dreadqueen Rathian-min.png" data-full="images/Dreadqueen Rathian"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Dreadking Rathalos-min.png" data-full="images/Dreadking Rathalos"></ol>
+<ol><img loading="lazy" decoding="async" src="thumbs/Gajau-min.png" data-full="images/Gajau"></ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>

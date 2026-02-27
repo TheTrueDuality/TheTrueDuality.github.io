@@ -1,0 +1,233 @@
+Name	Mana Cost	Type	Rules Text	Power	Toughness	Loyalty	Name 2	Mana Cost 2	Type 2	Rules Text 2	Power 2	Toughness 2	Loyalty 2	
+Chatcabra							
+Tetranadon							
+Tetsucabra							
+Zamtrios							
+Aknosom							
+Gendrome							
+Giadrome							
+Great Baggi							
+Great Izuchi							
+Great Jaggi							
+Great Maccao							
+Great Wroggi							
+Gypceros							
+Hypnocatrice							
+Iodrome							
+Kulu-Ya-Ku							
+Malfestio							
+Pukei-Pukei							
+Qurupeco							
+Tzitzi-Ya-Ku							
+Velocidrome							
+Yian Garuga							
+Yian Kut-Ku							
+Anjanath							
+Banbaro							
+Barroth							
+Brachydios							
+Deviljho							
+Duramboros							
+Glavenus							
+Quematrice							
+Radobaan							
+Rompopolo							
+Uragaan							
+Daimyo Hermitaur							
+Shen Gaoren							
+Shogun Ceanataur							
+Nu Udra							
+Xu Wu							
+Zoh Shia							
+Gore Magala							
+Alatreon							
+Amatsu							
+Behemoth							
+Ceadus							
+Chameleos							
+Dahren Mohran							
+Dalamadur							
+Dire Miralis							
+Fatalis							
+Gaismagorm							
+Gogmazios							
+Jhen Mohran							
+Kirin							
+Kulve Taroth							
+Kushala Daora							
+Lao-Shan Lung							
+Lunastra							
+Malzeno							
+Nakarkos							
+Namielle							
+Nergigante							
+Safi'Jiiva							
+Shagaru Magala							
+Shara Ishvalda							
+Teostra							
+Vaal Hazak							
+Valstrax							
+Velkhana							
+Thunder Serpent Narwa							
+Wind Serpent Ibushi							
+Narwa the Allmother							
+Xeno'Jiiva							
+Yama Tsukami							
+Zorah Magdaros							
+Ajarakan							
+Arzuros							
+Bishaten							
+Blangonga							
+Bulldrome							
+Congalala							
+Doshaguma							
+Gammoth							
+Garangolm							
+Goss Harag							
+Kecha Wacha							
+Lagombi							
+Rajang							
+Volvidon							
+Dodogama							
+Great Girros							
+Great Jagras							
+Lunagaron							
+Magnamalo							
+Odogaron							
+Tobi-Kadachi							
+Zinogre							
+Akanator							
+Arkveld							
+Astalos							
+Barioth							
+Basarios							
+Bazelgeuse							
+Diablos							
+Espinas							
+Gigginox							
+Gravios							
+Khezu							
+Legiana							
+Monoblos							
+Nargacuga							
+Paolumu							
+Rathalos							
+Rathian							
+Ray Dau							
+Seregios							
+Tigrex							
+Ukanlos							
+Agnaktor							
+Almudron							
+Balahara							
+Gobul							
+Hirabami							
+Jin Dahaad							
+Lagiacrus							
+Mizutsune							
+Nibelsnarf							
+Royal Ludroth							
+Somnacanth							
+Uth Duna							
+Shakalaka							
+Ahtal-Ka							
+Seltas							
+Vespoid Queen							
+Beotodus							
+Cephadrome							
+Jyuratodus							
+Lavasioth							
+Plesioth							
+Leshen							
+Najarala							
+Lala Barina							
+Nerscylla							
+Rakna-Kadaki							
+Omega Planetes							
+Zamite							
+Gelidron							
+Baggi							
+Boggi							
+Gargwa							
+Genprey							
+Giaprey							
+Ioprey							
+Izuchi							
+Jaggo							
+Jaggia							
+Kranodath							
+Maccao							
+Porkeplume							
+Zeikret							
+Talioth							
+Velociprey							
+Wroggi							
+Ceanataur							
+Hermitaur							
+Blango							
+Bombadgy							
+Bullfango							
+Canyne							
+Conga							
+Girros							
+Jagras							
+Shamos							
+Wulg							
+Giggi							
+Anteka							
+Apceros							
+Aptonoth							
+Ceratonoth							
+Dalthydon							
+Epioth							
+Gastodon							
+Gowngoat							
+Kelbi							
+Kestodon							
+Larinoth							
+Moofah							
+Mosswine							
+Popo							
+Rafma							
+Rhenoplos							
+Slagtoth							
+Gajios							
+Ludroth							
+Piragill							
+Uroktor							
+Boaboa							
+Felyne							
+Gajalaka							
+Grimalkyne							
+Melynx							
+Wudwun							
+Altaroth							
+Bnahabra							
+Bulaqchi							
+Comaqchi							
+Great Thunderbug							
+Hornetaur							
+Konchu							
+Vespoid							
+Cephalos							
+Delex							
+Remobra							
+Rachnoid							
+Pyrantula							
+Omega Micros							
+Barnos							
+Baunos							
+Cortos							
+Harpios							
+Hernos							
+Noios							
+Raphinos							
+Apex Arzuros							
+Apex Rathalos							
+Apex Zingore							
+Apex Diablos							
+Apex Rathian							
+Apex Mizutsune							
+Dreadqueen Rathian							
+Dreadking Rathalos							
+Gajau							

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summoners Rift (SMR)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body data-cardinfo="CardInfo_SMR.txt">
+<div id="cardModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+    <button id="prevCard" class="nav-btn nav-prev" type="button"></button>
+    <button id="nextCard" class="nav-btn nav-next" type="button"></button>
+
+        <div class="modal-image-wrapper">
+
+            <div class="card-3d" id="card3d">
+                <div class="card-face card-front">
+                    <img id="modalFront" src="" alt="">
+                </div>
+                <div class="card-face card-back">
+                    <img id="modalBack" src="" alt="">
+                </div>
+            </div>
+
+            <button id="flipButton" class="flip-btn" style="display:none;">
+                Flip
+            </button>
+
+        </div>
+
+            <div class="modal-info">
+            <div class="title-row">
+                <h2 id="cardTitle"></h2>
+                <div class="mana" id="cardMana"></div>
+            </div>
+
+            <div class="taper-line"></div>
+
+            <p class="type" id="cardType"></p>
+
+            <div class="taper-line"></div>
+
+            <div class="rules" id="cardText"></div>
+
+            <div class="taper-line"></div>
+
+            <p class="pt" id="cardPowerToughness"></p>
+
+            <div class="taper-line"></div>
+
+            <p class="flavor" id="cardFlavor"></p>
+            </div>
+    </div>
+        <div class="oracle-panel" id="oraclePanel">
+      <a id="oracleDeckLink" class="oracle-link" href="#" target="_blank" rel="noopener noreferrer">
+        View Commander Decklist
+      </a>
+      <div class="taper-line"></div>
+      <div class="oracle-text" id="oracleText"></div>
+    </div>
+</div>
+<section class="header">
+    <nav>
+      <div class="nav-left">
+        <a class="home-link" href="index.html" aria-label="Home" title="Home">
+          <!-- inline SVG so you don't need an icon library -->
+          <svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 3.2 2.8 11h2.1v9.8h6.1v-6h2v6h6.1V11h2.1L12 3.2z"/>
+          </svg>
+        </a>
+                <input id="cardSearch" type="text" placeholder="Search card name or syntax using c: t: deck..." autocomplete="off" />
+            </div>
+        <div class="nav-links">
+            <ul>
+              <li class="nav-item nav-dropdown">
+                <button
+                  id="setMenuBtn"
+                  class="nav-dropdown-btn"
+                  type="button"
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                >
+                  Choose a set…
+                  <span class="nav-dropdown-caret" aria-hidden="true"></span>
+                </button>
+
+                <div id="setMenu" class="nav-dropdown-menu" role="menu" aria-labelledby="setMenuBtn">
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="smr.html">SMR — Summoners Rift</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="mhr.html">MHR — Monster Hunter</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="dlk.html">DLK — Deadlock</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="thk.html">THK — Hollow Knight</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="ovw.html">OVW — Overwatch</button>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="bigheader">CHAMPIONS</h1>
+</section>
+<section class="cardlist">
+
+    <div class="cards">
+        <div class="cardlistmain">
+            <div class="cardlist">
+              <ol><img loading="lazy" decoding="async" src="thumbs/Jhin Cold Open-min.png" data-full="images/Jhin, Cold Open.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Garen Might of Demacia-min.png" data-full="images/Garen, Might of Demacia.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Kayle Angel of Punishment-min.png" data-full="images/Kayle, Angel of Punishment.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Lucian Grim Purifier-min.png" data-full="images/Lucian, Grim Purifier.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Lux The Last Light-min.png" data-full="images/Lux, The Last Light.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Poppy Hero of Demacia-min.png" data-full="images/Poppy, Hero of Demacia.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Xin-Zhao Redeemed Reckoner-min.png" data-full="images/Xin-Zhao, Redeemed Reckoner.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Alune Sibling of Faith-min.png" data-full="images/Alune, Sibling of Faith.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Anivia The Eternal Frost-min.png" data-full="images/Anivia, The Eternal Frost.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Eggnivia Frozen Over-min.png" data-full="images/Eggnivia, Frozen Over.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Nunu Savior of Winter-min.png" data-full="images/Nunu, Savior of Winter.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Seraphine Song of Hope-min.png" data-full="images/Seraphine, Song of Hope.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Swain Demon Keeper-min.png" data-full="images/Swain, Demon Keeper.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/VelKoz Scion of the Watchers-min.png" data-full="images/Vel’Koz, Scion of the Watchers.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Xerath Cursed by Envy-min.png" data-full="images/Xerath, Cursed by Envy.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Xerath Saikhal Tomb-min.png" data-full="images/Xerath, Saikhal Tomb.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Yuumi Keeper of Book-min.png" data-full="images/Yuumi, Keeper of Book.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Fiddlesticks Whispering Terror-min.png" data-full="images/Fiddlesticks, Whispering Terror.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Karthus Voice of Ruin-min.png" data-full="images/Karthus, Voice of Ruin.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Mordekaiser Immortal Bastion-min.png" data-full="images/Mordekaiser, Immortal Bastion.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Morgana Angel of Redemption-min.png" data-full="images/Morgana, Angel of Redemption.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Nocturne Living Nightmare-min.png" data-full="images/Nocturne, Living Nightmare.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Viego The Ruined King-min.png" data-full="images/Viego, The Ruined King.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/The Ruination-min.png" data-full="images/The Ruination.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Yorick Undead Shepherd-min.png" data-full="images/Yorick, Undead Shepherd.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Brand Searing Pyroclast-min.png" data-full="images/Brand, Searing Pyroclast.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Malphite Roaming Range-min.png" data-full="images/Malphite, Roaming Range.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Olaf Might of Lokfar-min.png" data-full="images/Olaf, Might of Lokfar.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ornn The Living Bellows-min.png" data-full="images/Ornn, The Living Bellows.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Shyvana Guilty by Blood-min.png" data-full="images/Shyvana, Guilty by Blood.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Shyvana Reawoken-min.png" data-full="images/Shyvana, Reawoken.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Tryndamere Frozen Fury-min.png" data-full="images/Tryndamere, Frozen Fury.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ivern Reborn Mystic-min.png" data-full="images/Ivern, Reborn Mystic.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Rammus Rolling Hero-min.png" data-full="images/Rammus, Rolling Hero.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Volibear Aurora of Thunder-min.png" data-full="images/Volibear, Aurora of Thunder.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Zac Indomitable Sludge-min.png" data-full="images/Zac, Indomitable Sludge.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Zyra Nature Given Form-min.png" data-full="images/Zyra, Nature Given Form.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Aatrox Imminent Apocolypse-min.png" data-full="images/Aatrox, Imminent Apocolypse.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ahri Alluring Conjurist-min.png" data-full="images/Ahri, Alluring Conjurist.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Akali Silent Reckoning-min.png" data-full="images/Akali, Silent Reckoning.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Akshan Rogue Sentinel-min.png" data-full="images/Akshan, Rogue Sentinel.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Alistar Unbreakable Vengeance-min.png" data-full="images/Alistar, Unbreakable Vengeance.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ambessa Merciless Wolf-min.png" data-full="images/Ambessa, Merciless Wolf.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Amumu Sad Mummy-min.png" data-full="images/Amumu, Sad Mummy.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Annie Cursed by Kindle-min.png" data-full="images/Annie, Cursed by Kindle.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Aphelios Moons Marksman-min.png" data-full="images/Aphelios, Moons Marksman.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ashe Bow of Freljord-min.png" data-full="images/Ashe, Bow of Freljord.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Aurora Winters  Intrument-min.png" data-full="images/Aurora, Winter’s  Intrument.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Azir Sand Sculptor-min.png" data-full="images/Azir, Sand Sculptor.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/BelVeth Matron of Madness-min.png" data-full="images/Bel’Veth, Matron of Madness.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Shurima the Lavender Sea-min.png" data-full="images/Shurima, the Lavender Sea.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Braum Shield of Freljord-min.png" data-full="images/Braum, Shield of Freljord.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Briar Blood Frenzy-min.png" data-full="images/Briar, Blood Frenzy.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Caitlyn Piltover Peacekeeper-min.png" data-full="images/Caitlyn, Piltover Peacekeeper.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Camille Hextech Tactician-min.png" data-full="images/Camille, Hextech Tactician.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Cassiopeia Serpents Gaze-min.png" data-full="images/Cassiopeia, Serpents Gaze.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/ChoGath Hunger Incarnate-min.png" data-full="images/Cho’Gath, Hunger Incarnate.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Corki Daring Bombardier-min.png" data-full="images/Corki, Daring Bombardier.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Darius Hand of Noxus-min.png" data-full="images/Darius, Hand of Noxus.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Dr. Mundo Mad Practicioner-min.png" data-full="images/Dr. Mundo, Mad Practicioner.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Draven Glorius Gladiator-min.png" data-full="images/Draven, Glorius Gladiator.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ekko Timewinder-min.png" data-full="images/Ekko, Timewinder.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Elise Spider Monarch-min.png" data-full="images/Elise, Spider Monarch.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Evelynn Maiden of Anguish-min.png" data-full="images/Evelynn, Maiden of Anguish.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ezreal Daring Archeoligist-min.png" data-full="images/Ezreal, Daring Archeoligist.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Fiora Honored Duelest-min.png" data-full="images/Fiora, Honored Duelest.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Fizz Playful Prankster-min.png" data-full="images/Fizz, Playful Prankster.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Gangplank Burning Vengeance-min.png" data-full="images/Gangplank, Burning Vengeance.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Gnar Primal Curiosity-min.png" data-full="images/Gnar, Primal Curiosity.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Mega Gnar Enraged Titan-min.png" data-full="images/Mega Gnar, Enraged Titan.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Gragas Bottomless Barrel-min.png" data-full="images/Gragas, Bottomless Barrel.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Graves Destined Outlaw-min.png" data-full="images/Graves, Destined Outlaw.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Gwen Arcane Weaved-min.png" data-full="images/Gwen, Arcane Weaved.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Hecarim Endless Torment-min.png" data-full="images/Hecarim, Endless Torment.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Heimerdinger Obsessed Inventor-min.png" data-full="images/Heimerdinger, Obsessed Inventor.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Hwei Bloody Blend-min.png" data-full="images/Hwei, Bloody Blend.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ice Witch Lissandra-min.png" data-full="images/Ice Witch Lissandra.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Illaoi Truthbearer-min.png" data-full="images/Illaoi, Truthbearer.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Irelia The Blade Dancer-min.png" data-full="images/Irelia, The Blade Dancer.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Jarvan The Fourth-min.png" data-full="images/Jarvan The Fourth.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Jax Grandmaster at Arms-min.png" data-full="images/Jax, Grandmaster at Arms.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Jayce Protector of Today-min.png" data-full="images/Jayce, Protector of Today.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Jayce Returned From Time-min.png" data-full="images/Jayce, Returned From Time.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Jinx Pow Pow and Fishbones-min.png" data-full="images/Jinx, Pow Pow and Fishbones.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/KaiSa Bound to Ruin-min.png" data-full="images/Kai’Sa, Bound to Ruin.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Kalista Undying Wraith-min.png" data-full="images/Kalista, Undying Wraith.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Karma Mantra Master-min.png" data-full="images/Karma, Mantra Master.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Kassadin Riftwalker-min.png" data-full="images/Kassadin, Riftwalker.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Katarina Sinister Blade-min.png" data-full="images/Katarina, Sinister Blade.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Kayn Shadow Assassin-min.png" data-full="images/Kayn, Shadow Assassin.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Rhaast Form Unbound-min.png" data-full="images/Rhaast, Form Unbound.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Kennen Eye of the Storm-min.png" data-full="images/Kennen, Eye of the Storm.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/KhaZix Ever Adaptive-min.png" data-full="images/Kha’Zix, Ever Adaptive.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Kindred Lamb of Light-min.png" data-full="images/Kindred, Lamb of Light.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Kindred The Black Wolf-min.png" data-full="images/Kindred, The Black Wolf.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Kled The Mountain Admiral-min.png" data-full="images/Kled, The Mountain Admiral.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/KogMaw Looming Feast-min.png" data-full="images/Kog’Maw, Looming Feast.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/KSante Umber Bastion-min.png" data-full="images/K’Sante, Umber Bastion.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/LeBlanc Mirrored Mystery-min.png" data-full="images/LeBlanc, Mirrored Mystery.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Lee Sin Sightless Master-min.png" data-full="images/Lee Sin, Sightless Master.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Lillia Full Bloom-min.png" data-full="images/Lillia, Full Bloom.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Lulu Unknown Mischief-min.png" data-full="images/Lulu, Unknown Mischief.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Malzahar Betrayer of Humanity-min.png" data-full="images/Malzahar, Betrayer of Humanity.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Maokai Eternal Evergreen-min.png" data-full="images/Maokai, Eternal Evergreen.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/The Roots of The Isle-min.png" data-full="images/The Roots of The Isle.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Master Yi of Great Insight-min.png" data-full="images/Master Yi of Great Insight.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Mel Gilded Brilliance-min.png" data-full="images/Mel, Gilded Brilliance.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Milio Gentle Flame-min.png" data-full="images/Milio, Gentle Flame.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Miss Fortune Captain of Tyranny-min.png" data-full="images/Miss Fortune, Captain of Tyranny.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Naafiri Pack of One-min.png" data-full="images/Naafiri, Pack of One.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Naafiri Blade of the Sands-min.png" data-full="images/Naafiri, Blade of the Sands.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Nami Seabound Archon-min.png" data-full="images/Nami, Seabound Archon.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Nasus Ascended Strategist-min.png" data-full="images/Nasus, Ascended Strategist.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Nautilus Sunken Titan-min.png" data-full="images/Nautilus, Sunken Titan.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Neeko Shapesplitter-min.png" data-full="images/Neeko, Shapesplitter.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Nidalee Ixtals Protector-min.png" data-full="images/Nidalee, Ixtal’s Protector.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Jungle Cat Nidalee-min.png" data-full="images/Jungle Cat Nidalee.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Nilah Seven Handed-min.png" data-full="images/Nilah, Seven Handed.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Orianna Manufactured Beauty-min.png" data-full="images/Orianna, Manufactured Beauty.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Pyke Drowned Vengeance-min.png" data-full="images/Pyke, Drowned Vengeance.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Qiyana Ixtals Highness-min.png" data-full="images/Qiyana, Ixtal’s Highness.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Quinn Birds Eye-min.png" data-full="images/Quinn, Birds Eye.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Rakan Swaying Songbird-min.png" data-full="images/Rakan, Swaying Songbird.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Raum Demon of Secrets-min.png" data-full="images/Raum, Demon of Secrets.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/RekSai From Below-min.png" data-full="images/Rek’Sai, From Below.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Rell The Price of Power-min.png" data-full="images/Rell, The Price of Power.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Renata Glasc Chem Baron-min.png" data-full="images/Renata Glasc, Chem Baron.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Renekton Blood of Shurima-min.png" data-full="images/Renekton, Blood of Shurima.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Rengar Primal Hunter-min.png" data-full="images/Rengar, Primal Hunter.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Riven Noxian General-min.png" data-full="images/Riven, Noxian General.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Riven Ionia Redeemed-min.png" data-full="images/Riven, Ionia Redeemed.png">
+              </ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Rumble Junkyard Menace-min.png" data-full="images/Rumble, Junkyard Menace.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/-min.png" data-full="images/">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ryze Tethered to Power-min.png" data-full="images/Ryze, Tethered to Power.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Samira Stylish Daredevil-min.png" data-full="images/Samira, Stylish Daredevil.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Sejuani Sister of Battle-min.png" data-full="images/Sejuani, Sister of Battle.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Senna The Redeemer-min.png" data-full="images/Senna, The Redeemer.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Sett Savage Beating-min.png" data-full="images/Sett, Savage Beating.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Shaco Deaths Jester-min.png" data-full="images/Shaco, Death’s Jester.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Shen Seer of Night-min.png" data-full="images/Shen, Seer of Night.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Spirit Sword-min.png" data-full="images/Spirit Sword.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Singed Living Contagion-min.png" data-full="images/Singed, Living Contagion.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Sion Ressurected Rage-min.png" data-full="images/Sion, Ressurected Rage.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Sivir Fortune Hunter-min.png" data-full="images/Sivir, Fortune Hunter.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Skarner Ixtals Tremor-min.png" data-full="images/Skarner, Ixtal’s Tremor.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Smolder Dragon in Training-min.png" data-full="images/Smolder, Dragon in Training.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Sona Silent Song-min.png" data-full="images/Sona, Silent Song.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Soraka the Starchild-min.png" data-full="images/Soraka, the Starchild.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Sylas Bane of Demacia-min.png" data-full="images/Sylas, Bane of Demacia.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Syndra Infinite Potential-min.png" data-full="images/Syndra, Infinite Potential.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Tahm Kench Demon of Gluttony-min.png" data-full="images/Tahm Kench, Demon of Gluttony.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Taliyah Rubble Rouser-min.png" data-full="images/Taliyah, Rubble Rouser.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Talon Blade Unseen-min.png" data-full="images/Talon, Blade Unseen.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Teemo Mischievous Poisoner-min.png" data-full="images/Teemo, Mischievous Poisoner.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Thresh Restless Shackles-min.png" data-full="images/Thresh, Restless Shackles.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Tristana The Bandle Gunner-min.png" data-full="images/Tristana, The Bandle Gunner.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Trundle Proclaimed King-min.png" data-full="images/Trundle, Proclaimed King.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Twisted Fate Dealer of Destiny-min.png" data-full="images/Twisted Fate, Dealer of Destiny.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Twitch The Spreading Plague-min.png" data-full="images/Twitch, The Spreading Plague.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Udyr Ethereal Avalanche-min.png" data-full="images/Udyr, Ethereal Avalanche.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Urgot Zauns Weapon-min.png" data-full="images/Urgot, Zauns Weapon.png"></ol>
+              <ol class="double">
+                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Varus Bow of Retribution-min.png" data-full="images/Varus, Bow of Retribution.png">
+                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Varus Unstable Malevolence-min.png" data-full="images/Varus, Unstable Malevolence.png">
+              </ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Veigar Twisted Mage-min.png" data-full="images/Veigar, Twisted Mage.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Vex Shadowcaster-min.png" data-full="images/Vex, Shadowcaster.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Vi Impulsive Haymaker-min.png" data-full="images/Vi, Impulsive Haymaker.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Viktor Herald of Progress-min.png" data-full="images/Viktor, Herald of Progress.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Vladimir Blood Craving-min.png" data-full="images/Vladimir, Blood Craving.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Warwick Wild Experiment-min.png" data-full="images/Warwick, Wild Experiment.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Willump Friend of Ice-min.png" data-full="images/Willump, Friend of Ice.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Wukong Living Cyclone-min.png" data-full="images/Wukong, Living Cyclone.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Xayah Sleuthing Songbird-min.png" data-full="images/Xayah, Sleuthing Songbird.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Yasuo Wind of Resolve-min.png" data-full="images/Yasuo, Wind of Resolve.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Yone Displaced Duelist-min.png" data-full="images/Yone, Displaced Duelist.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Yunara Faith Unbroken-min.png" data-full="images/Yunara, Faith Unbroken.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Zed Harmony in Shadow-min.png" data-full="images/Zed, Harmony in Shadow.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Zeri Volatile Spark-min.png" data-full="images/Zeri, Volatile Spark.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Ziggs Crazed Detonation-min.png" data-full="images/Ziggs, Crazed Detonation.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Zilean Keeper of Icathia-min.png" data-full="images/Zilean, Keeper of Icathia.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Blitzcrank Rolling Golem-min.png" data-full="images/Blitzcrank, Rolling Golem.png"></ol>
+              <ol><img loading="lazy" decoding="async" src="thumbs/Galio Bulwark of Demacia-min.png" data-full="images/Galio, Bulwark of Demacia.png"></ol>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script.js" defer></script>
+</body>
+</html>

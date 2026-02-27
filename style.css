@@ -25,7 +25,10 @@ nav{
     backdrop-filter: blur(4px);
 }
 .nav-left {
-  flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 30px;      /* slightly tighter than 20 */
+    margin-left: 60px;
 }
 .nav-links{
     flex: 1;
@@ -46,10 +49,16 @@ nav{
     content: '';
     width: 0%;
     height: 2px;
-    background: #C89B3C;
-    display: block;
+    background: #c89c3c;
+    display: flex;
     margin: auto;
     transition: 0.5s;
+    background: linear-gradient(
+    to right,
+    transparent,
+    #c89c3c,
+    transparent
+  );
 }
 .nav-links ul li:hover::after{
     width: 100%;
@@ -65,15 +74,246 @@ nav{
     font-size: 130px;
 }
 
+.nav-select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  height: 38px;
+  padding: 0 42px 0 14px;
+  border-radius: 10px;
+
+  color: #fff;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, transform 0.12s ease;
+
+  /* 👇 Proper arrow */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='10' viewBox='0 0 24 24' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+}
+
+/* custom chevron */
+.nav-item{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-item::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #C89B3C;
+    display: flex;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-select:hover{
+  background-color: rgba(255,255,255,0.10);
+  border-color: rgba(200,155,60,0.55);
+}
+
+.nav-select:focus{
+  outline: none;
+  border-color: rgba(200,155,60,0.9);
+  box-shadow: 0 0 0 3px rgba(200,155,60,0.18);
+}
+
+/* dropdown list (browser-dependent, but helps where supported) */
+.nav-select option{
+  color: #111;
+}
+
+/* your label uses sr-only but sr-only isn't defined in your css */
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.home-hero{
+  min-height: 52vh;
+  padding-top: 110px; /* clears fixed nav (nav is fixed) */
+  padding-bottom: 34px;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-hero-inner{
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-title{
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.home-subtitle{
+  opacity: 0.9;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  width: min(780px, 95%);
+  margin: 0 auto 18px auto;
+}
+
+.home-cta-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.home-cta{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 10px;
+
+  color: #5c5c5c;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.63);
+  border: 1px solid rgba(255,255,255,0.14);
+  transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+.home-cta:hover{
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(200,155,60,0.55);
+  transform: translateY(-1px);
+}
+
+.home-cta.primary{
+  border-color: rgba(44, 44, 44, 0.75);
+  background: rgba(131, 131, 131, 0.212);
+}
+
+/* Set grid */
+.set-grid-wrap{
+  padding: 26px 0 34px 0;
+  background: linear-gradient(#070a14, #060816);
+}
+
+.set-grid{
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.set-tile{
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  min-height: 150px;
+  transform: translateY(0);
+  transition: transform 0.14s ease, border-color 0.14s ease;
+}
+
+.set-tile:hover{
+  transform: translateY(-3px);
+  border-color: #c89b3c8c;
+}
+
+.set-tile-bg{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05) contrast(1.05);
+  transform: scale(1.05);
+}
+
+.set-tile::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(4,9,30,0.92),
+    rgba(4,9,30,0.55),
+    rgba(4,9,30,0.25)
+  );
+}
+
+.set-tile-content{
+  position: relative;
+  padding: 14px 14px;
+  display: grid;
+  gap: 6px;
+}
+
+.set-code{
+  display: inline-flex;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.288);
+  border: 1px solid rgba(255, 255, 255, 0.767);
+  color: #000000dc;
+}
+
+.set-name{
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.set-meta{
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.home-footer{
+  padding: 18px 0 24px 0;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.95rem;
+  background: #22222293;
+}
+
+.home-footer code{
+  background: rgba(92, 92, 92, 0.521);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
 /*------------Card Display-------------*/
 
-.whitemain{
+.cardlistmain{
     width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
-.whitemain h1{
+.cardlistmain h1{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
     background-attachment: fixed;
     background-position: center;
@@ -87,7 +327,7 @@ nav{
     text-align: center;
     font-size: 100px;
 }
-.white{
+.cardlist{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -97,285 +337,17 @@ nav{
     text-align: center;
     padding-top: 50px;
 }
-.white ol{
+.cardlist ol{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-.white img{
+.cardlist img{
     width: 280px;
 }
-.bluemain{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.bluemain h1{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    width: 100%;
-    color: white;
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 100px;
-}
-.blue-head{
-    color: white;
-    text-align: center;
-    font-size: 100px;
-}
-.blue{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.blue ol{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.blue img{
-    width: 380px;
-}
-.blackmain{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.blackmain h1{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    width: 100%;
-    color: white;
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 100px;
-}
-.black-head{
-    color: white;
-    text-align: center;
-    font-size: 100px;
-}
-.black{
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.black ol{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.black img{
-    width: 380px;
-}
-.redmain{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.redmain h1{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    width: 100%;
-    color: white;
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 100px;
-}
-.red-head{
-    color: white;
-    text-align: center;
-    font-size: 100px;
-}
-.red{
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.red ol{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.red img{
-    width: 380px;
-}
-.greenmain{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.greenmain h1{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    width: 100%;
-    color: white;
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 100px;
-}
-.green-head{
-    color: white;
-    text-align: center;
-    font-size: 100px;
-}
-.green{
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.green ol{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.green img{
-    width: 380px;
-}
-.multimain{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.multimain h1{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    width: 100%;
-    color: white;
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 100px;
-}
-.multi-head{
-    color: white;
-    text-align: center;
-    font-size: 100px;
-}
-.multi{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.multi ol{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.multi img{
-    width: 380px;
-}
-.lessmain{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.lessmain h1{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    width: 100%;
-    color: white;
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 100px;
-}
-.less-head{
-    color: white;
-    text-align: center;
-    font-size: 100px;
-}
-.less{
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.less ol{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.less img{
-    width: 380px;
-}
-
 
 /*--------Two Sided Cards--------*/
-
-
-
 
 .double {
     position: absolute;
@@ -805,32 +777,32 @@ img { max-width: 100%; height: auto; } /* safety */
   }
 
   /* Grid: switch to responsive grid instead of long row */
-  .white {
+  .cardlist {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 10px;
     justify-items: center;
   }
 
-  .white ol {
+  .cardlist ol {
     width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .white ol img {
+  .cardlist ol img {
     width: 100%;
     border-radius: 10px;
     display: block;
   }
 
   /* Double cards: ensure both images don’t blow up layout */
-  .white ol.double {
+  .cardlist ol.double {
     position: relative;
   }
 
-  .white ol.double .image-hover {
+  .cardlist ol.double .image-hover {
     display: none; /* hover doesn’t exist on mobile */
   }
 
@@ -948,4 +920,145 @@ img { max-width: 100%; height: auto; } /* safety */
   .bigheader {
     font-size: 1.6rem;
   }
+}
+
+.home-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+.home-link:hover{
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(200,155,60,0.55);
+  transform: translateY(-1px);
+}
+
+.home-link:focus-visible{
+  outline: 2px solid rgba(200,155,60,0.9);
+  outline-offset: 2px;
+}
+
+.home-icon{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  opacity: 0.95;
+}
+
+.nav-dropdown{
+  position: relative;
+}
+
+/* Button (looks like a nav control) */
+.nav-dropdown-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 10px;
+
+  color: #fff;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background 0.12s ease, border-color 0.12s ease, transform 0.12s ease;
+}
+
+.nav-dropdown-btn:hover{
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(200,155,60,0.55);
+  transform: translateY(-1px);
+}
+
+.nav-dropdown-btn:focus-visible{
+  outline: 2px solid rgba(200,155,60,0.9);
+  outline-offset: 2px;
+}
+
+/* caret */
+.nav-dropdown-caret{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-right: 2px solid rgba(255,255,255,0.85);
+  border-bottom: 2px solid rgba(255,255,255,0.85);
+  transform: rotate(45deg);
+  margin-top: -2px;
+}
+
+/* Menu panel */
+.nav-dropdown-menu{
+  position: absolute;
+  right: 0;
+  top: 100%;
+
+  min-width: 200px;
+  padding: 8px;
+
+  border-radius: 12px;
+  background: rgba(4,9,30,0.95);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  display: none;
+  z-index: 2000;
+
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+}
+
+.nav-dropdown-menu.open{
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Items */
+.nav-dropdown-item{
+  width: 100%;
+  text-align: left;
+
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  background: transparent;
+  border: none;
+  color: #fff;
+
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.nav-dropdown-item:hover,
+.nav-dropdown-item:focus-visible{
+  background: rgba(200,155,60,0.18);
+  outline: none;
+}
+
+.nav-dropdown-item.active{
+  background: rgba(200,155,60,0.28);
 }

@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Summoners Rift</title>
+    <title>Card Sets Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-
 
 <div id="cardModal" class="modal">
     <div class="modal-content">
@@ -67,1025 +65,106 @@
     </div>
 </div>
 
+<script src="script.js" defer></script>
 
-
-<script>
-document.addEventListener("DOMContentLoaded", async function () {
-
-  /* =============================
-     LOAD CardInfo.txt -> DATABASE
-     CardInfo.txt is TAB-separated.
-     Expected columns:
-     0  frontName
-     1  frontMana
-     2  frontType
-     3  frontText
-     4  frontPower
-     5  frontToughness
-     6  frontFlavor (optional)
-     7  backName (optional)
-     8  backMana (optional)
-     9  backType (optional)
-     10 backText (optional)
-     11 backPower (optional)
-     12 backToughness (optional)
-     13 backFlavor (optional)
-  ============================== */
-
-  async function loadCardDatabaseFromTxt(url = "CardInfo.txt") {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
-
-    const raw = await res.text();
-
-    // Split into lines, ignore blanks
-    const lines = raw
-      .split(/\r?\n/)
-      .map(l => l.trimEnd())
-      .filter(l => l.trim().length > 0);
-
-    const db = {};
-
-    for (const line of lines) {
-      // Tabs are the delimiter in your file
-      const cols = line.split("\t");
-
-      const frontName = (cols[0] || "").trim();
-      if (!frontName) continue;
-
-      const frontMana = (cols[1] || "").trim();
-      const frontType = (cols[2] || "").trim();
-      const frontText = (cols[3] || "").trim();
-      const frontPower = (cols[4] || "").trim();
-      const frontToughness = (cols[5] || "").trim();
-      const frontFlavor = (cols[6] || "").trim();
-
-      const backName = (cols[7] || "").trim();
-      const backMana = (cols[8] || "").trim();
-      const backType = (cols[9] || "").trim();
-      const backText = (cols[10] || "").trim();
-      const backPower = (cols[11] || "").trim();
-      const backToughness = (cols[12] || "").trim();
-      const backFlavor = (cols[13] || "").trim();
-
-      db[normalizeCardKey(frontName)] = {
-        front: {
-          name: frontName,
-          mana: frontMana,
-          type: frontType,
-          text: frontText,
-          pt: (frontPower && frontToughness) ? `${frontPower}/${frontToughness}` : "",
-          flavor: frontFlavor
-        },
-        back: backName ? {
-          name: backName,
-          mana: backMana,
-          type: backType,
-          text: backText,
-          pt: (backPower && backToughness) ? `${backPower}/${backToughness}` : "",
-          flavor: backFlavor
-        } : null
-      };
-    }
-
-    return db;
-  }
-
-  let cardDatabase = {};
-  try {
-    cardDatabase = await loadCardDatabaseFromTxt("CardInfo.txt");
-  } catch (err) {
-    console.error(err);
-  }
-
-  /* =============================
-     MODAL LOGIC
-  ============================== */
-
-  const modal = document.getElementById("cardModal");
-  const modalFront = document.getElementById("modalFront");
-  const modalBack = document.getElementById("modalBack");
-  const card3d = document.getElementById("card3d");
-
-  const modalTitle = document.getElementById("cardTitle");
-  const modalMana = document.getElementById("cardMana");
-  const modalType = document.getElementById("cardType");
-  const modalText = document.getElementById("cardText");
-  const modalPowerToughness = document.getElementById("cardPowerToughness");
-  const modalFlavor = document.getElementById("cardFlavor");
-  const oraclePanel = document.getElementById("oraclePanel");
-  const oracleDeckLink = document.getElementById("oracleDeckLink");
-  const oracleTextBox = document.getElementById("oracleText");
-
-  const closeBtn = document.querySelector(".close");
-  const flipButton = document.getElementById("flipButton");
-  const modalContent = document.querySelector(".modal-content");
-  function applyColorGlowForFace(faceData) {
-  if (!modalContent || !faceData) return;
-
-
-  const manaRaw = (faceData.mana || "").toUpperCase();
-  const order = [];
-  const seen = new Set();
-
-  function addColor(c) {
-    if (!"WUBRG".includes(c)) return;
-    if (seen.has(c)) return;
-    seen.add(c);
-    order.push(c);
-  }
-
-  // Supports both:
-  //  "2WU"
-  //  "{2}{W}{U}"
-  let tokens;
-
-  if (manaRaw.includes("{")) {
-    tokens = manaRaw.match(/\{([^}]+)\}/g)?.map(t => t.replace(/[{}]/g, "")) || [];
-  } else {
-    tokens = manaRaw.match(/\d+|[A-Z]/g) || [];
-  }
-
-  for (const t of tokens) {
-    if (/^[WUBRG]$/.test(t)) {
-      addColor(t);
-    } else if (/^[WUBRG]+$/.test(t)) {
-      for (const ch of t) addColor(ch);
-    }
-  }
-
-  const glow = {
-    W: "rgba(245, 245, 235, 0.55)",
-    U: "rgba(80, 170, 255, 0.55)",
-    B: "rgba(120, 90, 170, 0.55)",
-    R: "rgba(255, 90, 80, 0.55)",
-    G: "rgba(90, 210, 120, 0.55)"
-  };
-
-  if (order.length === 0) {
-  // Colorless / no WUBRG in cost -> light grey glow like generic mana
-  modalContent.classList.add("has-glow");
-  modalContent.style.setProperty("--glow-bg", "rgba(210, 210, 210, 0.45)");
-  return;
-}
-
-  const bg = (order.length === 1)
-    ? glow[order[0]]
-    : `linear-gradient(90deg, ${order.map(c => glow[c]).join(", ")})`;
-
-  modalContent.classList.add("has-glow");
-  modalContent.style.setProperty("--glow-bg", bg);
-}
-
-  let hasBackImage = false;
-  let currentFace = "front"; // "front" | "back"
-  let currentCardEntry = null;
-
-  function renderFace(face) {
-    if (!currentCardEntry) return;
-
-    const data = currentCardEntry[face];
-    if (!data) return;
-
-    modalTitle.textContent = data.name || "";
-    modalMana.innerHTML = "";
-
-const SPRITE_STEP_X = 100;   // pitch between icons (not 100)
-const SPRITE_STEP_Y = 100;
-
-const manaRaw = (data.mana || "").trim();
-
-// map ONLY the symbols you actually use from CardInfo
-// grid is 10 columns wide:
-// row 0: 0-9
-// row 1: 10-19
-// row 2: 20, X, Y, Z, W, U, B, R, G, (snow/other)
-function symbolToGrid(token) {
-  // numbers
-  if (/^\d+$/.test(token)) {
-    const n = parseInt(token, 10);
-    if (n >= 0 && n <= 9) return { row: 0, col: n };
-    if (n >= 10 && n <= 19) return { row: 1, col: n - 10 };
-    if (n === 20) return { row: 2, col: 0 };
-    return null;
-  }
-
-  const t = token.toUpperCase();
-  const map = {
-    T: { row: 5, col: 0 },
-    W: { row: 2, col: 4 },
-    U: { row: 2, col: 5 },
-    B: { row: 2, col: 6 },
-    R: { row: 2, col: 7 },
-    G: { row: 2, col: 8 },
-    X: { row: 2, col: 1 },
-    Y: { row: 2, col: 2 },
-    Z: { row: 2, col: 3 },
-  };
-
-  return map[t] || null;
-}
-
-// support either "{2}{W}{U}" or "2WU"
-let tokens = [];
-if (manaRaw.includes("{") && manaRaw.includes("}")) {
-  tokens = manaRaw.match(/\{([^}]+)\}/g)?.map(t => t.replace(/[{}]/g, "").trim()) || [];
-} else {
-  tokens = manaRaw.match(/\d+|[A-Za-z]/g) || [];
-}
-
-for (const t of tokens) {
-  const pos = symbolToGrid(t);
-
-  if (!pos) {
-    // show raw token if not mapped (so nothing silently disappears)
-    const txt = document.createElement("span");
-    txt.textContent = t;
-    txt.style.marginLeft = "6px";
-    modalMana.appendChild(txt);
-    continue;
-  }
-
-  const el = document.createElement("span");
-  el.className = "mana-symbol";
-  const GRID_COLS = 10;
-  const GRID_ROWS = 7;
-
-  const xPercent = (pos.col / (GRID_COLS - 1)) * 100;
-  const yPercent = (pos.row / (GRID_ROWS - 1)) * 100;
-
-  el.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
-  modalMana.appendChild(el);
-}
-    modalType.textContent = data.type || "";
-    // Your CSS uses white-space: pre-line; so textContent is perfect
-
-const rulesRaw = (data.text || "").replace(/\\n/g, "\n");
-
-// token -> icon span HTML
-function iconHTML(token) {
-  const pos = symbolToGrid(token);
-  if (!pos) return null;
-
-  const GRID_COLS = 10;
-  const GRID_ROWS = 7;
-  const xPercent = (pos.col / (GRID_COLS - 1)) * 100;
-  const yPercent = (pos.row / (GRID_ROWS - 1)) * 100;
-
-  return `<span class="mana-symbol" style="background-position:${xPercent}% ${yPercent}%"></span>`;
-}
-
-function escapeHTML(s) {
-  return s.replace(/[&<>"']/g, (ch) => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#39;"
-  }[ch]));
-}
-
-// Replaces mana/tap chunks like: "1UB", "WU", "T", "10RG"
-// when NOT inside a larger word. Works before ":" "," space, end-of-line, etc.
-function renderRulesWithIcons(text) {
-  let out = "";
-  let i = 0;
-
-  // Matches a mana/tap chunk ONLY if followed by : or ,
-  // Examples matched:
-  //   1UB:
-  //   WU:
-  //   1,
-  //   T:
-  //   10RG,
-  const re = /(\d{1,2}[WUBRGT]+|[WUBRGT]+)(?=$|[^A-Za-z0-9_])|(\d{1,2})(?=[:,])/g;
-
-  while (true) {
-    const m = re.exec(text);
-    if (!m) break;
-
-    const token = m[1] || m[2];
-    const start = m.index;
-    const end = start + token.length;
-
-    const prevChar = start > 0 ? text[start - 1] : "";
-
-    // prevent replacing inside words like "Bounty"
-    const leftOK = start === 0 || !/[A-Za-z0-9_]/.test(prevChar);
-    if (!leftOK) continue;
-
-    out += escapeHTML(text.slice(i, start));
-
-    let rest = token;
-
-    // leading number (optional)
-    const numMatch = rest.match(/^\d{1,2}/);
-    if (numMatch) {
-      const num = numMatch[0];
-      const icon = iconHTML(num);
-      out += icon ? icon : escapeHTML(num);
-      rest = rest.slice(num.length);
-    }
-
-    // remaining letters
-    for (const ch of rest) {
-      const icon = iconHTML(ch);
-      out += icon ? icon : escapeHTML(ch);
-    }
-
-    i = end;
-  }
-
-  out += escapeHTML(text.slice(i));
-  return out.replace(/\n/g, "<br>");
-}
-
-modalText.innerHTML = renderRulesWithIcons(rulesRaw);
-    modalPowerToughness.textContent = data.pt || "";
-    modalFlavor.textContent = data.flavor || "";
-    applyColorGlowForFace(data);
-  }
-  
-
-  function clearInfo(message = "") {
-    modalTitle.textContent = "";
-    modalMana.textContent = "";
-    modalType.textContent = "";
-    modalText.textContent = message;
-    modalPowerToughness.textContent = "";
-    modalFlavor.textContent = "";
-  }
-
-  const prevBtn = document.getElementById("prevCard");
-const nextBtn = document.getElementById("nextCard");
-
-const cardContainers = Array.from(document.querySelectorAll(".white ol"));
-let currentIndex = -1;
-
-function normalizeCardKey(s) {
-  return (s || "")
-    .normalize("NFKC")
-    .replace(/[’‘‛′`]/g, "'")   // all common apostrophe-like chars -> '
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function getCardNameFromContainer(container) {
-  const mainImage = container.querySelector(".image_main") || container.querySelector("img");
-  if (!mainImage) return "";
-
-  // Prefer full image path
-  let fullPath = mainImage.dataset.full || mainImage.getAttribute("src") || "";
-  let filename = fullPath.split("/").pop() || "";
-
-  filename = decodeURIComponent(filename);
-
-  return normalizeCardKey(filename.replace(/\.png$/i, ""));
-}
-
-const orderedNames = cardContainers.map(getCardNameFromContainer);
-
-function updateNavButtons() {
-  if (currentIndex < 0) return;
-
-  const prevIndex = (currentIndex - 1 + cardContainers.length) % cardContainers.length;
-  const nextIndex = (currentIndex + 1) % cardContainers.length;
-
-  prevBtn.textContent = `← ${orderedNames[prevIndex]}`;
-  nextBtn.textContent = `${orderedNames[nextIndex]} →`;
-}
-
-function openCardAtIndex(idx) {
-  currentIndex = idx;
-
-  modal.style.display = "flex";
-  document.body.classList.add("modal-open");
-
-  card3d.classList.remove("flipped");
-  currentFace = "front";
-
-  const container = cardContainers[idx];
-
-  const mainImage = container.querySelector(".image_main") || container.querySelector("img");
-  const hoverImage = container.querySelector(".image-hover");
-
-  const frontSrc = mainImage ? (mainImage.dataset.full || mainImage.getAttribute("src")) : "";
-  const backSrc  = hoverImage ? (hoverImage.dataset.full || hoverImage.getAttribute("src")) : null;
-
-  modalFront.src = frontSrc;
-  modalBack.src = backSrc ? backSrc : "";
-
-  hasBackImage = !!backSrc;
-  flipButton.style.display = hasBackImage ? "block" : "none";
-
-  const name = orderedNames[idx];
-  currentCardEntry = cardDatabase[normalizeCardKey(name)] || null;
-
-const cardKey = normalizeCardKey(name);
-const linksSet = deckLinksByCardKey.get(cardKey);
-const links = linksSet ? Array.from(linksSet) : [];
-
-if (links.length === 0) {
-  oraclePanel.style.display = "none";
-} else {
-  oraclePanel.style.display = "block";
-
-  // If a card appears in multiple decklists, use the first link.
-  // (If you want a dropdown/list later, say so.)
-  oracleDeckLink.href = links[0];
-  oracleDeckLink.textContent = "View decklist on Archidekt";
-}
-
-oracleTextBox.textContent = ""; // later we’ll fill this with oracle text
-
-  if (!currentCardEntry) {
-    clearInfo("No card data found.");
-  } else {
-    renderFace("front");
-    applyColorGlowForFace(currentCardEntry.front);
-  }
-
-  updateNavButtons();
-}
-
-const searchInput = document.getElementById("cardSearch");
-const searchCount = document.getElementById("searchCount");
-
-// =============================
-// MANUAL DECKLIST FILE NAMES
-// =============================
-const DECKLIST_FILES = [
-  "Taliyah, Rubble Rouser.txt",
-  "Zilean, Keeper of Icathia.txt"
-  // Add more here
-];
-
-function normalizeForCompare(s) {
-  return (s || "")
-    .normalize("NFKC")
-    .replace(/[’‘‛′`]/g, "'")
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
-}
-
-function escapeRegex(s) {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-// Match card name as a "whole token-ish" thing, not as part of another word.
-// Example: "Annie" won't match "Annie's" perfectly, but it WILL match "Annie, Cursed..."
-function deckTextContainsCard(deckTextNorm, cardName) {
-  const n = normalizeForCompare(cardName);
-  if (!n) return false;
-
-  // boundaries: start OR non-alnum before, and end OR non-alnum after
-  const re = new RegExp(`(^|[^a-z0-9])${escapeRegex(n)}([^a-z0-9]|$)`, "i");
-  return re.test(deckTextNorm);
-}
-
-// --- Color parsing helpers (from mana cost) ---
-const COLOR_WORD_TO_LETTER = {
-  white: "W", blue: "U", black: "B", red: "R", green: "G",
-  w: "W", u: "U", b: "B", r: "R", g: "G",
-};
-
-function extractColorsFromMana(mana) {
-  const manaRaw = (mana || "").toUpperCase();
-  const colors = new Set();
-
-  // supports "{2}{W}{U}" OR "2WU"
-  let tokens = [];
-  if (manaRaw.includes("{")) {
-    tokens = manaRaw.match(/\{([^}]+)\}/g)?.map(t => t.replace(/[{}]/g, "")) || [];
-  } else {
-    tokens = manaRaw.match(/\d+|[A-Z]/g) || [];
-  }
-
-  for (const t of tokens) {
-    if (/^[WUBRG]$/.test(t)) colors.add(t);
-    else if (/^[WUBRG]+$/.test(t)) for (const ch of t) colors.add(ch);
-  }
-  return colors;
-}
-
-const deckLinksByCardKey = new Map(); // normalized card name -> Set(links)
-
-// Build base searchable index (we’ll fill inDeck after decklists load)
-const searchable = cardContainers.map((container, idx) => {
-  const name = orderedNames[idx] || "";
-  const key = normalizeCardKey(name);
-  const entry = cardDatabase[key] || null;
-  const front = entry?.front || {};
-
-  return {
-    container,
-    name,
-    nameKey: normalizeForCompare(name),
-    typeLine: (front.type || "").toLowerCase(),
-    colorSet: extractColorsFromMana(front.mana || ""),
-    inDeck: false, // will be set after decklists load
-  };
-});
-
-function updateCount(visible, total) {
-  if (!searchCount) return;
-  searchCount.textContent = `${visible} / ${total}`;
-}
-
-// Tokenize query like: 't:creature c:white deck annie'
-function parseQuery(q) {
-  const raw = (q || "").trim();
-  if (!raw) return { free: [], types: [], colorsAny: null, deckOnly: false };
-
-  const parts = raw.split(/\s+/).filter(Boolean);
-
-  const free = [];
-  const types = [];
-  let colorsAny = null; // Set; match if card has ANY of these
-  let deckOnly = false;
-
-  for (const p of parts) {
-    const lower = p.toLowerCase();
-
-    if (lower === "deck" || lower === "in:deck" || lower === "is:deck") {
-      deckOnly = true;
-      continue;
-    }
-
-    if (lower.startsWith("t:")) {
-      const t = lower.slice(2).trim();
-      if (t) types.push(t);
-      continue;
-    }
-
-    if (lower.startsWith("c:")) {
-      const rawC = lower.slice(2).trim();
-      if (!rawC) continue;
-
-      const chunks = rawC.split(",").map(s => s.trim()).filter(Boolean);
-      const set = new Set();
-
-      for (const ch of chunks) {
-        if (/^[wubrg]+$/.test(ch)) {
-          for (const letter of ch) set.add(COLOR_WORD_TO_LETTER[letter]);
-        } else {
-          const mapped = COLOR_WORD_TO_LETTER[ch];
-          if (mapped) set.add(mapped);
-        }
-      }
-
-      colorsAny = set.size ? set : colorsAny;
-      continue;
-    }
-
-    free.push(lower);
-  }
-
-  return { free, types, colorsAny, deckOnly };
-}
-
-function matchesQuery(card, parsed) {
-  if (parsed.deckOnly && !card.inDeck) return false;
-
-  for (const t of parsed.types) {
-    if (!card.typeLine.includes(t)) return false;
-  }
-
-  if (parsed.colorsAny && parsed.colorsAny.size) {
-    let ok = false;
-    for (const c of parsed.colorsAny) {
-      if (card.colorSet.has(c)) { ok = true; break; }
-    }
-    if (!ok) return false;
-  }
-
-  for (const term of parsed.free) {
-    if (!card.nameKey.includes(term)) return false;
-  }
-
-  return true;
-}
-
-function applyFilter(q) {
-  const parsed = parseQuery(q);
-  let visible = 0;
-
-  for (const item of searchable) {
-    const match = matchesQuery(item, parsed);
-    item.container.style.display = match ? "" : "none";
-    if (match) visible++;
-  }
-
-  updateCount(visible, searchable.length);
-}
-
-// Load decklists and mark inDeck
-async function loadDecklistsAndMarkCards() {
-  if (!DECKLIST_FILES.length) return;
-
-  // clear previous
-  deckLinksByCardKey.clear();
-  for (const item of searchable) item.inDeck = false;
-
-  const urlRegex = /https?:\/\/\S+/i;
-
-  const deckTexts = await Promise.all(
-    DECKLIST_FILES.map(async (file) => {
-      try {
-        const r = await fetch(`decklist/${encodeURI(file)}`, { cache: "no-store" });
-        if (!r.ok) return { file, text: "" };
-        return { file, text: await r.text() };
-      } catch {
-        return { file, text: "" };
-      }
-    })
-  );
-
-  for (const deck of deckTexts) {
-    const raw = deck.text || "";
-    const lines = raw.split(/\r?\n/);
-
-    // Find the first URL near the top (first ~10 lines)
-    let deckLink = "";
-    for (let i = 0; i < Math.min(lines.length, 10); i++) {
-      const m = lines[i].match(urlRegex);
-      if (m) { deckLink = m[0].trim(); break; }
-    }
-
-    const deckNorm = normalizeForCompare(raw);
-
-    // Mark cards that appear in THIS decklist and attach link (if present)
-    for (const item of searchable) {
-      if (deckTextContainsCard(deckNorm, item.name)) {
-        item.inDeck = true;
-
-        if (deckLink) {
-          const key = normalizeCardKey(item.name);
-          if (!deckLinksByCardKey.has(key)) deckLinksByCardKey.set(key, new Set());
-          deckLinksByCardKey.get(key).add(deckLink);
-        }
-      }
-    }
-  }
-}
-
-// init
-if (searchInput) {
-  updateCount(searchable.length, searchable.length);
-
-  searchInput.addEventListener("input", (e) => {
-    applyFilter(e.target.value);
-  });
-
-  searchInput.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      searchInput.value = "";
-      applyFilter("");
-      searchInput.blur();
-    }
-  });
-}
-
-// Run deck scan, then re-apply current filter
-loadDecklistsAndMarkCards().then(() => {
-  applyFilter(searchInput ? searchInput.value : "");
-});
-
-cardContainers.forEach((container, idx) => {
-  container.style.cursor = "pointer";
-  container.addEventListener("click", () => openCardAtIndex(idx));
-});
-
-prevBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  const prevIndex = (currentIndex - 1 + cardContainers.length) % cardContainers.length;
-  openCardAtIndex(prevIndex);
-});
-
-nextBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  const nextIndex = (currentIndex + 1) % cardContainers.length;
-  openCardAtIndex(nextIndex);
-});
-
-  flipButton.addEventListener("click", function () {
-    if (!hasBackImage || !currentCardEntry || !currentCardEntry.back) return;
-
-    card3d.classList.toggle("flipped");
-    currentFace = card3d.classList.contains("flipped") ? "back" : "front";
-    renderFace(currentFace);
-    applyColorGlowForFace(currentCardEntry[currentFace]);
-  });
-
-  closeBtn.onclick = () => {
-    modal.style.display = "none";
-    document.body.classList.remove("modal-open");
-  };
-
-  modal.onclick = (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-      document.body.classList.remove("modal-open");
-    }
-  };
-document.addEventListener("keydown", (e) => {
-  if (!document.body.classList.contains("modal-open")) return;
-
-  // prevent page scroll on these keys
-  if (["ArrowLeft", "ArrowRight", "Escape", " "].includes(e.key)) {
-    e.preventDefault();
-  }
-
-  if (e.key === "ArrowLeft") {
-    const prevIndex = (currentIndex - 1 + cardContainers.length) % cardContainers.length;
-    openCardAtIndex(prevIndex);
-
-  } else if (e.key === "ArrowRight") {
-    const nextIndex = (currentIndex + 1) % cardContainers.length;
-    openCardAtIndex(nextIndex);
-
-  } else if (e.key === "Escape") {
-    modal.style.display = "none";
-    document.body.classList.remove("modal-open");
-
-  } else if (e.key === " " || e.code === "Space") {
-    // Spacebar flips if there IS a back
-    if (!hasBackImage || !currentCardEntry || !currentCardEntry.back) return;
-    card3d.classList.toggle("flipped");
-    currentFace = card3d.classList.contains("flipped") ? "back" : "front";
-    renderFace(currentFace);
-  }
-});
-});
-</script>
-<body>
+<body data-cardinfo="CardInfo_DLK.txt">
 <section class="header">
     <nav>
       <div class="nav-left">
+        <a class="home-link" href="index.html" aria-label="Home" title="Home">
+          <!-- inline SVG so you don't need an icon library -->
+          <svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 3.2 2.8 11h2.1v9.8h6.1v-6h2v6h6.1V11h2.1L12 3.2z"/>
+          </svg>
+        </a>
                 <input id="cardSearch" type="text" placeholder="Search card name or syntax using c: t: deck..." autocomplete="off" />
             </div>
         <div class="nav-links">
             <ul>
-                <!-- <li><a href="index.html">CHAMPIONS</a></li>
-                <li><a href="creatures.html">CREATURES</a></li>
-                <li><a href="planeswalkers.html">PLANESWALKERS</a></li>
-                <li><a href="artifacts.html">ARTIFACTS</a></li>
-                <li><a href="enchantments.html">ENCHANTMENTS</a></li>
-                <li><a href="instants.html">INSTANTS</a></li>
-                <li><a href="sorceries.html">SORCERIES</a></li>
-                <li><a href="lands.html">LANDS</a></li>
-                <li><a href="battles.html">BATTLES</a></li> -->
+              <li class="nav-item nav-dropdown">
+                <button
+                  id="setMenuBtn"
+                  class="nav-dropdown-btn"
+                  type="button"
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                >
+                  Choose a set…
+                  <span class="nav-dropdown-caret" aria-hidden="true"></span>
+                </button>
+
+                <div id="setMenu" class="nav-dropdown-menu" role="menu" aria-labelledby="setMenuBtn">
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="smr.html">SMR — Summoners Rift</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="mhr.html">MHR — Monster Hunter</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="dlk.html">DLK — Deadlock</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="thk.html">THK — Hollow Knight</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="ovw.html">OVW — Overwatch</button>
+                </div>
+              </li>
             </ul>
         </div>
     </nav>
-    <h1 class="bigheader">CHAMPIONS</h1>
 </section>
 
 
-<section class="cardlist">
-
-    <div class="cards">
-        <div class="whitemain">
-            <div class="white">
-              <ol><img loading="lazy" decoding="async" src="thumbs/Jhin Cold Open-min.png" data-full="images/Jhin, Cold Open.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Garen Might of Demacia-min.png" data-full="images/Garen, Might of Demacia.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Kayle Angel of Punishment-min.png" data-full="images/Kayle, Angel of Punishment.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Lucian Grim Purifier-min.png" data-full="images/Lucian, Grim Purifier.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Lux The Last Light-min.png" data-full="images/Lux, The Last Light.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Poppy Hero of Demacia-min.png" data-full="images/Poppy, Hero of Demacia.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Xin-Zhao Redeemed Reckoner-min.png" data-full="images/Xin-Zhao, Redeemed Reckoner.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Alune Sibling of Faith-min.png" data-full="images/Alune, Sibling of Faith.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Anivia The Eternal Frost-min.png" data-full="images/Anivia, The Eternal Frost.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Eggnivia Frozen Over -min.png" data-full="images/Eggnivia Frozen Over .png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Nunu Savior of Winter-min.png" data-full="images/Nunu, Savior of Winter.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Seraphine Song of Hope-min.png" data-full="images/Seraphine, Song of Hope.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Swain Demon Keeper-min.png" data-full="images/Swain, Demon Keeper.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/VelKoz Scion of the Watchers-min.png" data-full="images/Vel’Koz, Scion of the Watchers.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Xerath Cursed by Envy-min.png" data-full="images/Xerath, Cursed by Envy.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Xerath Saikhal Tomb-min.png" data-full="images/Xerath, Saikhal Tomb.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Yuumi Keeper of Book-min.png" data-full="images/Yuumi, Keeper of Book.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Fiddlesticks Whispering Terror-min.png" data-full="images/Fiddlesticks, Whispering Terror.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Karthus Voice of Ruin-min.png" data-full="images/Karthus, Voice of Ruin.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Mordekaiser Immortal Bastion-min.png" data-full="images/Mordekaiser, Immortal Bastion.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Morgana Angel of Redemption-min.png" data-full="images/Morgana, Angel of Redemption.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Nocturne Living Nightmare-min.png" data-full="images/Nocturne, Living Nightmare.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Viego The Ruined King-min.png" data-full="images/Viego, The Ruined King.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/The Ruination-min.png" data-full="images/The Ruination.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Yorick Undead Shepherd-min.png" data-full="images/Yorick, Undead Shepherd.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Brand Searing Pyroclast-min.png" data-full="images/Brand, Searing Pyroclast.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Malphite Roaming Range-min.png" data-full="images/Malphite, Roaming Range.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Olaf Might of Lokfar-min.png" data-full="images/Olaf, Might of Lokfar.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ornn The Living Bellows-min.png" data-full="images/Ornn, The Living Bellows.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Shyvana Guilty by Blood-min.png" data-full="images/Shyvana, Guilty by Blood.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Shyvana Reawoken-min.png" data-full="images/Shyvana, Reawoken.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Tryndamere Frozen Fury-min.png" data-full="images/Tryndamere, Frozen Fury.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ivern Reborn Mystic-min.png" data-full="images/Ivern, Reborn Mystic.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Rammus Rolling Hero-min.png" data-full="images/Rammus, Rolling Hero.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Volibear Aurora of Thunder-min.png" data-full="images/Volibear, Aurora of Thunder.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Zac Indomitable Sludge-min.png" data-full="images/Zac, Indomitable Sludge.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Zyra Nature Given Form-min.png" data-full="images/Zyra, Nature Given Form.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Aatrox Imminent Apocolypse-min.png" data-full="images/Aatrox, Imminent Apocolypse.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ahri Alluring Conjurist-min.png" data-full="images/Ahri, Alluring Conjurist.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Akali Silent Reckoning-min.png" data-full="images/Akali, Silent Reckoning.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Akshan Rogue Sentinel-min.png" data-full="images/Akshan, Rogue Sentinel.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Alistar Unbreakable Vengeance-min.png" data-full="images/Alistar, Unbreakable Vengeance.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ambessa Merciless Wolf-min.png" data-full="images/Ambessa, Merciless Wolf.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Amumu Sad Mummy-min.png" data-full="images/Amumu, Sad Mummy.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Annie Cursed by Kindle-min.png" data-full="images/Annie, Cursed by Kindle.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Aphelios Moons Marksman-min.png" data-full="images/Aphelios, Moons Marksman.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ashe Bow of Freljord-min.png" data-full="images/Ashe, Bow of Freljord.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Aurora Winters  Intrument-min.png" data-full="images/Aurora, Winter’s  Intrument.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Azir Sand Sculptor-min.png" data-full="images/Azir, Sand Sculptor.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/BelVeth Matron of Madness-min.png" data-full="images/Bel’Veth, Matron of Madness.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Shurima the Lavender Sea-min.png" data-full="images/Shurima, the Lavender Sea.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Braum Shield of Freljord-min.png" data-full="images/Braum, Shield of Freljord.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Briar Blood Frenzy-min.png" data-full="images/Briar, Blood Frenzy.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Caitlyn Piltover Peacekeeper-min.png" data-full="images/Caitlyn, Piltover Peacekeeper.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Camille Hextech Tactician-min.png" data-full="images/Camille, Hextech Tactician.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Cassiopeia Serpents Gaze-min.png" data-full="images/Cassiopeia, Serpents Gaze.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/ChoGath Hunger Incarnate-min.png" data-full="images/Cho’Gath, Hunger Incarnate.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Corki Daring Bombardier-min.png" data-full="images/Corki, Daring Bombardier.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Darius Hand of Noxus-min.png" data-full="images/Darius, Hand of Noxus.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Dr. Mundo Mad Practicioner-min.png" data-full="images/Dr. Mundo, Mad Practicioner.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Draven Glorius Gladiator-min.png" data-full="images/Draven, Glorius Gladiator.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ekko Timewinder-min.png" data-full="images/Ekko, Timewinder.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Elise Spider Monarch-min.png" data-full="images/Elise, Spider Monarch.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Evelynn Maiden of Anguish-min.png" data-full="images/Evelynn, Maiden of Anguish.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ezreal Daring Archeoligist-min.png" data-full="images/Ezreal, Daring Archeoligist.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Fiora Honored Duelest-min.png" data-full="images/Fiora, Honored Duelest.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Fizz Playful Prankster-min.png" data-full="images/Fizz, Playful Prankster.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Gangplank Burning Vengeance-min.png" data-full="images/Gangplank, Burning Vengeance.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Gnar Primal Curiosity-min.png" data-full="images/Gnar, Primal Curiosity.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Mega Gnar Enraged Titan-min.png" data-full="images/Mega Gnar, Enraged Titan.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Gragas Bottomless Barrel-min.png" data-full="images/Gragas, Bottomless Barrel.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Graves Destined Outlaw-min.png" data-full="images/Graves, Destined Outlaw.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Gwen Arcane Weaved-min.png" data-full="images/Gwen, Arcane Weaved.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Hecarim Endless Torment-min.png" data-full="images/Hecarim, Endless Torment.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Heimerdinger Obsessed Inventor-min.png" data-full="images/Heimerdinger, Obsessed Inventor.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Hwei Bloody Blend-min.png" data-full="images/Hwei, Bloody Blend.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ice Witch Lissandra-min.png" data-full="images/Ice Witch Lissandra.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Illaoi Truthbearer-min.png" data-full="images/Illaoi, Truthbearer.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Irelia The Blade Dancer-min.png" data-full="images/Irelia, The Blade Dancer.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Jarvan The Fourth-min.png" data-full="images/Jarvan The Fourth.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Jax Grandmaster at Arms-min.png" data-full="images/Jax, Grandmaster at Arms.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Jayce Protector of Today-min.png" data-full="images/Jayce, Protector of Today.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Jayce Returned From Time-min.png" data-full="images/Jayce, Returned From Time.png">
-              </ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Jinx Pow Pow and Fishbones-min.png" data-full="images/Jinx, Pow Pow and Fishbones.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/KaiSa Bound to Ruin-min.png" data-full="images/Kai’Sa, Bound to Ruin.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Kalista Undying Wraith-min.png" data-full="images/Kalista, Undying Wraith.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Karma Mantra Master-min.png" data-full="images/Karma, Mantra Master.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Kassadin Riftwalker-min.png" data-full="images/Kassadin, Riftwalker.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Katarina Sinister Blade-min.png" data-full="images/Katarina, Sinister Blade.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Kayn Shadow Assassin-min.png" data-full="images/Kayn, Shadow Assassin.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Rhaast Form Unbound-min.png" data-full="images/Rhaast, Form Unbound.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Kennen Eye of the Storm-min.png" data-full="images/Kennen, Eye of the Storm.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/KhaZix Ever Adaptive-min.png" data-full="images/Kha’Zix, Ever Adaptive.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Kindred Lamb of Light-min.png" data-full="images/Kindred, Lamb of Light.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Kindred The Black Wolf-min.png" data-full="images/Kindred, The Black Wolf.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Kled The Mountain Admiral-min.png" data-full="images/Kled, The Mountain Admiral.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/KogMaw Looming Feast-min.png" data-full="images/Kog’Maw, Looming Feast.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/KSante Umber Bastion-min.png" data-full="images/K’Sante, Umber Bastion.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/LeBlanc Mirrored Mystery-min.png" data-full="images/LeBlanc, Mirrored Mystery.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Lee Sin Sightless Master-min.png" data-full="images/Lee Sin, Sightless Master.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Lillia Full Bloom-min.png" data-full="images/Lillia, Full Bloom.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Lulu Unknown Mischief-min.png" data-full="images/Lulu, Unknown Mischief.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Malzahar Betrayer of Humanity-min.png" data-full="images/Malzahar, Betrayer of Humanity.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Maokai Eternal Evergreen-min.png" data-full="images/Maokai, Eternal Evergreen.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/The Roots of The Isle-min.png" data-full="images/The Roots of The Isle.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Master Yi of Great Insight-min.png" data-full="images/Master Yi of Great Insight.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Mel Gilded Brilliance-min.png" data-full="images/Mel, Gilded Brilliance.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Milio Gentle Flame-min.png" data-full="images/Milio, Gentle Flame.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Miss Fortune Captain of Tyranny-min.png" data-full="images/Miss Fortune, Captain of Tyranny.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Naafiri Pack of One-min.png" data-full="images/Naafiri, Pack of One.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Naafiri Blade of the Sands-min.png" data-full="images/Naafiri, Blade of the Sands.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Nami Seabound Archon-min.png" data-full="images/Nami, Seabound Archon.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Nasus Ascended Strategist-min.png" data-full="images/Nasus, Ascended Strategist.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Nautilus Sunken Titan-min.png" data-full="images/Nautilus, Sunken Titan.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Neeko Shapesplitter-min.png" data-full="images/Neeko, Shapesplitter.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Nidalee Ixtals Protector-min.png" data-full="images/Nidalee, Ixtal’s Protector.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Jungle Cat Nidalee-min.png" data-full="images/Jungle Cat Nidalee.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Nilah Seven Handed-min.png" data-full="images/Nilah, Seven Handed.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Orianna Manufactured Beauty-min.png" data-full="images/Orianna, Manufactured Beauty.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Pyke Drowned Vengeance-min.png" data-full="images/Pyke, Drowned Vengeance.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Qiyana Ixtals Highness-min.png" data-full="images/Qiyana, Ixtal’s Highness.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Quinn Birds Eye-min.png" data-full="images/Quinn, Birds Eye.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Rakan Swaying Songbird-min.png" data-full="images/Rakan, Swaying Songbird.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Raum Demon of Secrets-min.png" data-full="images/Raum, Demon of Secrets.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/RekSai From Below-min.png" data-full="images/Rek’Sai, From Below.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Rell The Price of Power-min.png" data-full="images/Rell, The Price of Power.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Renata Glasc Chem Baron-min.png" data-full="images/Renata Glasc, Chem Baron.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Renekton Blood of Shurima-min.png" data-full="images/Renekton, Blood of Shurima.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Rengar Primal Hunter-min.png" data-full="images/Rengar, Primal Hunter.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Riven Noxian General-min.png" data-full="images/Riven, Noxian General.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Riven Ionia Redeemed-min.png" data-full="images/Riven, Ionia Redeemed.png">
-              </ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Rumble Junkyard Menace-min.png" data-full="images/Rumble, Junkyard Menace.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/-min.png" data-full="images/">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ryze Tethered to Power-min.png" data-full="images/Ryze, Tethered to Power.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Samira Stylish Daredevil-min.png" data-full="images/Samira, Stylish Daredevil.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Sejuani Sister of Battle-min.png" data-full="images/Sejuani, Sister of Battle.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Senna The Redeemer-min.png" data-full="images/Senna, The Redeemer.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Sett Savage Beating-min.png" data-full="images/Sett, Savage Beating.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Shaco Deaths Jester-min.png" data-full="images/Shaco, Death’s Jester.png"></ol>
-
-              <ol class="double">
-                <img class="image_main" loading="lazy" decoding="async" src="thumbs/Shen Seer of Night-min.png" data-full="images/Shen, Seer of Night.png">
-                <img class="image-hover" loading="lazy" decoding="async" src="thumbs/Spirit Sword-min.png" data-full="images/Spirit Sword.png">
-              </ol>
-
-              <ol><img loading="lazy" decoding="async" src="thumbs/Singed Living Contagion-min.png" data-full="images/Singed, Living Contagion.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Sion Ressurected Rage-min.png" data-full="images/Sion, Ressurected Rage.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Sivir Fortune Hunter-min.png" data-full="images/Sivir, Fortune Hunter.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Skarner Ixtals Tremor-min.png" data-full="images/Skarner, Ixtal’s Tremor.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Smolder Dragon in Training-min.png" data-full="images/Smolder, Dragon in Training.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Sona Silent Song-min.png" data-full="images/Sona, Silent Song.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Soraka the Starchild-min.png" data-full="images/Soraka, the Starchild.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Sylas Bane of Demacia-min.png" data-full="images/Sylas, Bane of Demacia.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Syndra Infinite Potential-min.png" data-full="images/Syndra, Infinite Potential.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Tahm Kench Demon of Gluttony-min.png" data-full="images/Tahm Kench, Demon of Gluttony.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Taliyah Rubble Rouser-min.png" data-full="images/Taliyah, Rubble Rouser.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Talon Blade Unseen-min.png" data-full="images/Talon, Blade Unseen.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Teemo Mischievous Poisoner-min.png" data-full="images/Teemo, Mischievous Poisoner.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Thresh Restless Shackles-min.png" data-full="images/Thresh, Restless Shackles.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Tristana The Bandle Gunner-min.png" data-full="images/Tristana, The Bandle Gunner.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Trundle Proclaimed King-min.png" data-full="images/Trundle, Proclaimed King.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Twisted Fate Dealer of Destiny-min.png" data-full="images/Twisted Fate, Dealer of Destiny.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Twitch The Spreading Plague-min.png" data-full="images/Twitch, The Spreading Plague.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Udyr Ethereal Avalanche-min.png" data-full="images/Udyr, Ethereal Avalanche.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Urgot Zauns Weapon-min.png" data-full="images/Urgot, Zauns Weapon.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Varus Bow of Retribution-min.png" data-full="images/Varus, Bow of Retribution.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Veigar Twisted Mage-min.png" data-full="images/Veigar, Twisted Mage.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Vex Shadowcaster-min.png" data-full="images/Vex, Shadowcaster.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Vi Impulsive Haymaker-min.png" data-full="images/Vi, Impulsive Haymaker.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Viktor Herald of Progress-min.png" data-full="images/Viktor, Herald of Progress.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Vladimir Blood Craving-min.png" data-full="images/Vladimir, Blood Craving.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Warwick Wild Experiment-min.png" data-full="images/Warwick, Wild Experiment.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Willump Friend of Ice-min.png" data-full="images/Willump, Friend of Ice.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Wukong Living Cyclone-min.png" data-full="images/Wukong, Living Cyclone.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Xayah Sleuthing Songbird-min.png" data-full="images/Xayah, Sleuthing Songbird.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Yasuo Wind of Resolve-min.png" data-full="images/Yasuo, Wind of Resolve.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Yone Displaced Duelist-min.png" data-full="images/Yone, Displaced Duelist.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Yunara Faith Unbroken-min.png" data-full="images/Yunara, Faith Unbroken.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Zed Harmony in Shadow-min.png" data-full="images/Zed, Harmony in Shadow.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Zeri Volatile Spark-min.png" data-full="images/Zeri, Volatile Spark.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Ziggs Crazed Detonation-min.png" data-full="images/Ziggs, Crazed Detonation.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Zilean Keeper of Icathia-min.png" data-full="images/Zilean, Keeper of Icathia.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Blitzcrank Rolling Golem-min.png" data-full="images/Blitzcrank, Rolling Golem.png"></ol>
-              <ol><img loading="lazy" decoding="async" src="thumbs/Galio Bulwark of Demacia-min.png" data-full="images/Galio, Bulwark of Demacia.png"></ol>
-            </div>
-        </div>
-    </div>
+<section class="home-hero">
+  <div class="home-hero-inner">
+    <h1 class="home-title">Custom Card Sets</h1>
+    <p class="home-subtitle">
+      Browse my custom Magic sets. Click a set to view cards, search syntax, and deck links.
+    </p>
+  </div>
 </section>
+
+<section class="set-grid-wrap">
+  <div class="set-grid">
+
+    <a class="set-tile" href="smr.html">
+      <div class="set-tile-bg" style="background-image:url('images/Summoners_Rift.png');"></div>
+      <div class="set-tile-content">
+        <div class="set-name">Summoners Rift</div>
+        <div class="set-code">SMR</div>
+      </div>
+    </a>
+
+    <a class="set-tile" href="mhr.html">
+      <div class="set-tile-bg" style="background-image:url('images/Monster_Hunter.png');"></div>
+      <div class="set-tile-content">
+        <div class="set-name">Monster Hunter</div>
+        <div class="set-code">MHR</div>
+      </div>
+    </a>
+
+    <a class="set-tile" href="dlk.html">
+      <div class="set-tile-bg" style="background-image:url('images/Deadlock.png');"></div>
+      <div class="set-tile-content">
+        <div class="set-name">Deadlock</div>
+        <div class="set-code">DLK</div>
+      </div>
+    </a>
+
+    <a class="set-tile" href="thk.html">
+      <div class="set-tile-bg" style="background-image:url('images/Hollow_Knight.png');"></div>
+      <div class="set-tile-content">
+        <div class="set-name">Hollow Knight</div>
+        <div class="set-code">THK</div>
+      </div>
+    </a>
+
+    <a class="set-tile" href="ovw.html">
+      <div class="set-tile-bg" style="background-image:url('images/Overwatch.png');"></div>
+      <div class="set-tile-content">
+        <div class="set-name">Overwatch</div>
+        <div class="set-code">OVW</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer class="home-footer">
+  <span>Tip: Use search syntax like <code>c:</code> <code>t:</code> <code>deck</code> inside a set page.</span>
+</footer>
 
 
 

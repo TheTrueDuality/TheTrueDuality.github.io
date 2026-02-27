@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overwatch (OVW)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<div id="cardModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+    <button id="prevCard" class="nav-btn nav-prev" type="button"></button>
+    <button id="nextCard" class="nav-btn nav-next" type="button"></button>
+
+        <div class="modal-image-wrapper">
+
+            <div class="card-3d" id="card3d">
+                <div class="card-face card-front">
+                    <img id="modalFront" src="" alt="">
+                </div>
+                <div class="card-face card-back">
+                    <img id="modalBack" src="" alt="">
+                </div>
+            </div>
+
+            <button id="flipButton" class="flip-btn" style="display:none;">
+                Flip
+            </button>
+
+        </div>
+
+            <div class="modal-info">
+            <div class="title-row">
+                <h2 id="cardTitle"></h2>
+                <div class="mana" id="cardMana"></div>
+            </div>
+
+            <div class="taper-line"></div>
+
+            <p class="type" id="cardType"></p>
+
+            <div class="taper-line"></div>
+
+            <div class="rules" id="cardText"></div>
+
+            <div class="taper-line"></div>
+
+            <p class="pt" id="cardPowerToughness"></p>
+
+            <div class="taper-line"></div>
+
+            <p class="flavor" id="cardFlavor"></p>
+            </div>
+    </div>
+        <div class="oracle-panel" id="oraclePanel">
+      <a id="oracleDeckLink" class="oracle-link" href="#" target="_blank" rel="noopener noreferrer">
+        View Commander Decklist
+      </a>
+      <div class="taper-line"></div>
+      <div class="oracle-text" id="oracleText"></div>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+
+<body data-cardinfo="CardInfo_OVW.txt">
+<section class="header">
+    <nav>
+      <div class="nav-left">
+        <a class="home-link" href="index.html" aria-label="Home" title="Home">
+          <!-- inline SVG so you don't need an icon library -->
+          <svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 3.2 2.8 11h2.1v9.8h6.1v-6h2v6h6.1V11h2.1L12 3.2z"/>
+          </svg>
+        </a>
+                <input id="cardSearch" type="text" placeholder="Search card name or syntax using c: t: deck..." autocomplete="off" />
+            </div>
+        <div class="nav-links">
+            <ul>
+              <li class="nav-item nav-dropdown">
+                <button
+                  id="setMenuBtn"
+                  class="nav-dropdown-btn"
+                  type="button"
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                >
+                  Choose a set…
+                  <span class="nav-dropdown-caret" aria-hidden="true"></span>
+                </button>
+
+                <div id="setMenu" class="nav-dropdown-menu" role="menu" aria-labelledby="setMenuBtn">
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="smr.html">SMR — Summoners Rift</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="mhr.html">MHR — Monster Hunter</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="dlk.html">DLK — Deadlock</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="thk.html">THK — Hollow Knight</button>
+                  <button class="nav-dropdown-item" type="button" role="menuitem" data-value="ovw.html">OVW — Overwatch</button>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="bigheader">HEROES</h1>
+</section>
+
+
+<section class="cardlist">
+
+    <div class="cards">
+        <div class="cardlistmain">
+            <div class="cardlist">
+              <ol><img loading="lazy" decoding="async" src="thumbs/.png" data-full="images/.png"></ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>
