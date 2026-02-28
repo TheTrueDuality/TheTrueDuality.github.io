@@ -966,6 +966,7 @@ img { max-width: 100%; height: auto; } /* safety */
   gap: 10px;
 
   height: 38px;
+  width: 300px;
   padding: 0 14px;
   border-radius: 10px;
 

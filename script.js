@@ -494,8 +494,29 @@ function openCardAtIndex(idx) {
   const frontSrc = mainImage ? (mainImage.dataset.full || mainImage.getAttribute("src")) : "";
   const backSrc  = hoverImage ? (hoverImage.dataset.full || hoverImage.getAttribute("src")) : null;
 
-  modalFront.src = frontSrc;
-  modalBack.src = backSrc ? backSrc : "";
+  function setImageWithFallback(imgEl, fullSrc, thumbSrc) {
+    if (!imgEl) return;
+
+    imgEl.onerror = null; // clear previous handler
+    imgEl.src = fullSrc;
+
+    imgEl.onerror = function () {
+      console.warn("Image failed to load:", fullSrc);
+      imgEl.onerror = null; // prevent infinite loop
+      imgEl.src = thumbSrc;
+    };
+  }
+
+  const frontThumb = mainImage ? mainImage.getAttribute("src") : "";
+  const backThumb  = hoverImage ? hoverImage.getAttribute("src") : "";
+
+  setImageWithFallback(modalFront, frontSrc, frontThumb);
+
+  if (backSrc) {
+    setImageWithFallback(modalBack, backSrc, backThumb);
+  } else {
+    modalBack.src = "";
+  }
 
   hasBackImage = !!backSrc;
   flipButton.style.display = hasBackImage ? "block" : "none";
