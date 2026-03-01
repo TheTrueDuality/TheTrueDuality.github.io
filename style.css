@@ -27,8 +27,8 @@ nav{
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 30px;      /* slightly tighter than 20 */
-    margin-left: 60px;
+    gap: 20px;      /* slightly tighter than 20 */
+    margin-left: 20px;
 }
 .nav-links{
     flex: 1;
