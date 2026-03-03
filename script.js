@@ -104,30 +104,82 @@ if (setMenuBtn && setMenu) {
   });
 }
 
-  async function loadCardDatabaseFromTxt(url = "CardInfo.txt") {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
+async function loadCardDatabaseFromTxt(url = "CardInfo.txt") {
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
 
-    const raw = await res.text();
+  const raw = await res.text();
 
-    // Split into lines, ignore blanks
-    const lines = raw
-      .split(/\r?\n/)
-      .map(l => l.trimEnd())
-      .filter(l => l.trim().length > 0);
+  const lines = raw
+    .split(/\r?\n/)
+    .map(l => l.trimEnd())
+    .filter(l => l.trim().length > 0);
 
-    const db = {};
+  const db = {};
 
-    for (const line of lines) {
-      // Tabs are the delimiter in your file
-      const cols = line.split("\t");
+  // --- Header-aware mapping (preferred) ---
+  function buildHeaderIndexMap(headerCols) {
+    const norm = (s) => (s || "").trim().toLowerCase().replace(/\s+/g, " ");
+    const index = {};
+    headerCols.forEach((h, i) => { index[norm(h)] = i; });
 
+    // If we can find a "name" column, assume header mode.
+    if (index["name"] == null) return null;
+
+    const get = (row, key) => {
+      const i = index[norm(key)];
+      return i == null ? "" : (row[i] || "").trim();
+    };
+
+    return {
+      getFront: (row) => ({
+        name: get(row, "Name"),
+        mana: get(row, "Mana Cost"),
+        type: get(row, "Type"),
+        text: get(row, "Rules Text"),
+        flavor: get(row, "Flavor Text"),
+        power: get(row, "Power"),
+        toughness: get(row, "Toughness"),
+        loyalty: get(row, "Loyalty")
+      }),
+      getBack: (row) => ({
+        name: get(row, "Name 2"),
+        mana: get(row, "Mana Cost 2"),
+        type: get(row, "Type 2"),
+        text: get(row, "Rules Text 2"),
+        flavor: get(row, "Flavor Text 2"),
+        power: get(row, "Power 2"),
+        toughness: get(row, "Toughness 2"),
+        loyalty: get(row, "Loyalty 2")
+      })
+    };
+  }
+
+  // Try header mode if the first row looks like headers
+  const firstCols = lines[0].split("\t");
+  const headerMap = buildHeaderIndexMap(firstCols);
+
+  // Start reading after header if header detected
+  const startAt = headerMap ? 1 : 0;
+
+  for (let li = startAt; li < lines.length; li++) {
+    const cols = lines[li].split("\t");
+
+    let front, back;
+
+    if (headerMap) {
+      front = headerMap.getFront(cols);
+      back = headerMap.getBack(cols);
+    } else {
+      // --- Backward compatible legacy format (your old positional layout) ---
       const frontName = (cols[0] || "").trim();
       if (!frontName) continue;
 
       const frontMana = (cols[1] || "").trim();
       const frontType = (cols[2] || "").trim();
       const frontText = (cols[3] || "").trim();
+
+      // old: power,toughness,flavor at 4,5,6
       const frontPower = (cols[4] || "").trim();
       const frontToughness = (cols[5] || "").trim();
       const frontFlavor = (cols[6] || "").trim();
@@ -140,28 +192,58 @@ if (setMenuBtn && setMenu) {
       const backToughness = (cols[12] || "").trim();
       const backFlavor = (cols[13] || "").trim();
 
-      db[normalizeCardKey(frontName)] = {
-        front: {
-          name: frontName,
-          mana: frontMana,
-          type: frontType,
-          text: frontText,
-          pt: (frontPower && frontToughness) ? `${frontPower}/${frontToughness}` : "",
-          flavor: frontFlavor
-        },
-        back: backName ? {
-          name: backName,
-          mana: backMana,
-          type: backType,
-          text: backText,
-          pt: (backPower && backToughness) ? `${backPower}/${backToughness}` : "",
-          flavor: backFlavor
-        } : null
+      front = {
+        name: frontName,
+        mana: frontMana,
+        type: frontType,
+        text: frontText,
+        flavor: frontFlavor,
+        power: frontPower,
+        toughness: frontToughness,
+        loyalty: ""
+      };
+
+      back = {
+        name: backName,
+        mana: backMana,
+        type: backType,
+        text: backText,
+        flavor: backFlavor,
+        power: backPower,
+        toughness: backToughness,
+        loyalty: ""
       };
     }
 
-    return db;
+    if (!front.name) continue;
+
+    const frontPT = (front.power && front.toughness) ? `${front.power}/${front.toughness}` : "";
+    const backPT = (back.power && back.toughness) ? `${back.power}/${back.toughness}` : "";
+
+    db[normalizeCardKey(front.name)] = {
+      front: {
+        name: front.name,
+        mana: front.mana,
+        type: front.type,
+        text: front.text,
+        pt: frontPT,
+        loyalty: (front.loyalty || "").trim(),
+        flavor: (front.flavor || "").trim()
+      },
+      back: (back.name || "").trim() ? {
+        name: back.name,
+        mana: back.mana,
+        type: back.type,
+        text: back.text,
+        pt: backPT,
+        loyalty: (back.loyalty || "").trim(),
+        flavor: (back.flavor || "").trim()
+      } : null
+    };
   }
+
+  return db;
+}
 
   let cardDatabase = {};
   try {
@@ -414,7 +496,7 @@ function renderRulesWithIcons(text) {
 }
 
 modalText.innerHTML = renderRulesWithIcons(rulesRaw);
-    modalPowerToughness.textContent = data.pt || "";
+    modalPowerToughness.textContent = data.pt || data.loyalty || "";
     modalFlavor.textContent = data.flavor || "";
     applyColorGlowForFace(data);
   }

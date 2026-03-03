@@ -4,14 +4,9 @@
     font-family: 'Merriweather Sans', sans-serif;
 }
 .header{
-    min-height: 30vh;
+    min-height: 10vh;
     text-align: center;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
 }
 nav{
     z-index: 999;
@@ -64,14 +59,36 @@ nav{
     width: 100%;
 }
 .bigheader{
-    width: 90%;
+    min-height: 30vh;
     color: white;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%);
+    padding-top: 130px;
     text-align: center;
     font-size: 130px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Summoners_Rift.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.card-section-header{
+  font-size: 60px;
+  color: white;
+  width: 100%;
+  min-height: 30hv;
+  margin: 24px 0 14px 0;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+  background-image: linear-gradient(rgba(4,9,30,0.75), rgba(4,9,30,0.85)), var(--section-bg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.card-section-header .inner{
+  padding: 26px 18px;
+  text-align: center;
 }
 
 .nav-select{
@@ -322,7 +339,6 @@ nav{
     width: 100%;
     color: white;
     position: relative;
-    padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
     font-size: 100px;
@@ -335,7 +351,6 @@ nav{
     overflow: hidden;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
 }
 .cardlist ol{
     list-style: none;
