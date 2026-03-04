@@ -210,7 +210,6 @@ Free From Ice	1GU	Snow Sorcery	Search your library for a creature card with mana
 The Watchers	UB	Legendary Creature						
 Underground Match Fixing	1B	Enchantment — Landmark 	​				3	
 Xolaani		Legendary Creature — Darkin 						Xolaani, The Darkin Sickles								
-Dragon Tamer	1RR	Creature — Human Shaman 	Ward—Draw two cards then discard two cards at random\n Dragons you control have haste and “T: Tap target creature with lesser power”					
 Champions Knuckles	2G	Artifact — Equipment 	When Champions Knuckles enters, target creature you control fights another target creature you don’t control.\n Whenever a creature you control fights and wins, attach Champions Knuckles to that creature and put a victory counter on Champions Knuckles.\n Equipped creature gets +X/+X and “Whenever this creature wins a fight or deals combat damage to player, create X tapped treasure tokens” Where X is the number of victory counters on Champions Knuckles.\n Equip 0, this ability costs 1 more to activate per victory counter on Champions Knuckles.					
 Sanctified Scriptures	2G	Enchantment — Aura 	Enchant land\n When enchanted land is tapped for mana, its controller adds X additional mana of any combination of colors where X is the number of sagas you control.\n Enchanted land has “T: Copy target triggered ability from a saga source you control.”					
 Alpha Strike	RGW	Sorcery	Exile target creature you control, deal damage equal to its power divided among any number of target creatures. Then return the exiled creature to the battlefield.					
