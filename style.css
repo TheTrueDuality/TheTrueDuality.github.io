@@ -164,7 +164,7 @@ nav{
 }
 
 .home-hero{
-  min-height: 52vh;
+  min-height: 20vh;
   padding-top: 110px; /* clears fixed nav (nav is fixed) */
   padding-bottom: 34px;
   background-size: cover;
@@ -226,8 +226,15 @@ nav{
 }
 
 /* Set grid */
+.set-grid-wrap h1{
+  color:#ffffff;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .set-grid-wrap{
-  padding: 26px 0 34px 0;
+  padding: 0 0 34px 0;
   background: linear-gradient(#070a14, #060816);
 }
 
