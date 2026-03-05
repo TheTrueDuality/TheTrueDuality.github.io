@@ -508,9 +508,4 @@ Snowball		Token Snow Artifact — Equipment 	Equipped creature has ‘1, T, Sacr
 Bear		Token Creature — Bear 			2	2		
 Bomb		Token Artifact	Bomb enters with three charge counters on it, whenever one or more creatures an opponent controls deals combat damage to you, put two charge counters on it. At the beginning of your endstep, if no counters have been put on Bomb since your last endstep, sacrifice it. Whenever Bomb leaves the battlefield, it deals X damage to you and each creature you control, where X is the amount of charge counters on Bomb.					
 Kai		Token Legendary Creature — Human 			2	2		
-Valmar		Token Legendary Creature — Human 			2	2		
-Zoe, Mischief Incarnate		Emblem						
-Taric, Shimmering Hope		Emblem						
-Janna, Tempest's Grace		Emblem						
-Leona, Solar Herald		Emblem						
-Diana, Midnight Emissary		Emblem						
+Valmar		Token Legendary Creature — Human 			2	2							
