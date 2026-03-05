@@ -8,6 +8,7 @@ https://archidekt.com/decks/19991498/zilean_precon
 1x Battlefield Forge
 1x Cleansing Nova
 1x Clifftop Retreat
+1x Clothed in Power #CustomCard
 1x Command Tower
 1x Consign to Memory
 1x Cursed Mirror
@@ -51,11 +52,13 @@ https://archidekt.com/decks/19991498/zilean_precon
 1x Shattering Spree
 1x Slash the Ranks
 1x Sol Ring
+1x Surge of Brilliance #CustomCard
 1x Talisman of Conviction
 1x Talisman of Progress
 1x Temple of Enlightenment
 1x Temple of Triumph
 1x Temporal Fissure
+1x The Axiomata #CustomCard
 1x Time Wipe
 1x Torrent Sculptor // Flamethrower Sonata
 1x Treasure Cruise

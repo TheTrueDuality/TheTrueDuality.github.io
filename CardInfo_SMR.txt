@@ -181,8 +181,8 @@ Minds Desire	4UU	Sorcery	Shuffle your library. Then exile the top card of your l
 Surge of Brilliance	1U	Instant	Paradox — Draw a card for each spell you’ve cast this turn from anywhere other than your hand.\n Foretell 1U (During your turn, you may pay 2 and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)					
 Heroic Intervention	1G	Instant	Permanents you control gain hexproof and indestructible until end of turn.	“Protecting my pack is my purpose” -Nidalee				
 Nylea's Intervention	XGG	Sorcery	Choose one —\n • Search your library for up to X land cards, reveal them, put them into your hand, then shuffle.\n • Nylea’s Intervention deals twice X damage to each creature with flying.	“I will always be my mother’s cub...”        				
-The Axiomata	WU	Creature — Human Wizard 	At the beginning of each endstep gain X life where X is the amount of spells you have cast this turn, If X is three or greater draw a card.	“All in good time.”                               — Zilean	1	3		
-Clothed in Power	1WU	Enchantment — Aura 	Vanishing 2 (This permanent enters with two time counters on it. At the beginning of your upkeep, remove a time counter from it. When the last is removed, sacrifice it.)\n At the beginning of your upkeep make a copy of enchanted creature except it has vanishing 2					
+The Axiomata	WU	Creature — Human Wizard 	At the beginning of each endstep, gain X life, where X is the amount of spells you have cast this turn, If X is three or greater draw a card.	“All in good time.”                               — Zilean	1	3		
+Clothed in Power	1WU	Enchantment — Aura 	Vanishing 2 (This permanent enters with two time counters on it. At the beginning of your upkeep, remove a time counter from it. When the last is removed, sacrifice it.)\n At the beginning of your upkeep, make a copy of enchanted creature except it has vanishing 2.					
 Time Wipe	2WWU	Sorcery	Return a creature you control to its owner’s hand, then destroy all creatures.	“The way is always the same.”            — Zilean				
 Frantic Search	2U	Instant	Draw two cards, then discard two cards. Untap up to three lands.					
 Titanic Growth	1G	Instant	Target creature gets +4/+4 until end of turn.					
@@ -200,8 +200,8 @@ Stacked Deck	WU	Sorcery	Reveal the top card of your library and put that card in
 Monkey's Treasure	2	Artifact — Treasure 	T, Put a Wish counter on Monkey’s Treasure, target opponent gains control of it: Add X mana of any one color where X is the number of wish counters on Monkey’s Treasure.					
 High Market		Land	T: Add C.\n T, Sacrifice a creature: You gain 1 life.					
 Joraal, First Defense								Joraal, The Darkin Aegis								
-Petricite Broadwing	1W	Artifact Creature — Golem 	Flying defender ward 2 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2.)\n Tithe — As long as an opponent has payed a cost or a spell an opponent controls has been countered, Petricite Broadwing can attack as though it did not have defender.      		3	3		
-Petricite Stag	2WW	Artifact Creature — Golem 	Ward 3 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 3.)\n While an opponent is choosing targets as part of casting a spell they control or activating an ability they control, that player must choose to target Petrcite stag if able.		3	3		
+Petricite Broadwing	1W	Artifact Creature — Golem Bird 	Flying defender ward 2 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2.)\n Tithe — As long as an opponent has payed a cost or a spell an opponent controls has been countered, Petricite Broadwing can attack as though it did not have defender.      		3	3		
+Petricite Stag	2WW	Artifact Creature — Golem Deer 	Ward 3 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 3.)\n While an opponent is choosing targets as part of casting a spell they control or activating an ability they control, that player must choose to target Petrcite stag if able.		3	3		
 Demacian Manifest	2WU	Sorcery	Choose two, you may reveal two white cards from your hand, if you do choose another —\n • Detain each nonland permanent with mana value 3 or less.\n • Return 2 target detained permanents to their owners hands.\n • return a permanent card with mana value 3 or less from your graveyard to the battlefield.					
 Anaacka								Anaacka, The Darkin Spear								
 Petricite Hound	2W	Artifact Creature — Golem Dog 	Defender Ward 2 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2.)\n If another permanent you control becoming the target of a spell or ability would cause a triggered ability of a permanent you control, that ability triggers an additional time.          		3	3		
@@ -243,7 +243,7 @@ Shuriman Manifest	2RW	Sorcery
 The Immortal Bastion	3B	Legendary Enchantment — Landmark 	​				3	
 Horazi, Darkin Focus	U	Legendary Artifact	When Horazi enters the battlefield, draw a card.\n 1UB, pay 3 life, T: Choose five different card names, then put the bottom five cards of your library into your graveyard, if those cards all share a name with cards chosen this way return those cards to your hand, exile Horazi, then return it to the battlefield transformed under your control.\n Horazi, Darkin Focus can be your commander.					Horazi, Seeker of Oblivion		Legendary Creature — Darkin Wizard 	Flying\n You have no maximum hand size.\n You may cast only one spell during each of your opponents turns.\n At the beginning of each upkeep you may name a card, you may play the named card this turn without paying its mana cost and as though it had flash.		3	7		
 Chaos Warp	2R	Instant	The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it is a permanent card, they put it onto the battlefield.					
-Invasion of Icathia	1WW	Battle — Siege 	When Invasion of Ixtal enters the battlefield, create two colorless 1/1 Voidling creatures with “devoid, ingest” (This card has no color. Whenever that creature deals combat damage to a player, that player exiles the top card of their library.)				4	
+Invasion of Icathia	1WW	Battle — Siege 	When Invasion of Ixtal enters the battlefield, create two colorless 1/1 Voidling creatures with “Devoid, ingest” (Whenever that creature deals combat damage to a player, that player exiles the top card of their library.)				4	
 Hunger of the Void	1WB	Instant	Target creature gets consumed by the void.	“You call us nothing, yet we are everything. Every place, every time... we are you.” -Bel’Veth				
 It Consumes All	3WWB	Sorcery	Consume all nonland permanents.	“A final feast to devour the world.” -Bel’Veth				
 Nethergrasp	WUB	Instant	Consume any number of target spells.	“All life will be repurposed. The void will live.” -Bel’Veth				
@@ -458,9 +458,9 @@ Dance of the Tumbleweeds	1G	Sorcery	Spree (Choose one or more additional costs.)
 Oracle of Mul Daya	3G	Creature — Elf Shaman 	You may play an additional land on each of your turns.\n Play with the top card of your library revealed.\n You may play lands from the top of your library.		2	2		
 Valakut Exploration	2R	Enchantment	Landfall — Whenever a land you control enters, exile the top card of your library. You may play that card for as long as it remains exiled.\n At the beginning of your end step, if there are cards exiled with this enchantment, put them into their owner’s graveyard, then this enchantment deals that much damage to each opponent.					
 Phylath, World Sculpter	4RG	Legendary Creature — Elemental 	When Phylath, enters, create a 0/1 green Plant creature token for each basic land you control.\n Landfall — Whenever a land you control enters, put four +1/+1 counters on target Plant you control.		5	5		
-								
+Sohm								
 Plunder Poro								
-								
+Kobuko								
 Pouty Poro								
 Poro Fluft								
 False Poro King								
@@ -475,3 +475,42 @@ Aurora Porealis
 Council Call								
 Call The Wild								
 Poro Stories	WU	Sorcery	Replicate Tap an untapped Poro you control (When you cast this spell, copy it for each time you paid its replicate cost. You may choose new targets for the copies.)\n Gain a life draw a card.					
+Ibaaros, Darkin Harpoon								Ibaaros								
+Sappling		Token Land Creature — Sappling 	T, Sacrifice this creature: Add BG.		3	3		
+Norra								
+																
+Turret Army		Token Artifact Creature — Turret Army 						
+Tentacle		Token Creature — Tentacle 			1	1		
+Voidling		Token Creature	Devoid, ingest		1	1		
+Quickblade		Token Artifact — Equipment 	When Quickblades enters, attach it to a creature you control. Equipped creature gets +1/+1 and if equipped creature has exactly 6 equipment attached to it, the creature gains an additional +2/+2.\n Equip 2					
+Grim Rose		Token Artifact	T, Sacrifice: Add 4 mana of any combination of colors to your mana pool.					
+Rock		Token Artifact — Equipment 	1, T, Sacrifice Rock: This creature deals 2 damage to any target\n Equip 1					
+Tibbers		Token Legendary Creature — Bear 	Decayed\n Whenever this creature attacks, exile the top two cards of your library you may play those cards as long you have cast another spell this turn.		4	4		
+Sand		Token Creature			1	1		
+Thopter		Token Artifact Creature — Thopter 	Flying		1	1		
+Shark		Token Creature — Shark 			5	5		
+Fish		Token Creature — Fish 			1	1		
+Spirit Horse		Token Creature — Spirit Horse 						
+Spirit Horse		Token Creature — Spirit Horse 						
+Dog		Token Creature — Dog 			1	1		
+Bird		Token Creature — Bird 	Flying		1	1		
+Black-hole		Token Enchantment	Exile target nonland permanent an opponent controls until Black-hole leaves the battlefield.					
+Puffcap		Token Creature — Plant 	When this creature dies, if it was dealt damage this turn, deal 1 damage to each creature target opponent controls.		0	1		
+Thresh's Lantern		Token Legendary Artifact	Hexproof\n If a nontoken creature an opponent controls dies, exile it instead.					
+Civilian		Token Creature — Human 						
+Zombie		Token Creature — Zombie 	Decayed (This creature can’t block. When it attacks, sacrifice it at end of combat.)		2	2		
+Golem		Token Creature — Golem 			3	3		
+Scarecrow Effigy		Token Creature — Scarecrow 	All creatures able to block  Scarecrow Effigy do so.		0	1		
+Maiden of the Mist		Token Legendary Creature — Wraith 	If a nontoken creature an opponent controls would die, exile that card and create a 2/2 black zombie creature token with decayed.		4	4		
+Spirit		Token Creature — Spirit 	Flying		1	1		
+Human Soldier		Token Creature — Human Soldier 						
+Snowball		Token Snow Artifact — Equipment 	Equipped creature has ‘1, T, Sacrifice Snowball: Tap target creature.\n Equip 2					
+Bear		Token Creature — Bear 			2	2		
+Bomb		Token Artifact	Bomb enters with three charge counters on it, whenever one or more creatures an opponent controls deals combat damage to you, put two charge counters on it. At the beginning of your endstep, if no counters have been put on Bomb since your last endstep, sacrifice it. Whenever Bomb leaves the battlefield, it deals X damage to you and each creature you control, where X is the amount of charge counters on Bomb.					
+Kai		Token Legendary Creature — Human 			2	2		
+Valmar		Token Legendary Creature — Human 			2	2		
+Zoe, Mischief Incarnate		Emblem						
+Taric, Shimmering Hope		Emblem						
+Janna, Tempest's Grace		Emblem						
+Leona, Solar Herald		Emblem						
+Diana, Midnight Emissary		Emblem						
