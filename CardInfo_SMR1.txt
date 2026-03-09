@@ -25,7 +25,7 @@ High Market		Land	T: Add C.\n T, Sacrifice a creature: You gain 1 life.
 Joraal, First Defense								Joraal, The Darkin Aegis								
 Petricite Broadwing	1W	Artifact Creature — Golem Bird 	Flying defender ward 2 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2.)\n Tithe — As long as an opponent has payed a cost or a spell an opponent controls has been countered, Petricite Broadwing can attack as though it did not have defender.      		3	3		
 Petricite Stag	2WW	Artifact Creature — Golem Deer 	Ward 3 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 3.)\n While an opponent is choosing targets as part of casting a spell they control or activating an ability they control, that player must choose to target Petrcite stag if able.		3	3		
-Demacian Manifest	2WU	Sorcery	Choose two, you may reveal two white cards from your hand, if you do choose another —\n • Detain each nonland permanent with mana value 3 or less.\n • Return two target detained permanents to their owners hands.\n • return a permanent card with mana value 3 or less from your graveyard to the battlefield.					
+Demacian Manifest	2WU	Sorcery	Choose two, you may reveal two white cards from your hand. If you do, choose another —\n • Detain each nonland permanent with mana value 3 or less.\n • Return two target detained permanents to their owners hands.\n • return a permanent card with mana value 3 or less from your graveyard to the battlefield.					
 Anaacka								Anaacka, The Darkin Spear								
 Petricite Hound	2W	Artifact Creature — Golem Dog 	Defender Ward 2 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2.)\n If another permanent you control becoming the target of a spell or ability would cause a triggered ability of a permanent you control, that ability triggers an additional time.          		3	3		
 Ornn's Forge	1R	Legendary Enchantment — Landmark 	​				3	
@@ -36,7 +36,7 @@ Xolaani		Legendary Creature — Darkin 						Xolaani, The Darkin Sickles
 Champions Knuckles	2G	Artifact — Equipment 	When Champions Knuckles enters, target creature you control fights another target creature you don’t control.\n Whenever a creature you control fights and wins, attach Champions Knuckles to that creature and put a victory counter on Champions Knuckles.\n Equipped creature gets +X/+X and “Whenever this creature wins a fight or deals combat damage to player, create X tapped Treasure tokens” Where X is the number of victory counters on Champions Knuckles.\n Equip 0, this ability costs 1 more to activate per victory counter on Champions Knuckles.					
 Sanctified Scriptures	2G	Enchantment — Aura 	Enchant land\n When enchanted land is tapped for mana, its controller adds X additional mana of any combination of colors where X is the number of sagas you control.\n Enchanted land has “T: Copy target triggered ability from a saga source you control.”					
 Alpha Strike	RGW	Sorcery	Exile target creature you control, deal damage equal to its power divided among any number of target creatures. Then return the exiled creature to the battlefield.					
-Ionian Manifest	2GU	Sorcery	Choose two, you may return a land you control to your hand, if you do choose another —\n • Search your library for up to 2 basic lands, reveal them and put them into your hand.\n • You may put a land from your hand onto the battlefield.\n • Draw a card for each land that entered the battlefield under your control this turn					
+Ionian Manifest	2GU	Sorcery	Choose two, you may return a land you control to your hand. If you do, choose another —\n • Search your library for up to 2 basic lands, reveal them and put them into your hand.\n • You may put a land from your hand onto the battlefield.\n • Draw a card for each land that entered the battlefield under your control this turn					
 Mana Sentinel	1GU	Creature — Golem 	Whenever a player expends 3, Put a +1/+1 counter on blue sentinel.\n At the beginning of each player’s first main phase, that player adds X mana of any one color to their mana pool, where X is the number of +1/+1 counters on Mana Sentinel.					
 Praa, The Darkin Fan	1GW	Legendary Enchantment — Aura 	Enchanted creature gains vigilance\n Whenever enchanted creature attacks create a a green and white dragon token with vigilance, flying and its size is equal to the enchanted creature. Then if you control 5 or more dragons unattach and transform Praa.    \n Praa, The Darkin Fan can be your commander. 					Praa, Breachwalker		Legendary Creature — Darkin Spirit Dragon 	Modified creatures you control get +1/+1 (Equipment, Auras you control, and counters are modifications.)\n Whenever you transform Praa, make nine nonlegendary copies of Praa, then distribute a flying counter, a first strike counter, a hexproof counter, a lifelink counter, a reach counter, a trample counter, a vigilance counter, an indestructible counter, a haste counter and a deathtouch counter evenly among darkins you control.		2	2		
 Red Brambleback	RG	Creature						
@@ -55,13 +55,13 @@ Vivid Embankment		Enchantment Land — Sanctuary 	Vivid Embankment enters tapped
 Sorting Sides	2UUU	Sorcery	Demonstrate (When you cast this spell, you may copy it. If you do, choose an opponent to also copy it.)\n Each opponent chooses a nonland nontoken permanent they control and own gain control of those permanents.					
 Atakhan, Ruin Contained	5BBB	Legendary Creature — Demon Shade 	Trample, ward—Atakhan’s controller chooses a creature card in your graveyard to return to the battlefield under their control.\n When you cast Atakhan, return the creature with the greatest mana value from your graveyard to the battlefield, you lose life equal to its cost\n Whenever Atakhan attacks, you may sacrifice any number of creatures, if you do, Atakahn gets +X/+X until end of turn, each opponent loses X life and you gain life equal to the amount lost this way where X is the total mana value of the creatures sacrificed.					
 Demonic Ascension	1BR	Enchantment	At the beginning of each upkeep, put a flare counter on Demonic Ascension, if Demonic Ascension has 3 or more flare counters, remove them and, tap and deal 1 damage to each creature you don’t control.\n At the beginning of each player’s end step, if no creatures are on an opponents battlefield, sacrifice Demonic Ascension.					
-Founding the Immortal Bastion	1UBR	Legendary Enchantment — Saga 	(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\n I — Amass humans 3.\n Draw 2 cards.\n II — Each opponent reveals their hand, you may choose a card from among them, exile it.\n III — You lose 5 life, then choose a previous chapter ability to repeat twice.					
+Founding the Immortal Bastion	1UBR	Legendary Enchantment — Saga 	\n I — Amass humans 3.\n Draw 2 cards.\n II — Each opponent reveals their hand, you may choose a card from among them, exile it.\n III — You lose 5 life, then choose a previous chapter ability to repeat twice.					
 The Leviathan	4BR	Legendary Artifact — Vehicle 	Hideaway 3 Hideaway 3 Hideaway 3\n Whenever The Leviathan attacks, you may put a creature card exiled by The Leviathan onto the battlefield tapped and attacking.\n Whenever the Leviathan leaves the battlefield, return all cards exiled by it to their owners hands.\n Crew 6					
-Noxian Manifest	2BR	Sorcery	Choose two, you may tap an untapped Warrior you control, if you do choose another —\n • Choose target creature with mana value 2 or less gain control of it, it becomes a Warrior in addition to its other types.\n • Each opponent sacrifices an artifact, for each artifact destroyed this way create a tapped Treasure token.\n • Deal X damage to target creature or planeswalker where X is the number of creatures you control.					
+Noxian Manifest	2BR	Sorcery	Choose two, you may tap an untapped Warrior you control. If you do, choose another —\n • Choose target creature with mana value 2 or less gain control of it, it becomes a Warrior in addition to its other types.\n • Each opponent sacrifices an artifact, for each artifact destroyed this way create a tapped Treasure token.\n • Deal X damage to target creature or planeswalker where X is the number of creatures you control.					
 T-Hex		Artifact — Vehicle 			2	2		
 Taarosh								Taarosh, The Darkin Halberd								
-Ruined Manifest	2UB	Sorcery	Choose two, you may exile three cards from your graveyard, if you do choose another —\n • Mill five, you may exile any number of cards milled this way.\n • Return up to one target creature from your graveyard to your hand, if its mana value is 3 or less, return it to the battlefield instead.\n • Gain X life, surveil X, where X is the number of creature cards that left your graveyard this turn.					
-Zaunite Manifest	2BG	Sorcery	Choose two, you may discard a card, if you do choose another —\n • For each permanent you control that left the battlefield this turn.\n • \n • 					
+Ruined Manifest	2UB	Sorcery	Choose two, you may exile three cards from your graveyard. If you do, choose another —\n • Mill five, you may exile any number of cards milled this way.\n • Return up to one target creature from your graveyard to your hand, if its mana value is 3 or less, return it to the battlefield instead.\n • Gain X life, surveil X, where X is the number of creature cards that left your graveyard this turn.					
+Zaunite Manifest	2BG	Sorcery	Choose two, you may discard a card. If you do, choose another —\n • You may sacrifice a permanent. If you do, draw two cards.\n • Return up to one target creature with mana value X or less to the battlefield, where X is the amount of times you have descended this turn.\n • Each opponent who has less creatures than you discards a card, then each opponent who has less cards in hand than you sacrifices a creature.					
 Shuriman Manifest	2RW	Sorcery	Choose two, if you control two deserts, choose another —\n • Until the end of your next turn, if you would create a token, create twice that many instead.\n • Create two 1/1 Sand creature tokens.\n • Deal damage equal to the number of creatures you control to target creature or planeswalker.					
 The Immortal Bastion	3B	Legendary Enchantment — Landmark 	​				3	
 Horazi, Darkin Focus	U	Legendary Artifact	When Horazi enters the battlefield, draw a card.\n 1UB, pay 3 life, T: Choose five different card names, then put the bottom five cards of your library into your graveyard, if those cards all share a name with cards chosen this way return those cards to your hand, exile Horazi, then return it to the battlefield transformed under your control.\n Horazi, Darkin Focus can be your commander.					Horazi, Seeker of Oblivion		Legendary Creature — Darkin Wizard 	Flying\n You have no maximum hand size.\n You may cast only one spell during each of your opponents turns.\n At the beginning of each upkeep you may name a card, you may play the named card this turn without paying its mana cost and as though it had flash.		3	7		
@@ -79,7 +79,7 @@ Poro Soldier	1WW	Creature — Poro Soldier 	Soldiers and Poros you control have 
 Proto Poro	GW	Creature — Poro 	Flash\n When Proto Poro enters, up to one target creature gains hexproof until end of turn, if that creature is a Poro, put a +1/+1 counter on that creature.		2	2		
 Mighty Poro	7WW	Creature — Poro Warrior 	Affinity for poros (This spell costs 1 less to cast for each poro you control.)\n Whenever Mighty Poro enters reveal the top X cards of your library where X is the number of Poros you control, you may put any number of Poros from among them into your hand and put the rest on the bottom of your library.		5	6		
 Poro, Heart of the Fluft	W	Creature — Poro Knight 	if Poro, Healt of the Fluft or another Poro would enter the battlefield, if no mana was spent to cast them they enter with a +1/+1 counter.		1	1		
-Poro Play Time	2W	Sorcery	Choose up to 3 (Poro Snax) worth of modes. You may choose the same mode more than once.\n 1 — Create a 1/1 white Poro token\n 1 — You may put a Poro with mana value 2 or less from your hand onto the battlefield\n 2 — Return a Poro with mana value 2 or less from your graveyard to the battlefield					
+Poro Play Time	2W	Sorcery	Choose up to 3 🥖 Worth of modes. You may choose the same mode more than once.\n 🥖 — Create a 1/1 white Poro token\n 🥖 — You may put a Poro with mana value 2 or less from your hand onto the battlefield\n 🥖🥖 — Return a Poro with mana value 2 or less from your graveyard to the battlefield					
 Poro Shepherd	1W	Creature — Human Shaman 	Poro creatures you control have Convoke. (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for 1 or one mana of that creature’s color.)\n At the beginning of your endstep, untap target Poro you control.		1	2		
 Sledding Poro	1WU	Creature — Poro 	Poros you control have haste.\n Whenever one or more Poros you control attacks, you may put a Poro card with mana value less than the number of attacking Poros onto the battlefield tapped and attacking.		2	2		
 Fabled Poro	RW	Creature — Poro 	When Fabled Poro enters the battlefield, if you control five or more Poros, up to one target equipment becomes a masterwork.					
@@ -268,7 +268,7 @@ The Charger		Enchantment Creature — Aurochs 	Constellation —
 The Destroyer		Enchantment Creature — Rhino 	Constellation —					
 The Messenger		Enchantment Creature — Dog 	Constellation —					
 The Great Beyond		Legendary Creature — Dragon God 						
-Nagakabouros		Legendary Creature — God 						
+Nagakabouros		Legendary Creature — Kraken God  						
 Forgotten Arches		Land — Desert 	T: Add C.\n 1, T: Add one mana of any color to your mana pool.\n 5, T, consume Forgotten Arches: Consume any number of target cards among all graveyards.					
 Xer'sai Hatchling	WB	Creature — Voidling Rhino 	Trample, ingest 4 (Whenever this creature deals combat damage to a player, that player exiles the top card of their library.)\n Xer’sai Hatchling can’t attack unless there are eight or more cards in the void.\n at the beginning of your upkeep, consume the top card of each players library.		4	4		
 Salt the Earth	2WU	Enchantment	If a card were to be put into exile from anywhere, consume it instead.					
@@ -285,8 +285,8 @@ Sohm		Legendary Creature — Dragon Spirit
 Plunder Poro	1RW	Creature — Poro Pirate 	Whenever a Poro you control deals combat damage to a player, create a treasure token.\n At the beginning of your endstep discover Poro X, where X is the number of treasure tokens you control. (Reveal cards from the top of your library until you reveal a poro card. You may cast it without paying its mana cost or put it into your hand.					
 Kobuko, Joyous Dancer		Legendary Creature — Yordle  Monk 						
 Pouty Poro								
-Poro Fluft								
-False Poro King								
+Poro Fluft	1GWU	Creature — Poro 	Flash\n As this creature enters, you may exile any number of other Poros you control until this creature leaves the battlefield, for each Poro exiled this way, this creature gets +2/+2 and counts as an additional Poro creature on the battlefield.\n “Move like the herd.”                                   —Braum		2	1		
+Poro King Idol	2W	Artifact	Whenever a nontoken creature enters, if it was cast, put a worship counter on Poro King Idol.\n At the beginning of your endstep, reveal the top X cards of your library, where X is the number of worship counters on Poro King Idol, put a creature card from among them onto the battlefield if it’s mana value is less than the number of creatures you control, otherwise put it into your hand.					
 Patched Porobot								
 The Poro King								
 Poro Sanctuary		Snow Land	T: Add C\n T: Add one mana of any color, spend this mana only to cast Poro spells, if this mana was spent on a spell with mana value 6 or greater, create a 1/1 white poro creature token.					
@@ -295,19 +295,50 @@ Ultrasoft Poro
 Prototype Porobot								
 Porofly								
 Aurora Porealis								
-Council Call								
+Council Call	GWU	Kindred Sorcery — Poro 	Choose up to three, plus the number of Poros you control 🥖 worth of modes. You may choose the same option more than once.\n 🥖 — Reveal the top card of your library if it’s a creature card you may put it into your hand otherwise you may put it on the bottom of your library.\n 🥖🥖 — Create a 1/1 white Poro creature token.\n X🥖 — Put any number of Poro permanents from your hand onto the battlefield with total mana value X or less.					
 Call The Wild								
 Poro Stories	WU	Sorcery	Replicate Tap an untapped Poro you control (When you cast this spell, copy it for each time you paid its replicate cost. You may choose new targets for the copies.)\n Gain a life draw a card.					
 Ibaaros, Darkin Harpoon								Ibaaros								
+Sappling		Token Land Creature — Sappling 	T, Sacrifice this creature: Add BG.		3	3		
 Norra		Legendary Creature — Yordle Wizard 						
-Naganeka, The Darkin Ballista								Naganeka								
+Naganeka, The Darkin Ballista		Legendary Artifact						Naganeka		Legendary Creature — Darkin 						
+Turret Army		Token Artifact Creature — Turret Army 						
+Tentacle		Token Creature — Tentacle 			1	1		
+Voidling		Token Creature	Devoid, ingest		1	1		
+Quickblade		Token Artifact — Equipment 	When Quickblade enters, attach it to a creature you control. Equipped creature gets +1/+1 and if equipped creature has exactly 6 equipment attached to it, the creature gains an additional +2/+2.\n Equip 2					
+Grim Rose		Token Artifact	T, Sacrifice: Add 4 mana of any combination of colors to your mana pool.					
+Rock		Token Artifact — Equipment 	1, T, Sacrifice Rock: This creature deals 2 damage to any target\n Equip 1					
+Tibbers		Token Legendary Creature — Bear 	Decayed\n Whenever this creature attacks, exile the top two cards of your library you may play those cards as long you have cast another spell this turn.		4	4		
+Sand		Token Creature			1	1		
+Thopter		Token Artifact Creature — Thopter 	Flying		1	1		
+Shark		Token Creature — Shark 			5	5		
+Fish		Token Creature — Fish 			1	1		
+Spirit Horse		Token Creature — Spirit Horse 						
+Spirit Horse		Token Creature — Spirit Horse 						
+Dog		Token Creature — Dog 			1	1		
+Bird		Token Creature — Bird 	Flying		1	1		
+Black-hole		Token Enchantment	Exile target nonland permanent an opponent controls until Black-hole leaves the battlefield.					
+Puffcap		Token Creature — Plant 	When this creature dies, if it was dealt damage this turn, deal 1 damage to each creature target opponent controls.		0	1		
+Thresh's Lantern		Token Legendary Artifact	Hexproof\n If a nontoken creature an opponent controls dies, exile it instead.					
+Civilian		Token Creature — Human 						
+Zombie		Token Creature — Zombie 	Decayed (This creature can’t block. When it attacks, sacrifice it at end of combat.)		2	2		
+Golem		Token Creature — Golem 			3	3		
+Scarecrow Effigy		Token Creature — Scarecrow 	All creatures able to block  Scarecrow Effigy do so.		0	1		
+Maiden of the Mist		Token Legendary Creature — Wraith 	If a nontoken creature an opponent controls would die, exile that card and create a 2/2 black zombie creature token with decayed.		4	4		
+Spirit		Token Creature — Spirit 	Flying		1	1		
+Human Soldier		Token Creature — Human Soldier 			1	1		
+Snowball		Token Snow Artifact — Equipment 	Equipped creature has ‘1, T, Sacrifice Snowball: Tap target creature.\n Equip 2					
+Bear		Token Creature — Bear 			2	2		
+Bomb		Token Artifact	Bomb enters with three charge counters on it, whenever one or more creatures an opponent controls deals combat damage to you, put two charge counters on it. At the beginning of your endstep, if no counters have been put on Bomb since your last endstep, sacrifice it. Whenever Bomb leaves the battlefield, it deals X damage to you and each creature you control, where X is the amount of charge counters on Bomb.					
+Kai		Token Legendary Creature — Human 			2	2		
+Valmar		Token Legendary Creature — Human 			2	2							
 The Great Darkin War								
 To Slay Legends								
 God Warriors								
 Seal in Steel								
 Studies of the Desert								
-Targonian Manifest	2WB	Sorcery	Choose two, you may sacrifice a non-land permanent, if you do choose another —\n • Put a permanent card from your hand with mana value 3 or less onto the battlefield.\n • Each opponent sacrifices an artifact or enchantment.\n • Create a token copy of a permanent an opponent sacrificed this turn.					
-Freljordian Manifest	2RG	Sorcery	Choose two, you may exert two tapped creatures you control, if you do choose another —\n • For each tapped creature you control, tap up to one non-land permanent target player controls.\n • Deal X damage to target player and each creature they control, where X is the number of tapped creatures you control.\n • Create a tapped Treasure token for each tapped creature target player controls.					
-Bilgewater Manifest	2UR	Sorcery	Choose two, you may tap three permanents with different card types, if you do choose another —\n • Draw three cards, then discard two cards.\n • Deal damage to target creature equal to the number of cards you discarded this turn, excess damage dealt this way is dealt to the creatures controller.\n • Create a Treasure token for each opponent that was dealt damage this turn.					
+Targonian Manifest	2WB	Sorcery	Choose two, you may sacrifice a non-land permanent. If you do, choose another —\n • Put a permanent card from your hand with mana value 3 or less onto the battlefield.\n • Each opponent sacrifices an artifact or enchantment.\n • Create a token copy of a permanent an opponent sacrificed this turn.					
+Freljordian Manifest	2RG	Sorcery	Choose two, you may exert two tapped creatures you control. If you do, choose another —\n • For each tapped creature you control, tap up to one non-land permanent target player controls.\n • Deal X damage to target player and each creature they control, where X is the number of tapped creatures you control.\n • Create a tapped Treasure token for each tapped creature target player controls.					
+Bilgewater Manifest	2UR	Sorcery	Choose two, you may tap three permanents with different card types. If you do, choose another —\n • Draw three cards, then discard two cards.\n • Deal damage to target creature equal to the number of cards you discarded this turn, excess damage dealt this way is dealt to the creatures controller.\n • Create a Treasure token for each opponent that was dealt damage this turn.					
 Ixtali Manifest	2GW	Sorcery	Choose two, , if you do choose another —\n • \n • \n • 					
 Perfect Fit	RW	Enchantment	When perfect fit enters choose one —\n •  Search your library for up to one creature card that shares a mana value with an equipment you control, put that card into your hand then shuffle.\n • Search your library for up to one equipment card that shares a mana value with a creature you control, put that card into your hand then shuffle.\n You may equip equipment without paying its equip cost if the target shares a mana value with the equipment.					
