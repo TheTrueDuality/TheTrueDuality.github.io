@@ -14,12 +14,12 @@ https://archidekt.com/decks/13046927/taliyah_precon
 1x Caretaker's Talent
 1x Cataclysmic Prospecting
 1x Chishiro, the Shattered Blade
-1x Clock of Omens
 1x Command Tower
 1x Conduit of Worlds
 1x Cradle of the Accursed
 1x Creosote Heath
 1x Dance of the Tumbleweeds
+1x Desert Merchants #CustomCard
 1x Desert Naturalist #CustomCard
 1x Desert of the Fervent
 1x Desert of the Indomitable
@@ -31,7 +31,6 @@ https://archidekt.com/decks/13046927/taliyah_precon
 1x Endless Sands
 1x Explore
 1x Explosive Vegetation
-1x Felidar Retreat
 1x Fellwar Stone
 8x Forest
 1x Ghirapur Aether Grid
@@ -69,6 +68,7 @@ https://archidekt.com/decks/13046927/taliyah_precon
 1x Rumor Gatherer
 1x Sakura-Tribe Elder
 1x Sand Scout
+1x Sand Surfing #CustomCard
 1x Sandstorm Verge
 1x Scavenger Grounds
 1x Shefet Dunes

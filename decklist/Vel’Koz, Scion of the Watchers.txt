@@ -1,0 +1,67 @@
+https://archidekt.com/decks/20722814/velkoz_out_of_the_box_knowledge_is_power
+1x Archmage Emeritus
+1x Archmage of Runes
+1x Archmage's Charm
+1x Behold the Unspeakable // Vision of the Unspeakable
+1x Body of Knowledge
+1x Brainstorm
+1x Caged Sun
+1x Castle Vantress
+1x Commit // Memory
+1x Consider
+1x Counterspell
+1x Decanter of Endless Water
+1x Deep Analysis
+1x Defiler of Dreams
+1x Dig Through Time
+1x Emrakul's Messenger
+1x Esior, Wardwing Familiar
+1x Evacuation
+1x Extraplanar Lens
+1x Fact or Fiction
+1x Finale of Revelation
+1x Flood of Tears
+1x Ghostly Pilferer
+1x Gitaxian Probe
+1x Glimpse Into Nothingness #CustomCard
+1x Hall of Storm Giants
+1x Hullbreaker Horror
+1x Hydroelectric Specimen // Hydroelectric Laboratory
+1x Icebreaker Kraken
+1x Inquiries Made #CustomCard
+1x Jace Beleren
+1x Marina Vendrell's Grimoire
+1x Marit Lage's Slumber
+1x Mind Stone
+1x Mission Briefing
+1x Mystic Confluence
+1x Narset, Parter of Veils
+1x Negate
+1x Ominous Seas
+1x Oneirophage
+1x Reliquary Tower
+1x Rewind
+1x Sapphire Medallion
+1x Sea Gate Restoration // Sea Gate, Reborn
+1x Serum Visions
+1x She Who Wanders #CustomCard
+35x Snow-Covered Island
+1x Sol Ring
+1x Spectral Deluge
+1x Strix Serenade
+1x Sublime Epiphany
+1x Swan Song
+1x Teferi, Master of Time
+1x Teferi's Ageless Insight
+1x The Everflowing Well // The Myriad Pools
+1x The Magic Mirror
+1x The Water Crystal
+1x Thought Scour
+1x Tolarian Winds
+1x Treasure Cruise
+1x Turn to Knowledge #CustomCard
+1x Utter Insignificance
+1x Vel’Koz, Scion of the Watchers #CustomCard
+1x Wash Away
+1x Winter's Rest
+1x Wizard Class

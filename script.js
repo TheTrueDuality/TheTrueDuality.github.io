@@ -641,7 +641,8 @@ const searchCount = document.getElementById("searchCount");
 // =============================
 const DECKLIST_FILES = [
   "Taliyah, Rubble Rouser.txt",
-  "Zilean, Keeper of Icathia.txt"
+  "Zilean, Keeper of Icathia.txt",
+  "Vel’Koz, Scion of the Watchers.txt"
   // Add more here
 ];
 

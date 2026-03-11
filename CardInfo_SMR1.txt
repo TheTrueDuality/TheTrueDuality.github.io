@@ -26,7 +26,7 @@ Joraal, First Defense								Joraal, The Darkin Aegis
 Petricite Broadwing	1W	Artifact Creature — Golem Bird 	Flying defender ward 2 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2.)\n Tithe — As long as an opponent has payed a cost or a spell an opponent controls has been countered, Petricite Broadwing can attack as though it did not have defender.      		3	3		
 Petricite Stag	2WW	Artifact Creature — Golem Deer 	Ward 3 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 3.)\n While an opponent is choosing targets as part of casting a spell they control or activating an ability they control, that player must choose to target Petrcite stag if able.		3	3		
 Demacian Manifest	2WU	Sorcery	Choose two, you may reveal two white cards from your hand. If you do, choose another —\n • Detain each nonland permanent with mana value 3 or less.\n • Return two target detained permanents to their owners hands.\n • return a permanent card with mana value 3 or less from your graveyard to the battlefield.					
-Anaacka								Anaacka, The Darkin Spear								
+Anaacka		Legendary Creature — Darkin 						Anaacka, The Darkin Spear								
 Petricite Hound	2W	Artifact Creature — Golem Dog 	Defender Ward 2 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2.)\n If another permanent you control becoming the target of a spell or ability would cause a triggered ability of a permanent you control, that ability triggers an additional time.          		3	3		
 Ornn's Forge	1R	Legendary Enchantment — Landmark 	​				3	
 Free From Ice	1GU	Snow Sorcery	Search your library for a creature card with mana value 5 or less, exile it with a number of encased counters equal to it’s mana cost.\n it gains “Whenever an opponent casts a spell remove you may remove a slumber counter then if there are no more slumber counters put this creature onto the battlefield”					
@@ -62,7 +62,7 @@ T-Hex		Artifact — Vehicle 			2	2
 Taarosh								Taarosh, The Darkin Halberd								
 Ruined Manifest	2UB	Sorcery	Choose two, you may exile three cards from your graveyard. If you do, choose another —\n • Mill five, you may exile any number of cards milled this way.\n • Return up to one target creature from your graveyard to your hand, if its mana value is 3 or less, return it to the battlefield instead.\n • Gain X life, surveil X, where X is the number of creature cards that left your graveyard this turn.					
 Zaunite Manifest	2BG	Sorcery	Choose two, you may discard a card. If you do, choose another —\n • You may sacrifice a permanent. If you do, draw two cards.\n • Return up to one target creature with mana value X or less to the battlefield, where X is the amount of times you have descended this turn.\n • Each opponent who has less creatures than you discards a card, then each opponent who has less cards in hand than you sacrifices a creature.					
-Shuriman Manifest	2RW	Sorcery	Choose two, if you control two deserts, choose another —\n • Until the end of your next turn, if you would create a token, create twice that many instead.\n • Create two 1/1 Sand creature tokens.\n • Deal damage equal to the number of creatures you control to target creature or planeswalker.					
+Shuriman Manifest	2RW	Sorcery	Choose two, if you control two Deserts, choose another —\n • Until the end of your next turn, if you would create a token, create twice that many instead.\n • Create two 1/1 Sand creature tokens.\n • Deal damage equal to the number of creatures you control to target creature or planeswalker.					
 The Immortal Bastion	3B	Legendary Enchantment — Landmark 	​				3	
 Horazi, Darkin Focus	U	Legendary Artifact	When Horazi enters the battlefield, draw a card.\n 1UB, pay 3 life, T: Choose five different card names, then put the bottom five cards of your library into your graveyard, if those cards all share a name with cards chosen this way return those cards to your hand, exile Horazi, then return it to the battlefield transformed under your control.\n Horazi, Darkin Focus can be your commander.					Horazi, Seeker of Oblivion		Legendary Creature — Darkin Wizard 	Flying\n You have no maximum hand size.\n You may cast only one spell during each of your opponents turns.\n At the beginning of each upkeep you may name a card, you may play the named card this turn without paying its mana cost and as though it had flash.		3	7		
 Chaos Warp	2R	Instant	The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it is a permanent card, they put it onto the battlefield.					
@@ -90,13 +90,12 @@ The Great Stand	GWU	Enchantment — Saga 	\n I, II, III — Choose one that has 
 Lamppost	1	Artifact	Creatures your opponents control can be targeted as though they don’t have hexproof. Targeting those creatures does not cause triggered abilities to trigger.					
 Citybreaker	2R	Artifact — Vehicle 	Vigilance\n T, Sacrifice an artifact or creature: Citybreaker deals damage equal to the cards mana value plus the number of creatures that have crewed Citybreaker this turn\n Crew 5		4	5		
 Blasphemous Act	8R	Sorcery	This spell costs 1 less to cast for each creature on the battlefield.\n Blasphemous Act deals 13 damage to each creature.					
-Winding Desert		Land — Desert 	Winding Desert enters tapped\n T: Sacrifice Winding desert: Search your library for a basic land or a desert card, put that card onto the battlefield then shuffle your library.					
-Site of the Sun Disc		Legendary Land — Desert 	Ascend (If you control ten or more permanents, you get the city’s blessing for the rest of the game.)\n Site of the Sun Disc the battlefield tapped\n T: Add C\n T: Add two mana in any combination of colors, activate this ability only if you have the city’s blessing or control a god. 					
-Scorching Sands	2R	Enchantment	Whenever this or a desert enters the battlefield under your control, scorching sands deals 1 damage to target player and each creature that player controls.					
+Winding Desert		Land — Desert 	Winding Desert enters tapped\n T: Sacrifice Winding Desert: Search your library for a basic land or a Desert card, put that card onto the battlefield then shuffle your library.					
+Site of the Sun Disc		Legendary Land — Desert 	Ascend (If you control ten or more permanents, you get the city’s blessing for the rest of the game.)\n Site of the Sun Disc the battlefield tapped\n T: Add C\n T: Add two mana in any combination of colors, activate this ability only if you have the city’s blessing or control a God. 					
+Scorching Sands	2R	Enchantment	Whenever this or a Desert enters the battlefield under your control, scorching sands deals 1 damage to target player and each creature that player controls.					
 Treasure Seeker	RW	Creature — Human Nomad 	Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)\n Enrage — When this creature takes damage create a treasure token.		1	3		
 Rampaging Baccai	1RG	Creature — Hyena Warrior 	Enrage — Whenever this creature takes damage target opponent  sacrifices an artifact or enchantment.		2	3		
 Arcane Signet	2	Artifact	T: Add one mana of any color in your commander’s color identity.					
-Clock of Omens	4	Artifact	Tap two untapped artifacts you control: Untap target artifact.					
 Conduit of Worlds	2GG	Artifact	You may play lands from your graveyard.\n T: Choose target nonland permanent card in your graveyard. If you haven’t cast a spell this turn, you may cast that card. If you do, you can’t cast additional spells this turn. Activate only as a sorcery.					
 Fellwar Stone	2	Artifact	T: Add one mana of any color that a land an opponent controls could produce.					
 Inspiring Statuary	3	Artifact	Nonartifact spells you cast have improvise. (Your artifacts can help cast this spell. Each artifact you tap after you’re done activating mana abilities pays for 1.)					
@@ -135,7 +134,6 @@ Annie Joins Up	1RGW	Legendary Enchantment	When Annie Joins Up enters, it deals 5
 Caretaker's Talent	2W	Enchantment — Class 	(Gain the next level as a sorcery to add its ability.)\n Whenever one or more tokens you control enter, draw a card. This ability triggers only once each turn.\n W: Level 2\n When this Class becomes level 2, create a token that’s a copy of target token you control.\n 3W: Level 3\n Creature tokens you control get +2/+2.					
 Desert Warfare	3G	Enchantment	Whenever you sacrifice a Desert and whenever a Desert card is put into your graveyard from your hand or library, put that card onto the battlefield under your control at the beginning of your next end step.\n At the beginning of combat on your turn, if you control five or more Deserts, create that many 1/1 red, green, and white Sand Warrior creature tokens. They gain haste.					
 Druid Class	1G	Enchantment — Class 	(Gain the next level as a sorcery to add its ability.)\n Landfall — Whenever a land you control enters, you gain 1 life.\n 2G: Level 2\n You may play an additional land on each of your turns.\n 4G: Level 3\n When this Class becomes level 3, target land you control becomes a creature with haste and “This creature’s power and toughness are each equal to the number of lands you control.” It’s still a land.					
-Felidar Retreat	3W	Enchantment	Landfall — Whenever a land you control enters, choose one —\n • Create a 2/2 white Cat Beast creature token.\n • Put a +1/+1 counter on each creature you control. Those creatures gain vigilance until end of turn.					
 Ghirapur Aether Grid	2R	Enchantment	Tap two untapped artifacts you control: This enchantment deals 1 damage to any target.					
 Khalni Heart Expedition	1G	Enchantment	Landfall — Whenever a land you control enters, you may put a quest counter on this enchantment.\n Remove three quest counters from this enchantment and sacrifice it: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle.					
 Walk-In Closet	2G	Enchantment — Room 	You may play lands from your graveyard.					Forgotten Cellar	3GG		When you unlock this door, you may cast spells from your graveyard this turn, and if a card would be put into your graveyard from anywhere this turn, exile it instead.					
@@ -301,44 +299,23 @@ Poro Stories	WU	Sorcery	Replicate Tap an untapped Poro you control (When you cas
 Ibaaros, Darkin Harpoon								Ibaaros								
 Sappling		Token Land Creature — Sappling 	T, Sacrifice this creature: Add BG.		3	3		
 Norra		Legendary Creature — Yordle Wizard 						
-Naganeka, The Darkin Ballista		Legendary Artifact						Naganeka		Legendary Creature — Darkin 						
-Turret Army		Token Artifact Creature — Turret Army 						
-Tentacle		Token Creature — Tentacle 			1	1		
-Voidling		Token Creature	Devoid, ingest		1	1		
-Quickblade		Token Artifact — Equipment 	When Quickblade enters, attach it to a creature you control. Equipped creature gets +1/+1 and if equipped creature has exactly 6 equipment attached to it, the creature gains an additional +2/+2.\n Equip 2					
-Grim Rose		Token Artifact	T, Sacrifice: Add 4 mana of any combination of colors to your mana pool.					
-Rock		Token Artifact — Equipment 	1, T, Sacrifice Rock: This creature deals 2 damage to any target\n Equip 1					
-Tibbers		Token Legendary Creature — Bear 	Decayed\n Whenever this creature attacks, exile the top two cards of your library you may play those cards as long you have cast another spell this turn.		4	4		
-Sand		Token Creature			1	1		
-Thopter		Token Artifact Creature — Thopter 	Flying		1	1		
-Shark		Token Creature — Shark 			5	5		
-Fish		Token Creature — Fish 			1	1		
-Spirit Horse		Token Creature — Spirit Horse 						
-Spirit Horse		Token Creature — Spirit Horse 						
-Dog		Token Creature — Dog 			1	1		
-Bird		Token Creature — Bird 	Flying		1	1		
-Black-hole		Token Enchantment	Exile target nonland permanent an opponent controls until Black-hole leaves the battlefield.					
-Puffcap		Token Creature — Plant 	When this creature dies, if it was dealt damage this turn, deal 1 damage to each creature target opponent controls.		0	1		
-Thresh's Lantern		Token Legendary Artifact	Hexproof\n If a nontoken creature an opponent controls dies, exile it instead.					
-Civilian		Token Creature — Human 						
-Zombie		Token Creature — Zombie 	Decayed (This creature can’t block. When it attacks, sacrifice it at end of combat.)		2	2		
-Golem		Token Creature — Golem 			3	3		
-Scarecrow Effigy		Token Creature — Scarecrow 	All creatures able to block  Scarecrow Effigy do so.		0	1		
-Maiden of the Mist		Token Legendary Creature — Wraith 	If a nontoken creature an opponent controls would die, exile that card and create a 2/2 black zombie creature token with decayed.		4	4		
-Spirit		Token Creature — Spirit 	Flying		1	1		
-Human Soldier		Token Creature — Human Soldier 			1	1		
-Snowball		Token Snow Artifact — Equipment 	Equipped creature has ‘1, T, Sacrifice Snowball: Tap target creature.\n Equip 2					
-Bear		Token Creature — Bear 			2	2		
-Bomb		Token Artifact	Bomb enters with three charge counters on it, whenever one or more creatures an opponent controls deals combat damage to you, put two charge counters on it. At the beginning of your endstep, if no counters have been put on Bomb since your last endstep, sacrifice it. Whenever Bomb leaves the battlefield, it deals X damage to you and each creature you control, where X is the amount of charge counters on Bomb.					
-Kai		Token Legendary Creature — Human 			2	2		
-Valmar		Token Legendary Creature — Human 			2	2							
-The Great Darkin War								
-To Slay Legends								
-God Warriors								
-Seal in Steel								
-Studies of the Desert								
+Naganeka, The Darkin Ballista		Legendary Artifact						Naganeka		Legendary Creature — Darkin 												
 Targonian Manifest	2WB	Sorcery	Choose two, you may sacrifice a non-land permanent. If you do, choose another —\n • Put a permanent card from your hand with mana value 3 or less onto the battlefield.\n • Each opponent sacrifices an artifact or enchantment.\n • Create a token copy of a permanent an opponent sacrificed this turn.					
 Freljordian Manifest	2RG	Sorcery	Choose two, you may exert two tapped creatures you control. If you do, choose another —\n • For each tapped creature you control, tap up to one non-land permanent target player controls.\n • Deal X damage to target player and each creature they control, where X is the number of tapped creatures you control.\n • Create a tapped Treasure token for each tapped creature target player controls.					
 Bilgewater Manifest	2UR	Sorcery	Choose two, you may tap three permanents with different card types. If you do, choose another —\n • Draw three cards, then discard two cards.\n • Deal damage to target creature equal to the number of cards you discarded this turn, excess damage dealt this way is dealt to the creatures controller.\n • Create a Treasure token for each opponent that was dealt damage this turn.					
-Ixtali Manifest	2GW	Sorcery	Choose two, , if you do choose another —\n • \n • \n • 					
+Ixtali Manifest	2GW	Sorcery	Choose two, do something. If you do, choose another —\n • \n • \n • 					
 Perfect Fit	RW	Enchantment	When perfect fit enters choose one —\n •  Search your library for up to one creature card that shares a mana value with an equipment you control, put that card into your hand then shuffle.\n • Search your library for up to one equipment card that shares a mana value with a creature you control, put that card into your hand then shuffle.\n You may equip equipment without paying its equip cost if the target shares a mana value with the equipment.					
+Desert Merchants	1RR	Enchantment	Whenever you sacrifice an artifact token, you may sacrifice any number of artifact tokens that share a name with it, if you do, deal 1 damage to any target for each card sacrificed this way.					
+Sand Surfing	G	Sorcery	Return target land from your graveyard to your hand, if a Desert is returned this way return it to the battlefield tapped instead.					
+The Water Crystal	2UU	Legendary Artifact	Blue spells you cast cost 1 less to cast.\n If an opponent would mill one or more cards, they mill that many cards plus four instead.\n 4UU, T: Each opponent mills cards equal to the number of cards in your hand.					
+The Darkness Crystal	2BB	Legendary Artifact	Black spells you cast cost 1 less to cast.\n If a nontoken creature an opponent controls would die, instead exile it and you gain 2 life.\n 4BB, T: Put target creature card exiled with The Darkness Crystal onto the battlefield tapped under your control with two additional +1/+1 counters on it.					
+The Wind Crystal	2WW	Legendary Artifact	White spells you cast cost 1 less to cast.\n If you would gain life, you gain twice that much life instead.\n 4WW, T: Creatures you control gain flying and lifelink until end of turn.					
+The Earth Crystal	2GG	Legendary Artifact	Green spells you cast cost 1 less to cast.\n If one or more +1/+1 counters would be put on a creature you control, twice that many +1/+1 counters are put on that creature instead.\n 4GG, T: Distribute two +1/+1 counters among one or two target creatures you control.					
+The Fire Crystal	2RR	Legendary Artifact	Red spells you cast cost 1 less to cast.\n Creatures you control have haste.\n 4RR, T: Create a token that’s a copy of target creature you control. Sacrifice it at the beginning of the next end step.					
+She Who Wanders	5UU	Creature — Incarnation Horror 	She Who Wanders’ toughness is equal to the number of cards in your hand plus 3.\n Play with the top three cards of your library revealed.\n You may play cards from the top 3 cards of your library.		*	3+*		
+It That Stares	7UU	Creature — Incarnation Horror 	When you cast this spell, you may tap up to X target permanents, where X is the amount of mana spent to cast this spell, they don’t untap during their controllers next untap step.\n Whenever one or more permanents don’t untap, scry that amount, if it was a permanent you control, you draw that many instead.\n Evoke 2UU		10	14		
+Glimpse Into Nothingness	5UU	Sorcery	Each player mills ten cards. For each player, choose an instant or sorcery card in that player’s graveyard. Exile each instant or sorcery spell chosen this way, You may copy them, you may cast the copies without paying their mana cost. Exile this card.					
+Teferi's Ageless Insight	2UU	Legendary Enchantment	If you would draw a card except the first one you draw in each of your draw steps, draw two cards instead.					
+Inquiries Made	3UU	Sorcery	You may exile any number of cards from all graveyards, draw a card for each card type exiled this way.\n “Odd creatures of blood and flesh.” —Vel’Koz					
+Turn to Knowledge	6UU	Instant	This spell costs 5 less to cast to target a creature you control.\n Exile target creature, draw cards equal to its mana cost.\n “Human melting point remains... inconsistent.”                             —Vel’Koz					
+Gitaxian Probe	H/U	Sorcery	Look at target player’s hand.\n Draw a card.					
