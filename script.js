@@ -642,7 +642,12 @@ const searchCount = document.getElementById("searchCount");
 const DECKLIST_FILES = [
   "Taliyah, Rubble Rouser.txt",
   "Zilean, Keeper of Icathia.txt",
-  "Vel’Koz, Scion of the Watchers.txt"
+  "Vel’Koz, Scion of the Watchers.txt",
+  "Ekko, Timewinder.txt",
+  "Gangplank, Burning Vengeance.txt",
+  "Hwei, Bloody Blend.txt",
+  "Soraka, the Starchild.txt",
+  "Wukong, Living Cyclone.txt"
   // Add more here
 ];
 
