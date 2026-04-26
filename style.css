@@ -305,9 +305,14 @@ nav{
 }
 
 .set-name{
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #000000;
+  text-shadow: 
+    -.8px -.8px 0 #ffffff,  
+     .8px -.8px 0 #ffffff,
+    -.8px  .8px 0 #ffffff,
+     .8px  .8px 0 #ffffff;
 }
 
 .set-meta{
